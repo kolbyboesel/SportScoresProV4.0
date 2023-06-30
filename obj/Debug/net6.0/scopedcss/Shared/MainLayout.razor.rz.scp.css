@@ -1,0 +1,24 @@
+.navmenu[b-uo0aacx1aq] {
+  height: 85px;
+  background-color: #f44336;
+  width: 100%;
+}
+
+.page[b-uo0aacx1aq] {
+  overflow-y: auto;
+  overflow-x: hidden;
+  bottom: 0;
+  height: calc(100vh - 85px);
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .navmenu[b-uo0aacx1aq] {
+    height: 90px!important;
+  }
+
+  .page[b-uo0aacx1aq] {
+    height: calc(100vh - 85px);
+  }
+}

@@ -1,0 +1,52 @@
+@page "/LiveScores"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+
+<PageTitle>Live Scores</PageTitle>
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+</head>
+<style>
+  .content {
+    width: 100vw;
+    height: calc(100vh - 85px);
+  }
+</style>
+<div class="headerImage mobileSetting">Live Scores</div>
+<div class="container no-gutters">
+<div class="row no-gutters responsiveScrollContainer">
+<i class="arrow left leftArrow" style="display: none;"></i>
+  <div class="scrollmenu mobileScroll">
+  <a onclick=showLiveNBA() href="" id="nbalive" class="w3-hover-text-white">NBA</a>
+  <a onclick=showLiveMLB() href="" id="mlblive" class="w3-hover-text-white">MLB</a>
+  <a onclick=showLiveNHL() href="" id="nhllive" class="w3-hover-text-white">NHL</a>
+  <a onclick=showLiveNFL() href="" id="nfllive" class="w3-hover-text-white">NFL</a>
+  <a onclick=showLiveCBB() href="" id="cbblive" class="w3-hover-text-white">College Basketball</a>
+  <a onclick=showLiveCFB() href="" id="cfblive" class="w3-hover-text-white">College Football</a>
+  <a onclick=showLiveCBaseball() href="" id="cbaseballlive" class="w3-hover-text-white">College Baseball</a>
+  <a onclick=showLivePrem() href="" id="premlive" class="w3-hover-text-white">Premier League</a>
+  <a onclick=showLiveBundesliga() href="" id="bundlive" class="w3-hover-text-white">Bundesliga</a>
+  <a onclick=showLiveLaliga() href="" id="laligalive" class="w3-hover-text-white">LaLiga</a>
+  <a onclick=showLiveSerieA() href="" id="seriealive" class="w3-hover-text-white">Serie A</a>
+  <a onclick=showLiveLigue1() href="" id="ligue1live" class="w3-hover-text-white">Ligue 1</a>
+  <a onclick=showLiveMLS() href="" id="mlslive" class="w3-hover-text-white">MLS</a>
+  </div>
+  <i class="arrow right rightArrow" style="display: none;"></i>
+  </div>
+
+  <div class="row no-gutters score-container-scroll indexContainerPad xs-padding liveScoresContainer">
+  </div>
+</div> 
+@code
+{
+    private string innerHtmlValue = "";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("liveActive");
+        await JSRuntime.InvokeVoidAsync("showLiveMLB");
+    }
+ 
+}

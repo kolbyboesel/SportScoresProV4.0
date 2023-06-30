@@ -1,0 +1,451 @@
+@font-face {
+  font-family: "quicksand";
+  src: url("/fonts/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "quicksand-bold";
+  src: url("/fonts/Quicksand-Bold.ttf");
+}
+
+.body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  background-color: #d8d8d8 !important;
+  height: 100vh;
+}
+
+p {
+  color: #b3b3b3 !important;
+  font-weight: 300 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+h1 {
+  font-size: 2vh !important;
+  text-align: center;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.content {
+  width: 100vw;
+  height: fit-content;
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+}
+
+.display-flex {
+  display: flex !important;
+}
+
+.container {
+  display: grid;
+  max-width: 100%;
+  height: 100%;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.active {
+  color: white !important;
+}
+
+/* Mobile Screen Adjust */
+
+@media screen and (max-width: 766px) {
+  .containerPad {
+    padding-top: 110px !important;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .xs-padding {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    padding-top: 10px!important;
+  }
+}
+
+@media screen and (max-width: 766px) {
+    .xs-padding-betting {
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
+  }
+/* HomePage Style */
+
+.w3-display-middle {
+  top: 40vh !important;
+}
+
+.middle-bar {
+  white-space: nowrap;
+  background-color: #f44336;
+  opacity: 75%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  height: fit-content;
+}
+
+.mainHeader {
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+  letter-spacing: 2px;
+}
+
+.InfoElement {
+  width: auto;
+  position: inherit;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.BackgroundNorm {
+  background-color: #d8d8d8 !important;
+}
+
+.indexContainerPad {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.infoContainer {
+  max-width: 100vw;
+  width: 100vw;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #f44336 !important;
+  padding-top: 10px;
+}
+
+.img-style {
+  width: 250px;
+  height: fit-content;
+  margin: auto;
+}
+
+.img-home {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.reactiveMobileCenter {
+  height: 100vh;
+}
+
+.reactiveMobileShow {
+  display: none;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .mainHeader {
+    font-size: 2.25rem !important;
+    letter-spacing: 1px;
+  }
+  .mobileMainPadding {
+    padding-top: 40vh !important;
+  }
+
+  .indexContainerPad {
+    padding-top: 50px;
+  }
+  .showIndex {
+    display: block !important;
+  }
+
+  .InfoElement {
+    display: inline-block;
+  }
+}
+.mobileHomePage {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 992px) {
+  .mobileHomePage {
+    background-color: transparent !important;
+  }
+
+  .reactiveMobileShow {
+    display: block;
+  }
+  .reactiveMobileHide {
+    display: none;
+  }
+  .reactiveMobileCenter {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  min-height: 100%;
+}
+
+.w3-wide {
+  letter-spacing: 10px;
+}
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    min-height: 400px;
+  }
+}
+
+.center-elements {
+  display: grid;
+  align-content: center;
+}
+
+.footer-style {
+  background-color: #f44336;
+  opacity: 75%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Style for all Live Pages*/
+.score-container-scroll {
+  height: calc(93.5vh - 85px);
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  padding-top: 30px;
+  overflow: auto;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.headerImage {
+  height: 85px;
+  width: 50% !important;
+  margin-left: 25%;
+  position: fixed;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@media screen and (max-width: 766px) {
+  .headerImage {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (min-width: 766px) {
+  .mobilePadding {
+    padding-top: 2vh !important;
+    left: 0 !important;
+  }
+}
+@media screen and (min-width: 1184px) {
+  .mobileSetting {
+    display: none !important;
+  }
+}
+
+.responsiveScrollContainer {
+  width: 100% !important;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #f44336;
+  position: fixed;
+  height: 6.5vh;
+}
+
+.scrollmenu {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+  white-space: nowrap;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .leftArrow {
+    display: block !important;
+    position: fixed;
+    top: 110px;
+    border-color: white;
+    left: 4%;
+  }
+
+  .rightArrow {
+    display: block !important;
+    position: fixed;
+    top: 110px;
+    border-color: white;
+    left: 94%;
+  }
+  .scrollmenu {
+    overflow: auto;
+    width: 90%;
+    justify-content: flex-start;
+  }
+
+  .responsiveScrollContainer {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.no-score-info {
+  color: black;
+  width: 100%;
+}
+
+/* Scoreboard Styles */
+
+.scoreboard {
+  width: 100%;
+  display: inline-block;
+  border-style: hidden;
+  border-width: 20px;
+  border-radius: 10px;
+  height: 150px;
+  align-items: center;
+  background-color: white;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.betBoard {
+  width: 100%;
+  border-style: hidden;
+  border-width: 20px;
+  height: 220px;
+  align-items: center;
+  display: inline-block;
+  background-color: white;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.header {
+  height: 20%;
+  align-items: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.team {
+  height: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.team .score {
+  text-align: right;
+}
+
+.win .score {
+  font-weight: bold;
+  color: black;
+}
+
+.win .team {
+  color: black;
+  font-weight: bold;
+}
+
+.headerElement {
+  font-size: 1.5vh;
+}
+
+.bet-odds-grid{
+  font-size: 1.5vh; 
+  width: 15%;
+  text-align: center;
+}
+
+.bet-main-element {
+  font-size: 1.5vh;
+  overflow: hidden;
+  width: 42%;
+}

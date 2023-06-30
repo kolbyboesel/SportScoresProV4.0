@@ -1,0 +1,74 @@
+﻿@page "/HomePage"
+@inject IJSRuntime JSRuntime
+@inject IHttpContextAccessor HttpContextAccessor
+@inject NavigationManager NavigationManager
+
+<PageTitle>Home</PageTitle>
+
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .navDivider{
+    display:none!important
+  }
+</style>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min reactiveMobileCenter" id="home">
+  <img class="reactiveMobileShow background-image" src="/images/newMobileBackground.jpeg">
+  <img class="reactiveMobileHide background-image" src="/images/newBackground.jpg">
+  <div class="w3-display-middle middle-bar">
+    <span class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity display-flex"><img class="img-style" src="/images/logo_transparent.png"></span>
+  </div>
+</div>
+
+<div class="container-fluid infoContainer">
+  <div>
+    <h3 class="w3-center text-white indexContainerPad xs-padding">WELCOME TO SPORT SCORES!</h3>
+  <div class="row InfoElement xs-padding indexContainerPad">
+    <div class="col-lg-6 center-elements">
+      <h4 class="w3-center text-white"><em>ABOUT</em></h4>
+      <p class="text-white w3-center">Thank you for visiting sportscorespro.com! This website is your hub for sport scores, betting odds, and current news.
+        The currently supported sports are MLB, NFL, NBA, NHL, College Football, College Basketball, as well as Soccer, including all Europe's 5 leagues (Ligue 1, Premier League, Serie A, LaLiga, and Bundesliga) 
+        and the MLS. Please contact me through the contact page with any bugs noticed, or suggestions for improvements.
+      </p>
+    </div>
+    <div class="col-lg-6 center-elements">
+      <img class="img-home" src="/images/homeImage.jpeg">
+    </div>
+  </div>
+    <div class="row InfoElement xs-padding BackgroundNorm indexContainerPad" style="padding-top:50px">
+    <div class="col-lg-6 center-elements">
+      <img class="img-home" src="/images/proExample.png">
+    </div>
+    <div class="col-lg-6 center-elements">
+      <h4 class="w3-center text-black"><em>ACCOUNT BENEFITS</em></h4>
+      <p class="text-black w3-center">Why create an account with Sport Scores Pro? Creating an account gives you access to high quality betting picks intended to give you +EV bets. 
+        Expected value (EV) in sports betting is a way to measure the probability gap between a bettor’s expectations and the sportsbook’s. So using a variety of data, you're given picks for every
+        game from the suppoerted leagues which give you the best opportunities to win. An example pick can be seen on the left, and includes the odds of a given team to win, as well as over predictions for given values. 
+        Currently supported are MLB, NFL, NHL, and NBA, and the rest of the sports listed above will be available during the season.
+      </p>
+    </div>
+  </div>
+    </div>
+</div>
+    <!-- Footer -->
+<footer class="w3-center footer-style w3-padding-64 w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity text-white"></i>
+    <i class="fa fa-instagram w3-hover-opacity text-white"></i>
+    <i class="fa fa-snapchat w3-hover-opacity text-white"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity text-white"></i>
+    <i class="fa fa-twitter w3-hover-opacity text-white"></i>
+    <i class="fa fa-linkedin w3-hover-opacity text-white"></i>
+  </div>
+</footer>
+
+@code{
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+      await JSRuntime.InvokeVoidAsync("homeActive");
+    }
+}

@@ -4,19 +4,11 @@
 @inject NavigationManager NavigationManager
 
 <PageTitle>Index</PageTitle>
-
+ 
 <div class="page content">
     @if(showIndex)
     {
       <SportScoresPro.Pages.HomePage></SportScoresPro.Pages.HomePage>
-    }
-    @if(showSignupModalBool)
-    {
-      <SportScoresPro.Pages.MongoDb.Signup></SportScoresPro.Pages.MongoDb.Signup>
-    }
-    @if(showLoginModalBool)
-    {
-      <SportScoresPro.Pages.MongoDb.Login></SportScoresPro.Pages.MongoDb.Login>
     }
     @if(showMLBBool)
     {
@@ -42,25 +34,13 @@
     {
       <SportScoresPro.Pages.LivePages.AllBetOdds></SportScoresPro.Pages.LivePages.AllBetOdds>
     }
-    @if(showContactBool)
-    {
-      <SportScoresPro.Pages.Contact></SportScoresPro.Pages.Contact>
-    }
     @if(showPrivacyBool)
     {
       <SportScoresPro.Pages.Privacy></SportScoresPro.Pages.Privacy>
     }
     @if(showAccountBool)
     {
-      <SportScoresPro.Pages.Account.AccountHome></SportScoresPro.Pages.Account.AccountHome>
-    }
-    @if(showChangeEmail)
-    {
-      <SportScoresPro.Pages.Account.ChangeEmail></SportScoresPro.Pages.Account.ChangeEmail>
-    }
-    @if(showChangePsw)
-    {
-      <SportScoresPro.Pages.Account.ChangePsw></SportScoresPro.Pages.Account.ChangePsw>
+      <SportScoresPro.Pages.AccountHome></SportScoresPro.Pages.AccountHome>
     }
     @if(showMLS)
     {
@@ -103,19 +83,14 @@
 @code
 {
   public Boolean showIndex = true;
-  public Boolean showSignupModalBool = false;
-  public Boolean showLoginModalBool = false;
   public Boolean showMLBBool = false;
   public Boolean showNBABool = false;
   public Boolean showNHLBool = false;
   public Boolean showNFLBool = false;
   public Boolean showLiveScoresBool = false;
   public Boolean showBettingOddsBool = false;
-  public Boolean showContactBool = false;
   public Boolean showPrivacyBool = false;
   public Boolean showAccountBool = false;
-  public Boolean showChangeEmail = false;
-  public Boolean showChangePsw = false;
   public Boolean showMLS = false;
   public Boolean showPrem = false;
   public Boolean showBundesliga = false;
@@ -131,147 +106,112 @@
     string tempHome = HttpContextAccessor.HttpContext.Request.Cookies["showHome"];
     if(tempHome == "true"){
       showIndex = true;
-      allFalseExcept("index");
+      await allFalseExcept("index");
       deleteCookie("showHome");
-    }
-
-    string tempSign = HttpContextAccessor.HttpContext.Request.Cookies["showSignupModal"];
-    if(tempSign == "true"){
-      showSignupModalBool = true;
-      allFalseExcept("signup");
-      deleteCookie("showSignupModal");
     }
 
     string tempMLB = HttpContextAccessor.HttpContext.Request.Cookies["showMLB"];
     if(tempMLB == "true"){
       showMLBBool = true;
-      allFalseExcept("mlb");
+      await allFalseExcept("mlb");
       deleteCookie("showMLB");
     }
 
     string tempNBA = HttpContextAccessor.HttpContext.Request.Cookies["showNBA"];
     if(tempNBA == "true"){
       showNBABool = true;
-      allFalseExcept("nba");
+      await allFalseExcept("nba");
       deleteCookie("showNBA");
     }
 
     string tempNFL = HttpContextAccessor.HttpContext.Request.Cookies["showNFL"];
     if(tempNFL == "true"){
       showNFLBool = true;
-      allFalseExcept("nfl");
+      await allFalseExcept("nfl");
       deleteCookie("showNFL");
     }
 
     string tempNHL = HttpContextAccessor.HttpContext.Request.Cookies["showNHL"];
     if(tempNHL == "true"){
       showNHLBool = true;
-      allFalseExcept("nhl");
+      await allFalseExcept("nhl");
       deleteCookie("showNHL");
     }
 
     string tempAccount = HttpContextAccessor.HttpContext.Request.Cookies["showAccount"];
     if(tempAccount == "true"){
       showAccountBool = true;
-      allFalseExcept("account");
+      await allFalseExcept("account");
       deleteCookie("showAccount");
-    }
-
-    string tempLogin = HttpContextAccessor.HttpContext.Request.Cookies["showLogin"];
-    if(tempLogin == "true"){
-      showLoginModalBool = true;
-      allFalseExcept("login");
-      deleteCookie("showLogin");
     }
     string tempBettingOdds = HttpContextAccessor.HttpContext.Request.Cookies["showBettingOdds"];
     if(tempBettingOdds == "true"){
       showBettingOddsBool = true;
-      allFalseExcept("bettingodds");
+      await allFalseExcept("bettingodds");
       deleteCookie("showBettingOdds");
     }
     string tempLiveScores = HttpContextAccessor.HttpContext.Request.Cookies["showLiveScores"];
     if(tempLiveScores == "true"){
       showLiveScoresBool = true;
-      allFalseExcept("livescores");
+      await allFalseExcept("livescores");
       deleteCookie("showLiveScores");
-    }
-    string tempContact = HttpContextAccessor.HttpContext.Request.Cookies["showContact"];
-    if(tempContact == "true"){
-      showContactBool = true;
-      allFalseExcept("contact");
-      deleteCookie("showContact");
-    }
-    string tempChangePsw = HttpContextAccessor.HttpContext.Request.Cookies["showChangePsw"];
-    if(tempChangePsw == "true"){
-      showChangePsw = true;
-      allFalseExcept("changepsw");
-      deleteCookie("showChangePsw");
-    }
-    string tempChangeEmail = HttpContextAccessor.HttpContext.Request.Cookies["showChangeEmail"];
-    if(tempChangeEmail == "true"){
-      showChangeEmail = true;
-      allFalseExcept("changeemail");
-      deleteCookie("showChangeEmail");
     }
     string tempLeague1 = HttpContextAccessor.HttpContext.Request.Cookies["showLeague1"];
     if(tempLeague1 == "true"){
       showLeague1 = true;
-      allFalseExcept("league");
+      await allFalseExcept("league");
       deleteCookie("showLeague1");
     }
     string tempPrem = HttpContextAccessor.HttpContext.Request.Cookies["showPrem"];
     if(tempPrem == "true"){
       showPrem = true;
-      allFalseExcept("premier");
+      await allFalseExcept("premier");
       deleteCookie("showPrem");
     }
     string tempLaLiga = HttpContextAccessor.HttpContext.Request.Cookies["showLaLiga"];
     if(tempLaLiga == "true"){
       showLaLiga = true;
-      allFalseExcept("laliga");
+      await allFalseExcept("laliga");
       deleteCookie("showLaLiga");
     }
     string tempBundesliga = HttpContextAccessor.HttpContext.Request.Cookies["showBundesliga"];
     if(tempBundesliga == "true"){
       showBundesliga = true;
-      allFalseExcept("bundesliga");
+      await allFalseExcept("bundesliga");
       deleteCookie("showBundesliga");
     }
     string tempSerieA = HttpContextAccessor.HttpContext.Request.Cookies["showSerieA"];
     if(tempSerieA == "true"){
       showSerieA = true;
-      allFalseExcept("serie");
+      await allFalseExcept("serie");
       deleteCookie("showSerieA");
     }
     string tempMLS = HttpContextAccessor.HttpContext.Request.Cookies["showMLS"];
     if(tempMLS == "true"){
       showMLS = true;
-      allFalseExcept("mls");
+      await allFalseExcept("mls");
       deleteCookie("showMLS");
     }
     string tempCBB = HttpContextAccessor.HttpContext.Request.Cookies["showCBB"];
     if(tempCBB == "true"){
       showCBB = true;
-      allFalseExcept("cbb");
+      await allFalseExcept("cbb");
       deleteCookie("showCBB");
     }
     string tempCFB = HttpContextAccessor.HttpContext.Request.Cookies["showCFB"];
     if(tempCFB == "true"){
       showCFB = true;
-      allFalseExcept("cfb");
+      await allFalseExcept("cfb");
       deleteCookie("showCFB");
     }
     string tempCBaseball = HttpContextAccessor.HttpContext.Request.Cookies["showCBaseball"];
     if(tempCBaseball == "true"){
       showCBaseball = true;
-      allFalseExcept("cbaseball");
+      await allFalseExcept("cbaseball");
       deleteCookie("showCBaseball");
     }
     string tempCancel = HttpContextAccessor.HttpContext.Request.Cookies["cancelPressed"];
     if(tempCancel == "true"){
-      showSignupModalBool = false;
-      showContactBool = false;
-      showLoginModalBool = false;
       showPrivacyBool = false;
       showIndex = true;
       deleteCookie("cancelPressed");
@@ -283,69 +223,61 @@
 
   public async Task allFalseExcept(string activePage){
     if(activePage == "index"){
-        showSignupModalBool = showLoginModalBool = showMLBBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
-    } else if(activePage == "signup"){
-        showIndex = showLoginModalBool = showMLBBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
-    }
-    else if(activePage == "login"){
-        showIndex = showSignupModalBool = showMLBBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+      showMLBBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "mlb"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "nba"){
-        showIndex = showSignupModalBool = showLoginModalBool = showMLBBool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showMLBBool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "nhl"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showMLBBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showMLBBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "nfl"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showMLBBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showMLBBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "livescores"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showMLBBool = showBettingOddsBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showMLBBool = showBettingOddsBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "bettingodds"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showMLBBool = showContactBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
-    }
-    else if(activePage == "contact"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showMLBBool = showPrivacyBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showMLBBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "privacy"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showMLBBool = showAccountBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "account"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showChangeEmail = showChangePsw = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "changepsw"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showMLBBool = showPrivacyBool = showAccountBool = showChangeEmail = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showMLBBool = showPrivacyBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "premier"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "league"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showBundesliga = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "bundesliga"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "laliga"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showBundesliga = showLeague1 = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "serie"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showCBB = showCFB = showCBaseball = false;
     }
     else if(activePage == "cbb"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCFB = showCBaseball = false;
     }
     else if(activePage == "cbaseball"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = false;
     }
     else if(activePage == "cfb"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showMLS = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCBaseball = false;
     }
     else if(activePage == "mls"){
-        showIndex = showSignupModalBool = showLoginModalBool = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showContactBool = showPrivacyBool = showMLBBool = showAccountBool = showChangePsw = showChangeEmail = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
+        showIndex = showNBABool = showNHLBool = showNFLBool = showLiveScoresBool = showBettingOddsBool = showPrivacyBool = showMLBBool = showAccountBool = showPrem = showBundesliga = showLeague1 = showLaLiga = showSerieA = showCBB = showCFB = showCBaseball = false;
     }
   }
 }

@@ -13,11 +13,11 @@ const options = {
   },
 };
 
-function AddNoDataTxt(){
-  return `<div class="col-12 no-score-info"><h1>Sorry, no data is available, please check back later!</h1></div>`
+function AddNoDataTxt() {
+  return `<div class="col-12 no-score-info"><h1>Sorry, no data is available, please check back later!</h1></div>`;
 }
 
-function removeAllActive(){
+function removeAllActive() {
   let nba = document.getElementById("nbalive");
   nba.classList.remove("active");
   let mlb = document.getElementById("mlblive");
@@ -57,13 +57,15 @@ async function getData(url) {
 async function showNBAScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NBA Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_nba/scores?daysFrom=1"
     ),
     "containerNBA"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerNBA");
   container.innerHTML = html;
@@ -72,13 +74,15 @@ async function showNBAScores() {
 async function showMLBScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">MLB Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores?daysFrom=1"
     ),
     "containerMLB"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerMLB");
   container.innerHTML = html;
@@ -87,43 +91,49 @@ async function showMLBScores() {
 async function showNFLScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NFL Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/scores?daysFrom=1"
     ),
     "containerNFL"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerNFL");
   container.innerHTML = html;
 }
- 
+
 async function showCFBScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">College Football Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/americanfootball_ncaaf/scores?daysFrom=1"
     ),
     "containeCFB"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
-  let container = document.querySelector("." + "containeCFB");
+  let container = document.querySelector("." + "containerCFB");
   container.innerHTML = html;
 }
 
 async function showCollegeBaseballScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">College Baseball Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/baseball_ncaa/scores?daysFrom=1"
     ),
     "containerCBaseball"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerCBaseball");
   container.innerHTML = html;
@@ -132,13 +142,15 @@ async function showCollegeBaseballScores() {
 async function showCBBScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">College Basketball Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/basketball_ncaab/scores?daysFrom=1"
     ),
     "containerNCAAB"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerNCAAB");
   container.innerHTML = html;
@@ -147,13 +159,15 @@ async function showCBBScores() {
 async function showPremScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Premier League Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_epl/scores?daysFrom=1"
     ),
     "containerPrem"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerPrem");
   container.innerHTML = html;
@@ -162,13 +176,15 @@ async function showPremScores() {
 async function showLigue1Scores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Ligue 1 Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_france_ligue_one/scores?daysFrom=1"
     ),
     "containerLigue1"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerLigue1");
   container.innerHTML = html;
@@ -177,13 +193,15 @@ async function showLigue1Scores() {
 async function showBundesligaScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Bundesliga Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_germany_bundesliga/scores?daysFrom=1"
     ),
     "containerNFL"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerBundesliga");
   container.innerHTML = html;
@@ -192,13 +210,15 @@ async function showBundesligaScores() {
 async function showSerieAScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Serie A Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_italy_serie_a/scores?daysFrom=1"
     ),
     "containerSerieA"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerSerieA");
   container.innerHTML = html;
@@ -207,13 +227,15 @@ async function showSerieAScores() {
 async function showLaligaScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">LaLiga Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_spain_la_liga/scores?daysFrom=1"
     ),
     "containerLaLiga"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerLaLiga");
   container.innerHTML = html;
@@ -222,13 +244,15 @@ async function showLaligaScores() {
 async function showMLSScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">MLS Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/soccer_usa_mls/scores?daysFrom=1"
     ),
     "containerMLS"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerMLS");
   container.innerHTML = html;
@@ -237,13 +261,15 @@ async function showMLSScores() {
 async function showNHLScores() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NHL Scores</div>`;
   html += buildScoreboard(
     await getData(
       "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/scores?daysFrom=1"
     ),
     "containerNHL"
   );
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector("." + "containerNHL");
   container.innerHTML = html;
@@ -259,6 +285,10 @@ async function showLiveMLB() {
     await getData("https://odds.p.rapidapi.com/v4/sports/baseball_mlb/scores"),
     "liveScoresContainer"
   );
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
 
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
@@ -276,7 +306,7 @@ async function showLiveNBA() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -294,7 +324,7 @@ async function showLiveNHL() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -314,14 +344,13 @@ async function showLiveNFL() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
   let container = document.querySelector(".liveScoresContainer");
   container.innerHTML = html;
 }
-
 
 async function showLiveCFB() {
   removeAllActive();
@@ -335,7 +364,7 @@ async function showLiveCFB() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -355,7 +384,7 @@ async function showLiveCBB() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -369,13 +398,11 @@ async function showLiveCBaseball() {
   currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
-    await getData(
-      "https://odds.p.rapidapi.com/v4/sports/baseball_ncaa/scores"
-    ),
+    await getData("https://odds.p.rapidapi.com/v4/sports/baseball_ncaa/scores"),
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -389,13 +416,11 @@ async function showLivePrem() {
   currentBtn.classList.add("active");
   let html = "";
   html += buildScoreboard(
-    await getData(
-      "https://odds.p.rapidapi.com/v4/sports/soccer_epl/scores"
-    ),
+    await getData("https://odds.p.rapidapi.com/v4/sports/soccer_epl/scores"),
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -415,7 +440,7 @@ async function showLiveBundesliga() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -435,7 +460,7 @@ async function showLiveLigue1() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -455,7 +480,7 @@ async function showLiveLaliga() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -475,7 +500,7 @@ async function showLiveSerieA() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -495,7 +520,7 @@ async function showLiveMLS() {
     "liveScoresContainer"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -559,7 +584,7 @@ function generateScoreboard(
   dateTimeValue,
   containerName
 ) {
-  let htmlSegment = `<div class="col-lg-6 center-elements pt-3 pb-3"><div class="outer mobileScreen"><div class="container scoreboard">`;
+  let htmlSegment = `<div class="col-lg-6 center-elements pt-3 pb-3"><div class="container scoreboard">`;
   let gameStatus;
 
   if (currentScore.completed) {
@@ -583,7 +608,7 @@ function generateScoreboard(
       </div>`;
   } else {
     htmlSegment += `<div class="row header">
-    <div class="col-auto headerDate">${dateTimeValue}</div>
+    <div class="col-auto headerElement">${dateTimeValue}</div>
     <div class="col headerElement" style="text-align:right">${gameStatus}</div>
   </div>
       <div class="row team lose" style="border-left: none; border-top:none; border-right:none;">
@@ -597,7 +622,7 @@ function generateScoreboard(
   }
 
   htmlSegment += `</div>
-  </div></div>`;
+  </div>`;
 
   return htmlSegment;
 }

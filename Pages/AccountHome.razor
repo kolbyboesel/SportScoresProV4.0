@@ -1,0 +1,166 @@
+@page "/AccountHome"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>Account Hub</PageTitle>
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+  </div>
+
+  <div class="site-mobile-menu-body">
+    <ul class="site-nav-wrap">
+      <li><a @onclick=renderHome href="">Home</a></li>
+      <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+      <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
+      <li><a @onclick=renderAccount href="">AI Best Bets</a></li>
+      <li class="has-children">
+        <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem2"
+          aria-expanded="false"></span>
+        <a>Manage Account</a>
+        <ul class="dropdown">
+          <li><a @onclick=changeEmailPressed href="">Update Email</a></li>
+          <li><a @onclick=changePasswordPressed href="">Change Password</a></li>
+        </ul>
+      </li>
+      <li><a href="/Signout">Sign Out</a></li>
+    </ul>
+  </div>
+</div> <!-- .site-mobile-menu -->
+<!-- NAVBAR -->
+<header class="site-navbar mt-3">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="site-logo col-6" style="width: 40%;"></div>
+      <nav class="mx-auto site-navigation sport-specific-dropdown" style="top:1rem!important">
+        <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+          <li class="has-children" style="left:50%">
+            <a class="nav-link active">Account Hub</a>
+            <ul class="dropdown">
+              <li><a @onclick=renderAccount href="">AI Best Bets</a></li>
+              <li><a @onclick=changeEmailPressed href="">Update Email</a></li>
+              <li><a @onclick=changePasswordPressed href="">Change Password</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- Add Alert -->
+
+<div class="headerImage mobileSetting">Best Bets</div>
+<div class="container no-gutters">
+  <div class="row no-gutters responsiveScrollContainer">
+
+    <div class="scrollmenu mobileScroll">
+      <a onclick=showNBABets() href="" id="nbaai" class="w3-hover-text-white">NBA</a>
+      <a onclick=showMLBBets() href="" id="mlbai" class="w3-hover-text-white">MLB</a>
+      <a onclick=showNHLBets() href="" id="nhlai" class="w3-hover-text-white">NHL</a>
+      <a onclick=showNFLBets() href="" id="nflai" class="w3-hover-text-white">NFL</a>
+      <a onclick=showCFBBets() href="" id="cfbai" class="w3-hover-text-white">College Football</a>
+      <a onclick=showCBBBets() href="" id="cbbai" class="w3-hover-text-white">College Basketball</a>
+      <a onclick=showCBaseballBets() href="" id="cbaseballai" class="w3-hover-text-white">College Baseball</a>
+      <a onclick=showPremBets() href="" id="premai" class="w3-hover-text-white">Premier League</a>
+      <a onclick=showLaligaBets() href="" id="laligaai" class="w3-hover-text-white">LaLiga</a>
+      <a onclick=showSerieABets() href="" id="serieaai" class="w3-hover-text-white">Serie A</a>
+      <a onclick=showLigue1Bets() href="" id="ligue1ai" class="w3-hover-text-white">Ligue 1</a>
+      <a onclick=showBundesligaBets() href="" id="bundai" class="w3-hover-text-white">Bundesliga</a>
+      <a onclick=showMLSBets() href="" id="mlsai" class="w3-hover-text-white">MLS</a>
+    </div>
+  </div>
+
+  <div class="row no-gutters score-container-scroll indexContainerPad xs-padding-betting AccountContainer">
+  </div>
+</div>
+@code
+{
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+            {
+              
+              string isLoggedIn = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+              string confirmPayment = HttpContextAccessor.HttpContext.Request.Cookies["PaidConfirm"];
+              string changedPassword = HttpContextAccessor.HttpContext.Request.Cookies["ChangedPassword"];
+              string changedEmail = HttpContextAccessor.HttpContext.Request.Cookies["ChangedEmail"];
+              string signedUp = HttpContextAccessor.HttpContext.Request.Cookies["signedUp"];
+              string loggedIn = HttpContextAccessor.HttpContext.Request.Cookies["loggedIn"];
+              if(isLoggedIn != "true"){
+                NavigationManager.NavigateTo("/", forceLoad:true);
+              }
+              else if(confirmPayment == "No")
+              {
+                NavigationManager.NavigateTo("/Payment", forceLoad:true);
+              }
+              else 
+              {
+                if(loggedIn == "yes")
+                {
+                  await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "loggedIn");
+                  await JSRuntime.InvokeAsync<object>("Alert", "Successfully Logged In!");
+                }
+                if(signedUp == "yes")
+                {
+                  await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "signedUp");
+                  await JSRuntime.InvokeAsync<object>("Alert", "Payment Successful!");
+                }
+                if(changedPassword == "yes")
+                {
+                  await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "ChangedPassword");
+                  await JSRuntime.InvokeAsync<object>("Alert", "Password Change Successful!");
+                }
+                if(changedEmail == "yes")
+                {
+                  await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "ChangedEmail");
+                  await JSRuntime.InvokeAsync<object>("Alert", "Email Change Successful!");
+                }
+                await JSRuntime.InvokeVoidAsync("showMLBBets");
+              }
+
+            }
+
+
+    public async Task showSignupModal()
+    {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+    }
+
+  public async Task renderLogin()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderAccount()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderBettingOdds()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBettingOdds", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLiveScores()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderHome()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task changeEmailPressed(){
+    await JSRuntime.InvokeVoidAsync("showChangeEmailModal");
+  }
+  public async Task changePasswordPressed(){
+    await JSRuntime.InvokeVoidAsync("showChangePasswordModal");
+  }
+  public async Task CancelPressed()
+  {
+    await JSRuntime.InvokeVoidAsync("closeModals");
+  }
+}

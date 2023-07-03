@@ -48,3 +48,5 @@
 /Users/kolbyboesel/Desktop/SportScoresPro/bin/Debug/net6.0/runtimes/win/native/mongocrypt.dll
 /Users/kolbyboesel/Desktop/SportScoresPro/bin/Debug/net6.0/runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/SportScoresPro.csproj.CopyComplete
+/Users/kolbyboesel/Desktop/SportScoresPro/bin/Debug/net6.0/package-lock.json
+/Users/kolbyboesel/Desktop/SportScoresPro/bin/Debug/net6.0/package.json

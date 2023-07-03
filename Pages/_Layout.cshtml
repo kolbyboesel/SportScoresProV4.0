@@ -12,6 +12,9 @@
     <link href="css/site.css" rel="stylesheet" />
     <link href="SportScoresPro.styles.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
 </head>
 <body>
@@ -36,7 +39,7 @@ async function renderPaypal()
         });
       },
       onApprove: function(data, actions) {
-        window.location.href = 'https://sportscores.azurewebsites.net/ConfirmPayment' // You can add optional success message for the subscriber here
+        window.location.href = '/ConfirmPayment' // You can add optional success message for the subscriber here
       }
   }).render('#paypal-button-container-P-6TS59700HA1617635MRDVNHY'); // Renders the PayPal button
 }
@@ -58,10 +61,14 @@ async function renderPaypal()
     <script src="/js/Imports/jquery.sticky.js"></script>
     <script src="/js/Imports/owl.carousel.min.js"></script>
 
+    <script src="/js/StyleInjection.js"></script>
     <script src="/js/Scoreboard.js"></script>
     <script src="/js/CookieManagement.js"></script>
     <script src="/js/NavbarManagement.js"></script>
     <script src="/js/BettingOdds.js"></script>
+    <script src="/js/AIBestBets.js"></script>
+    <script src="/js/News.js"></script>
+
 
 </body>
 </html>

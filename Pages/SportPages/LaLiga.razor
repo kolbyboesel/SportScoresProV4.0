@@ -1,0 +1,103 @@
+@page "/LaLiga"
+@inject IJSRuntime JSRuntime
+@inject IHttpContextAccessor HttpContextAccessor
+@inject NavigationManager NavigationManager
+
+<PageTitle>LaLiga</PageTitle>
+<style>
+  .navDivider {
+    display: none !important;
+  }
+</style>
+<div class="headerImage mobileSetting"><img class="h-inherit" src="/images/laligaLogo.png"></div>
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-body">
+    <ul class="site-nav-wrap">
+      <li><a @onclick=renderHome href="">Home</a></li>
+      <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+      <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
+      <li><a onclick=showLaligaScores()>LaLiga Scores</a></li>
+      <li><a onclick=showLaligaOdds()>LaLiga Betting Odds</a></li>
+      @if (cookieValue == "true")
+      {
+      <li><a href="/Signout">Sign Out</a></li>
+      <li><a @onclick=renderAccount href="">Account Hub</a></li>
+      } else {
+      <li><a @onclick=showSignupModal href="">Sign Up</a></li>
+      <li><a @onclick=renderLogin href="">Login</a></li>
+      }
+    </ul>
+  </div>
+</div> <!-- .site-mobile-menu -->
+<!-- NAVBAR -->
+<header class="site-navbar mt-3" style="top:1rem!important">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="site-logo col-6" style="width: 40%;"></div>
+
+      <nav class="mx-auto site-navigation sport-specific-dropdown">
+        <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+          <li class="has-children" style="left:50%">
+            <a class="nav-link active"><img src="/images/laligaLogo.png" style="height: 6vh;"></a>
+            <ul class="dropdown">
+              <li><a onclick=showLaligaScores()>LaLiga Scores</a></li>
+              <li><a onclick=showLaligaOdds()>LaLiga Betting Odds</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="row no-gutters sport-container-scroll indexContainerPad xs-padding-betting containerLaLiga"></div>
+@code {
+
+  string cookieValue = "";
+  protected override async Task OnInitializedAsync()
+  {
+        cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
+  }
+  private string innerHtmlValue = "";
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        innerHtmlValue = "";
+        await JSRuntime.InvokeVoidAsync("showLaligaScores");
+    }
+
+
+    public async Task showSignupModal()
+    {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+    }
+
+  public async Task renderLogin()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderAccount()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showAccount", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task renderBettingOdds()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showBettingOdds", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderLiveScores()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLiveScores", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+  public async Task renderHome()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
+    NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+}

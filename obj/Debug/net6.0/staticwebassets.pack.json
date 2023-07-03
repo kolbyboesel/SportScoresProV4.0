@@ -201,16 +201,12 @@
       "PackagePath": "staticwebassets/js/Imports/popper.min.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/MLBNews.js",
-      "PackagePath": "staticwebassets/js/MLBNews.js"
-    },
-    {
-      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/NBANews.js",
-      "PackagePath": "staticwebassets/js/NBANews.js"
-    },
-    {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/NavbarManagement.js",
       "PackagePath": "staticwebassets/js/NavbarManagement.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/News.js",
+      "PackagePath": "staticwebassets/js/News.js"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Scoreboard.js",

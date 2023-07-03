@@ -8,7 +8,7 @@ const getBets = {
   },
 };
 
-function removeAllActiveAI(){
+function removeAllActiveAI() {
   let nba = document.getElementById("nbaai");
   nba.classList.remove("active");
   let mlb = document.getElementById("mlbai");
@@ -37,8 +37,8 @@ function removeAllActiveAI(){
   mls.classList.remove("active");
 }
 
-function AddNoDataTxt(){
-    return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`
+function AddNoDataTxt() {
+  return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`;
 }
 
 async function getBetData(url) {
@@ -102,7 +102,7 @@ async function showNBABets() {
     "containerNBA"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -132,7 +132,7 @@ async function showMLBBets() {
     "containerMLB"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -147,7 +147,7 @@ async function showNFLBets() {
   let currentDate = getCurrentDate();
   let nextDay = getDatePlusOne();
   let html = "";
- 
+
   html += buildBestBetBoard(
     await getBetData(
       "https://betigolo-predictions.p.rapidapi.com/football/" + currentDate
@@ -162,7 +162,7 @@ async function showNFLBets() {
     "containerNFL"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -193,7 +193,7 @@ async function showNHLBets() {
     "containerNHL"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -224,7 +224,7 @@ async function showCFBBets() {
     "containerCFB"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -255,7 +255,7 @@ async function showCBBBets() {
     "containerCBB"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -286,7 +286,7 @@ async function showCBaseballBets() {
     "containerCBaseball"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -317,7 +317,7 @@ async function showPremBets() {
     "containerPrem"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -348,7 +348,7 @@ async function showLaligaBets() {
     "containerLaliga"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -379,7 +379,7 @@ async function showSerieABets() {
     "containerSerieA"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -410,7 +410,7 @@ async function showLigue1Bets() {
     "containerLigue1"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -441,7 +441,7 @@ async function showBundesligaBets() {
     "containerBundesliga"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -472,15 +472,13 @@ async function showMLSBets() {
     "containerMLS"
   );
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
   let container = document.querySelector(".AccountContainer");
   container.innerHTML = html;
 }
-
-
 
 function round(value) {
   let temp = Math.ceil(value * 100) / 100;
@@ -515,7 +513,12 @@ function buildBestBetBoard(allOdds, containerName) {
       thirdOver = round(currentGame.rank_to_85_nt, 2);
       fourthOver = round(currentGame.rank_to_95_nt, 2);
       fifthOver = round(currentGame.rank_to_105_nt, 2);
-      html += generateMLBBestBetsBoard(
+      firstOverVal = 6.5;
+      secondOverVal = 7.5;
+      thirdOverVal = 8.5;
+      fourthOverVal = 9.5;
+      fifthOverVal = 10.5;
+      html += generateBestBetBoard(
         currentGame,
         homeTeam,
         awayTeam,
@@ -525,7 +528,12 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOver,
         thirdOver,
         fourthOver,
-        fifthOver
+        fifthOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal,
+        fourthOverVal,
+        fifthOverVal
       );
     }
 
@@ -544,7 +552,12 @@ function buildBestBetBoard(allOdds, containerName) {
       thirdOver = round(currentGame.rank_to_85_nt, 2);
       fourthOver = round(currentGame.rank_to_95_nt, 2);
       fifthOver = round(currentGame.rank_to_105_nt, 2);
-      html += generateMLBBestBetsBoard(
+      firstOverVal = 6.5;
+      secondOverVal = 7.5;
+      thirdOverVal = 8.5;
+      fourthOverVal = 9.5;
+      fifthOverVal = 10.5;
+      html += generateBestBetBoard(
         currentGame,
         homeTeam,
         awayTeam,
@@ -554,7 +567,12 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOver,
         thirdOver,
         fourthOver,
-        fifthOver
+        fifthOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal,
+        fourthOverVal,
+        fifthOverVal
       );
     }
 
@@ -573,7 +591,12 @@ function buildBestBetBoard(allOdds, containerName) {
       thirdOver = round(currentGame.rank_to_55_nt, 2);
       fourthOver = round(currentGame.rank_to_65_nt, 2);
       fifthOver = round(currentGame.rank_to_75_nt, 2);
-      html += generateNHLBestBetsBoard(
+      firstOverVal = 3.5;
+      secondOverVal = 4.5;
+      thirdOverVal = 5.5;
+      fourthOverVal = 6.5;
+      fifthOverVal = 7.5;
+      html += generateBestBetBoard(
         currentGame,
         homeTeam,
         awayTeam,
@@ -583,7 +606,12 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOver,
         thirdOver,
         fourthOver,
-        fifthOver
+        fifthOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal,
+        fourthOverVal,
+        fifthOverVal
       );
     }
 
@@ -603,7 +631,12 @@ function buildBestBetBoard(allOdds, containerName) {
       thirdOver = round(currentGame.rank_to_lvl3_nt, 2);
       fourthOver = round(currentGame.rank_to_lvl4_nt, 2);
       fifthOver = round(currentGame.rank_to_lvl5_nt, 2);
-      html += generateNBABestBetsBoard(
+      firstOverVal = 197.5;
+      secondOverVal = 205.5;
+      thirdOverVal = 213.5;
+      fourthOverVal = 221.5;
+      fifthOverVal = 229.5;
+      html += generateBestBetBoard(
         currentGame,
         homeTeam,
         awayTeam,
@@ -613,7 +646,12 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOver,
         thirdOver,
         fourthOver,
-        fifthOver
+        fifthOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal,
+        fourthOverVal,
+        fifthOverVal
       );
     }
 
@@ -632,7 +670,12 @@ function buildBestBetBoard(allOdds, containerName) {
       thirdOver = round(currentGame.rank_to_lvl3_nt, 2);
       fourthOver = round(currentGame.rank_to_lvl4_nt, 2);
       fifthOver = round(currentGame.rank_to_lvl5_nt, 2);
-      html += generateNBABestBetsBoard(
+      firstOverVal = 197.5;
+      secondOverVal = 205.5;
+      thirdOverVal = 213.5;
+      fourthOverVal = 221.5;
+      fifthOverVal = 229.5;
+      html += generateBestBetBoard(
         currentGame,
         homeTeam,
         awayTeam,
@@ -642,15 +685,19 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOver,
         thirdOver,
         fourthOver,
-        fifthOver
+        fifthOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal,
+        fourthOverVal,
+        fifthOverVal
       );
     }
-    
   });
   return html;
 }
 
-function generateNBABestBetsBoard(
+function generateBestBetBoard(
   currentGame,
   homeTeam,
   awayTeam,
@@ -660,249 +707,45 @@ function generateNBABestBetsBoard(
   secondOver,
   thirdOver,
   fourthOver,
-  fifthOver
+  fifthOver,
+  firstOverVal,
+  secondOverVal,
+  thirdOverVal,
+  fourthOverVal,
+  fifthOverVal
 ) {
-  let htmlSegment = `<div class="outerBestBets mobileScreen"><div class="bestBets">`;
+  let htmlSegment = `<div class="col-12 center-elements pt-3 pb-3"><div class="container bestBets">`;
 
-  htmlSegment += `<div class="header" style="height:12.5%">
-        <div class="headerElement-team">Team Name</div>
-        <div class="headerElement-best">Moneyline</div>
+  htmlSegment += `<div class="row header border-bottom">
+        <div class="col">Team Name</div>
+        <div class="col right-text">Moneyline</div>
       </div>
-      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%">
-        <div class="bestBetTeam">${awayTeam}</div>
-        <div class="bestBetElement">${awayMoneylineVal}%</div>
+      <div class="row team" style="border-left: none; border-top:none; border-right:none;">
+        <div class="col">${awayTeam}</div>
+        <div class="col right-text">${awayMoneylineVal}%</div>
       </div>
      
-      <div class="team" style="height:25%">
-        <div class="bestBetTeam">${homeTeam}</div>
-        <div class="bestBetElement">${homeMoneylineVal}%</div>
+      <div class="row team">
+        <div class="col">${homeTeam}</div>
+        <div class="col right-text">${homeMoneylineVal}%</div>
+      </div> 
+
+      <div class="row header border-bottom border-top" style="border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
+      <div class="col center-text">Over ${firstOverVal}</div>
+      <div class="col center-text">Over ${secondOverVal}</div>
+      <div class="col center-text">Over ${thirdOverVal}</div>
+      <div class="col center-text">Over ${fourthOverVal}</div>
+      <div class="col center-text">Over ${fifthOverVal}</div>
       </div>
       
-      <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
-        <div class="headerElement-over">Over 197.5</div>
-        <div class="headerElement-over">Over 205.5</div>
-        <div class="headerElement-over">Over 213.5</div>
-        <div class="headerElement-over">Over 221.5</div>
-        <div class="headerElement-over">Over 229.5</div>
-      </div>
-      
-      <div class="team" style="height:20%">
-        <div class="bestBetOver">${firstOver}%</div>
-        <div class="bestBetOver">${secondOver}%</div>
-        <div class="bestBetOver">${thirdOver}%</div>
-        <div class="bestBetOver">${fourthOver}%</div>
-        <div class="bestBetOver">${fifthOver}%</div>
+      <div class="row team">
+        <div class="col center-text">${firstOver}%</div>
+        <div class="col center-text">${secondOver}%</div>
+        <div class="col center-text">${thirdOver}%</div>
+        <div class="col center-text">${fourthOver}%</div>
+        <div class="col center-text">${fifthOver}%</div>
 
       </div>`;
-
-  htmlSegment += `
-      </div>
-    </div>`;
-
-  return htmlSegment;
-}
-
-function generateMLBBestBetsBoard(
-  currentGame,
-  homeTeam,
-  awayTeam,
-  homeMoneylineVal,
-  awayMoneylineVal,
-  firstOver,
-  secondOver,
-  thirdOver,
-  fourthOver,
-  fifthOver
-) {
-  let htmlSegment = `<div class="outerBestBets mobileScreen"><div class="bestBets">`;
-
-  htmlSegment += `<div class="header" style="height:12.5%">
-        <div class="headerElement-team">Team Name</div>
-        <div class="headerElement-best">Moneyline</div>
-      </div>
-      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
-        <div class="bestBetTeam">${awayTeam}</div>
-        <div class="bestBetElement">${awayMoneylineVal}%</div>
-      </div>
-     
-      <div class="team" style="height:25%">
-        <div class="bestBetTeam">${homeTeam}</div>
-        <div class="bestBetElement">${homeMoneylineVal}%</div>
-      </div> 
-
-      <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
-      <div class="headerElement-over">Over 6.5</div>
-      <div class="headerElement-over">Over 7.5</div>
-      <div class="headerElement-over">Over 8.5</div>
-      <div class="headerElement-over">Over 9.5</div>
-      <div class="headerElement-over">Over 10.5</div>
-      </div>
-      
-      <div class="team" style="height:20%">
-        <div class="bestBetOver">${firstOver}%</div>
-        <div class="bestBetOver">${secondOver}%</div>
-        <div class="bestBetOver">${thirdOver}%</div>
-        <div class="bestBetOver">${fourthOver}%</div>
-        <div class="bestBetOver">${fifthOver}%</div>
-
-      </div>`;
-
-  htmlSegment += `
-      </div>
-    </div>`;
-
-  return htmlSegment;
-}
-
-function generateNHLBestBetsBoard(
-  currentGame,
-  homeTeam,
-  awayTeam,
-  homeMoneylineVal,
-  awayMoneylineVal,
-  firstOver,
-  secondOver,
-  thirdOver,
-  fourthOver,
-  fifthOver
-) {
-  let htmlSegment = `<div class="outerBestBets mobileScreen"><div class="bestBets">`;
-
-  htmlSegment += `<div class="header" style="height:12.5%">
-        <div class="headerElement-team">Team Name</div>
-        <div class="headerElement-best">Moneyline</div>
-      </div>
-      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
-        <div class="bestBetTeam">${awayTeam}</div>
-        <div class="bestBetElement">${awayMoneylineVal}%</div>
-      </div>
-     
-      <div class="team" style="height:25%">
-        <div class="bestBetTeam">${homeTeam}</div>
-        <div class="bestBetElement">${homeMoneylineVal}%</div>
-      </div> 
-      
-    <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
-      <div class="headerElement-over">Over 3.5</div>
-      <div class="headerElement-over">Over 4.5</div>
-      <div class="headerElement-over">Over 5.5</div>
-      <div class="headerElement-over">Over 6.5</div>
-      <div class="headerElement-over">Over 7.5</div>
-    </div>
-    
-    <div class="team" style="height:20%">
-      <div class="bestBetOver">${firstOver}%</div>
-      <div class="bestBetOver">${secondOver}%</div>
-      <div class="bestBetOver">${thirdOver}%</div>
-      <div class="bestBetOver">${fourthOver}%</div>
-      <div class="bestBetOver">${fifthOver}%</div>
-
-    </div>`;
-
-  htmlSegment += `
-      </div>
-    </div>`;
-
-  return htmlSegment;
-}
-
-
-function generateFootballBestBetsBoard(
-  currentGame,
-  homeTeam,
-  awayTeam,
-  homeMoneylineVal,
-  awayMoneylineVal,
-  firstOver,
-  secondOver,
-  thirdOver,
-  fourthOver,
-  fifthOver
-) {
-  let htmlSegment = `<div class="outerBestBets mobileScreen"><div class="bestBets">`;
-
-  htmlSegment += `<div class="header" style="height:12.5%">
-        <div class="headerElement-team">Team Name</div>
-        <div class="headerElement-best">Moneyline</div>
-      </div>
-      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
-        <div class="bestBetTeam">${awayTeam}</div>
-        <div class="bestBetElement">${awayMoneylineVal}%</div>
-      </div>
-     
-      <div class="team" style="height:25%">
-        <div class="bestBetTeam">${homeTeam}</div>
-        <div class="bestBetElement">${homeMoneylineVal}%</div>
-      </div> 
-      
-    <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
-      <div class="headerElement-over">Over 3.5</div>
-      <div class="headerElement-over">Over 4.5</div>
-      <div class="headerElement-over">Over 5.5</div>
-      <div class="headerElement-over">Over 6.5</div>
-      <div class="headerElement-over">Over 7.5</div>
-    </div>
-    
-    <div class="team" style="height:20%">
-      <div class="bestBetOver">${firstOver}%</div>
-      <div class="bestBetOver">${secondOver}%</div>
-      <div class="bestBetOver">${thirdOver}%</div>
-      <div class="bestBetOver">${fourthOver}%</div>
-      <div class="bestBetOver">${fifthOver}%</div>
-
-    </div>`;
-
-  htmlSegment += `
-      </div>
-    </div>`;
-
-  return htmlSegment;
-}
-
-function generatesSoccerBestBetsBoard(
-  currentGame,
-  homeTeam,
-  awayTeam,
-  homeMoneylineVal,
-  awayMoneylineVal,
-  firstOver,
-  secondOver,
-  thirdOver,
-  fourthOver,
-  fifthOver
-) {
-  let htmlSegment = `<div class="outerBestBets mobileScreen"><div class="bestBets">`;
-
-  htmlSegment += `<div class="header" style="height:12.5%">
-        <div class="headerElement-team">Team Name</div>
-        <div class="headerElement-best">Moneyline</div>
-      </div>
-      <div class="team" style="border-left: none; border-top:none; border-right:none; height:25%"">
-        <div class="bestBetTeam">${awayTeam}</div>
-        <div class="bestBetElement">${awayMoneylineVal}%</div>
-      </div>
-     
-      <div class="team" style="height:25%">
-        <div class="bestBetTeam">${homeTeam}</div>
-        <div class="bestBetElement">${homeMoneylineVal}%</div>
-      </div> 
-      
-    <div class="header" style="height:17.5%;border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
-      <div class="headerElement-over">Over 3.5</div>
-      <div class="headerElement-over">Over 4.5</div>
-      <div class="headerElement-over">Over 5.5</div>
-      <div class="headerElement-over">Over 6.5</div>
-      <div class="headerElement-over">Over 7.5</div>
-    </div>
-    
-    <div class="team" style="height:20%">
-      <div class="bestBetOver">${firstOver}%</div>
-      <div class="bestBetOver">${secondOver}%</div>
-      <div class="bestBetOver">${thirdOver}%</div>
-      <div class="bestBetOver">${fourthOver}%</div>
-      <div class="bestBetOver">${fifthOver}%</div>
-
-    </div>`;
 
   htmlSegment += `
       </div>

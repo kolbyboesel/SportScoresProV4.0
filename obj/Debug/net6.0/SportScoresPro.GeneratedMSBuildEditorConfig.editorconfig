@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/AccountHome.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudEhvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ConfirmPayment.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29uZmlybVBheW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ErrorTxt.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3JUeHQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +46,62 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/kolbyboesel/Desktop/SportScoresPro/Pages/LivePages/LiveScores.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGl2ZVBhZ2VzL0xpdmVTY29yZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Signout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lnbm91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Bundesliga.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9CdW5kZXNsaWdhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBaseball.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9Db2xsZWdlQmFzZWJhbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBasketball.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9Db2xsZWdlQmFza2V0YmFsbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeFootball.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9Db2xsZWdlRm9vdGJhbGwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/LaLiga.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9MYUxpZ2EucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Ligue1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9MaWd1ZTEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLB.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9NTEIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLS.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9NTFMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NBA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9OQkEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NFL.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9ORkwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NHL.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9OSEwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/PremierLeague.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9QcmVtaWVyTGVhZ3VlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/SerieA.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9TZXJpZUEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/kolbyboesel/Desktop/SportScoresPro/Shared/SurveyPrompt.razor]

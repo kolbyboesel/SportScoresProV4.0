@@ -3,123 +3,327 @@
 @inject NavigationManager NavigationManager
 
 <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-        <div href="" class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-        </div>
-      <div class="site-mobile-menu-body">
-        <ul class="site-nav-wrap">
-          <li><a @onclick=renderHome href="" class="nav-link active">Home</a></li>
-              <br>
-              <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
-              <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
-              <li class="has-children">
-                <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0" aria-expanded="false"></span>
-                <a href="" data-toggle="collapse" data-target="#collapseItem0">Sports</a>
-                <ul id="collapseItem0" class="dropdown collapse">
-                  <li><a @onclick=renderMLB href="" >MLB</a></li>
-                  <li><a @onclick=renderNFL href="" >NFL</a></li>
-                  <li><a @onclick=renderNBA href="" >NBA</a></li>
-                  <li><a @onclick=renderNHL href="" >NHL</a></li>
-                  <li><a @onclick=renderCBaseball href="">College Baseball</a></li>
-                  <li><a @onclick=renderCFB href="">College Football</a></li>
-                  <li><a @onclick=renderCBB href="">College Basketball</a></li>
-                  <li><a @onclick=renderLeague1 href="">Ligue 1</a></li>
-                  <li><a @onclick=renderSerieA href="">Serie A</a></li>
-                  <li><a @onclick=renderLaLiga href="">LaLiga</a></li>
-                  <li><a @onclick=renderPrem href="">Premier League</a></li>
-                  <li><a @onclick=renderBundesliga href="">Bundesliga</a></li>
-                  <li><a @onclick=renderMLS href="">MLS</a></li>
-                  </ul>
-              </li>
-              <li><a @onclick=renderContact href="">Contact</a></li>
-              @if (cookieValue == "true")
-              {
-              <li><a href="Signout">Sign Out</a></li>
-              <li><a @onclick=renderAccount href="">Account Hub</a></li>
-              }
-              else
-              {
-              <li><a @onclick=showSignupModal href="">Sign Up</a></li>
-              <li><a @onclick=renderLogin href="">Log In</a></li>
-              }
+  <div class="site-mobile-menu-header">
+    <div href="" class="site-mobile-menu-close mt-3">
+      <span class="icon-close2 js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body">
+    <ul class="site-nav-wrap">
+      <li><a @onclick=renderHome href="" class="nav-link active">Home</a></li>
+      <br>
+      <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
+      <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
+      <li class="has-children">
+        <span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0"
+          aria-expanded="false"></span>
+        <a href="" data-toggle="collapse" data-target="#collapseItem0">Sports</a>
+        <ul id="collapseItem0" class="dropdown collapse">
+          <li><a @onclick=renderMLB href="">MLB</a></li>
+          <li><a @onclick=renderNFL href="">NFL</a></li>
+          <li><a @onclick=renderNBA href="">NBA</a></li>
+          <li><a @onclick=renderNHL href="">NHL</a></li>
+          <li><a @onclick=renderCBaseball href="">College Baseball</a></li>
+          <li><a @onclick=renderCFB href="">College Football</a></li>
+          <li><a @onclick=renderCBB href="">College Basketball</a></li>
+          <li><a @onclick=renderLeague1 href="">Ligue 1</a></li>
+          <li><a @onclick=renderSerieA href="">Serie A</a></li>
+          <li><a @onclick=renderLaLiga href="">LaLiga</a></li>
+          <li><a @onclick=renderPrem href="">Premier League</a></li>
+          <li><a @onclick=renderBundesliga href="">Bundesliga</a></li>
+          <li><a @onclick=renderMLS href="">MLS</a></li>
         </ul>
-      </div>
-    </div> <!-- .site-mobile-menu -->
-    <!-- NAVBAR -->
-    <header class="site-navbar mt-3">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="site-logo col-6 hideHome"><a @onclick=renderHome href="" style="height: 6vh"><img src="/images/logo_transparent.png" style="height: 6vh"></a></div>
-          <nav class="mx-auto site-navigation">
-            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a @onclick=renderHome id="home" class="home" href="">Home</a></li>
-              <li><a @onclick=renderLiveScores id="live" class="live" href="">Live Scores</a></li>
-              <li><a @onclick=renderBettingOdds id="betting" class="betting" href="">Betting Odds</a></li>
-              <li class="has-children">
-                <a>Sports</a>
-                <ul class="dropdown">
-                  <li><a @onclick=renderMLB href="">MLB</a></li>
-                  <li><a @onclick=renderNFL href="">NFL</a></li>
-                  <li><a @onclick=renderNBA href="">NBA</a></li>
-                  <li><a @onclick=renderNHL href="">NHL</a></li>
-                  <li><a @onclick=renderCBaseball href="">College Baseball</a></li>
-                  <li><a @onclick=renderCFB href="">College Football</a></li>
-                  <li><a @onclick=renderCBB href="">College Basketball</a></li>
-                  <li><a @onclick=renderLeague1 href="">Ligue 1</a></li>
-                  <li><a @onclick=renderSerieA href="">Serie A</a></li>
-                  <li><a @onclick=renderLaLiga href="">LaLiga</a></li>
-                  <li><a @onclick=renderPrem href="">Premier League</a></li>
-                  <li><a @onclick=renderBundesliga href="">Bundesliga</a></li>
-                  <li><a @onclick=renderMLS href="">MLS</a></li>
+      </li>
+      <li><a @onclick=contactPressed href="">Contact</a></li>
+      @if (cookieValue == "true")
+      {
+      <li><a href="Signout">Sign Out</a></li>
+      <li><a @onclick=renderAccount href="">Account Hub</a></li>
+      }
+      else
+      {
+      <li><a @onclick=signupPressed href="">Sign Up</a></li>
+      <li><a @onclick=loginPressed href="">Log In</a></li>
+      }
+    </ul>
+  </div>
+</div> <!-- .site-mobile-menu -->
+<!-- NAVBAR -->
+<header class="site-navbar mt-3">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="site-logo col-6 hideHome"><a @onclick=renderHome href="" style="height: 6vh"><img
+            src="/images/logo_transparent.png" style="height: 6vh"></a></div>
+      <nav class="mx-auto site-navigation">
+        <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+          <li><a @onclick=renderHome id="home" class="home" href="">Home</a></li>
+          <li><a @onclick=renderLiveScores id="live" class="live" href="">Live Scores</a></li>
+          <li><a @onclick=renderBettingOdds id="betting" class="betting" href="">Betting Odds</a></li>
+          <li class="has-children">
+            <a>Sports</a>
+            <ul class="dropdown">
+              <li><a @onclick=renderMLB href="">MLB</a></li>
+              <li><a @onclick=renderNFL href="">NFL</a></li>
+              <li><a @onclick=renderNBA href="">NBA</a></li>
+              <li><a @onclick=renderNHL href="">NHL</a></li>
+              <li><a @onclick=renderCBaseball href="">College Baseball</a></li>
+              <li><a @onclick=renderCFB href="">College Football</a></li>
+              <li><a @onclick=renderCBB href="">College Basketball</a></li>
+              <li><a @onclick=renderLeague1 href="">Ligue 1</a></li>
+              <li><a @onclick=renderSerieA href="">Serie A</a></li>
+              <li><a @onclick=renderLaLiga href="">LaLiga</a></li>
+              <li><a @onclick=renderPrem href="">Premier League</a></li>
+              <li><a @onclick=renderBundesliga href="">Bundesliga</a></li>
+              <li><a @onclick=renderMLS href="">MLS</a></li>
 
-                  </ul>
-              </li>
-              <li><a @onclick=renderContact href="">Contact</a></li>
-              @if (cookieValue == "true")
-              {
-              <li class="d-lg-none"><a href="/Signout">Sign Out</a></li>
-              <li class="d-lg-none has-children"><a @onclick=renderAccount>Account</a></li>
-              }
-              else
-              {
-              <li class="d-lg-none"><a @onclick=showSignupModal href="">Sign Up</a></li>
-              <li class="d-lg-none"><a @onclick=renderLogin href="">Log In</a></li>
-              }
             </ul>
-          </nav>
-          <div class="navDivider"></div>
-          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
-            <div class="ml-auto">
-              @if (cookieValue == "true")
-              {
-              <a href="/Signout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Out</a>
-              <a @onclick=renderAccount href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Account Hub</a>
-              }
-              else
-              {
-              <a @onclick=showSignupModal href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Sign Up</a>
-              <a @onclick=renderLogin href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
-              }
-            </div>
-            <a href="" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none ml-3"><span class="icon-menu h1 m-0 p-0 mt-2"></span></a>
-          </div>
+          </li>
+          <li><a @onclick=contactPressed href="">Contact</a></li>
+          @if (cookieValue == "true")
+          {
+          <li class="d-lg-none"><a href="/Signout">Sign Out</a></li>
+          <li class="d-lg-none has-children"><a @onclick=renderAccount>Account</a></li>
+          }
+          else
+          {
+          <li class="d-lg-none"><a @onclick=signupPressed href="">Sign Up</a></li>
+          <li class="d-lg-none"><a @onclick=loginPressed href="">Log In</a></li>
+          }
+        </ul>
+      </nav>
+      <div class="navDivider"></div>
+      <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+        <div class="ml-auto">
+          @if (cookieValue == "true")
+          {
+          <a href="/Signout" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+              class="mr-2 icon-lock_outline"></span>Sign Out</a>
+          <a @onclick=renderAccount href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+              class="mr-2 icon-lock_outline"></span>Account Hub</a>
+          }
+          else
+          {
+          <a @onclick=signupPressed href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+              class="mr-2 icon-lock_outline"></span>Sign Up</a>
+          <a @onclick=loginPressed href="" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span
+              class="mr-2 icon-lock_outline"></span>Log In</a>
+          }
+        </div>
+        <a href="" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none ml-3"><span
+            class="icon-menu h1 m-0 p-0 mt-2"></span></a>
+      </div>
+    </div>
+  </div>
+</header>
 
+@* Signup Modal *@
+<div class="modal" id="signupModal">
+  <div class="container modal-container">
+
+    <!-- Put error message here -->
+    <EditForm Model="@signupData" OnValidSubmit="HandleSignupSubmit" class="modal-content animate mobileScreen">
+      <div id="signupForm" class="container pt-5 pb-5 h-auto">
+        <h2>Sign Up</h2>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <label for="username"><b>Email</b></label>
+        <InputText @bind-Value="@signupData.Email" id="username" type="text" placeholder="Enter Email" name="username"
+          required />
+
+        <label for="psw"><b>Password</b></label>
+        <InputText @bind-Value="@signupData.Psw" id="password" type="password" placeholder="Enter Password"
+          name="password" required />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <InputText @bind-Value="@signupData.PswRepeat" id="passwordRepeat" type="password" placeholder="Repeat Password"
+          name="password-repeat" required />
+
+        <p>By creating an account you agree to our <a href="/Privacy" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+        <button type="submit" style="border-radius:5px">Sign Up</button>
+
+        <div class="container" style="padding-left: 0">
+          <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
         </div>
       </div>
-    </header>
+    </EditForm>
+  </div>
+</div>
+
+@* Login Modal *@
+<!-- The Modal -->
+<div class="modal" id="loginModal">
+
+  <div class="container modal-container">
+    <!-- Modal Content -->
+
+    <!-- Put error message here -->
+    <EditForm Model="@loginData" OnValidSubmit="HandleLoginSubmit" class="modal-content animate mobileScreen">
+      <div class="container pt-5 h-auto">
+        <label for="uname"><b>Username</b></label>
+        <InputText @bind-Value="@loginData.Email" type="text" class="form-control" placeholder="Enter Username"
+          id="uname" name="uname" required></InputText>
+
+        <label for="psw"><b>Password</b></label>
+        <InputText @bind-Value="@loginData.Password" type="password" class="form-control" placeholder="Enter Password"
+          id="psw" name="psw" required></InputText>
+
+        <button type="submit" style="border-radius:5px">Login</button>
+      </div>
+
+      <div class="container pb-5 login-cancel">
+        <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </EditForm>
+  </div>
+</div>
+
+@* Contact Modal *@
+<!-- The Modal -->
+<div class="modal" id="contactModal">
+
+  <div class="container modal-container">
+
+    <section class="ftco-section">
+      <div class="container modal-content animate" style="width: fit-content!important;">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="wrapper" style="box-shadow: none;">
+              <div class="row no-gutters">
+
+                <div class="col-12 d-flex align-items-stretch" style="margin: auto;">
+                  <div class="info-wrap bg-primary w-100 p-4"
+                    style="background-color:white!important; border-radius:10px">
+                    <a @onclick=CancelPressed href=""
+                      style="color:black;float:right;font-size:1.5rem;font-weight:bold">X</a>
+                    <h3 style="color: black;">Let's get in touch</h3>
+                    <p class="mb-4" style="color: black;">We're open for any suggestions or bug fixes!</p>
+
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-phone" style="color: black;"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span style="color: black;">Phone:</span> <a href="tel://4148288543"
+                            style="color: black;">(414)-828-8543</a></p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-paper-plane" style="color: black;"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span style="color: black;">Email:</span> <a href="mailto:kolbyzboesel@gmail.com"
+                            style="color: black;">kolbyzboesel@gmail.com</a></p>
+                      </div>
+                    </div>
+                    <div class="dbox w-100 d-flex align-items-center">
+                      <div class="icon d-flex align-items-center justify-content-center">
+                        <span class="fa fa-globe" style="color: black;"></span>
+                      </div>
+                      <div class="text pl-3">
+                        <p><span style="color: black;">Website</span> <a href="#"
+                            style="color: black;">sportscorespro.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+@* Change Email *@
+<!-- The Modal -->
+<div class="modal" id="changeEmailModal">
+
+  <div class="container modal-container">
+    <!-- Modal Content -->
+    <!-- Put error message here -->
+    <EditForm Model="@changeEmail" OnValidSubmit="HandleChangeEmailSubmit" class="modal-content animate mobileScreen">
+
+      <div class="container pt-5 h-auto">
+        <label for="email"><b>New Email</b></label>
+        <InputText @bind-Value="@changeEmail.Email" type="text" class="form-control" placeholder="Enter New Email"
+          id="email" name="email" required />
+
+        <label for="confirmEmail"><b>Confirm New Email</b></label>
+        <InputText @bind-Value="@changeEmail.EmailRepeat" type="text" class="form-control" placeholder="Reenter Email"
+          id="confirmEmail" name="confirmEmail" required />
+
+        <label for="password"><b>Enter Password to Verify</b></label>
+        <InputText @bind-Value="@changeEmail.Password" type="password" class="form-control" placeholder="Enter Password"
+          id="password" name="password" required />
+
+        <button type="submit" style="border-radius:5px">Confirm</button>
+      </div>
+
+      <div class="container pb-5 login-cancel" style="border-radius:10px">
+        <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
+      </div>
+    </EditForm>
+  </div>
+</div>
+
+@* Change Password *@
+<!-- The Modal -->
+<div class="modal" id="changePasswordModal">
+
+  <div class="container modal-container">
+    <!-- Add Alert Here -->
+
+    <EditForm Model="@changePsw" OnValidSubmit="HandleChangePasswordSubmit" class="modal-content animate mobileScreen">
+
+      <div class="container pt-5 h-auto">
+        <label for="email"><b>Enter Old Password</b></label>
+        <InputText @bind-Value="@changePsw.OldPSW" type="password" class="form-control" placeholder="Enter Old Password"
+          id="oldPassword" name="oldPassword" required />
+
+        <label for="confirmEmail"><b>Enter New Password</b></label>
+        <InputText @bind-Value="@changePsw.NewPSW" type="password" class="form-control" placeholder="Enter New Password"
+          id="newPassword" name="newPassword" required />
+
+        <label for="password"><b>Confirm New Password</b></label>
+        <InputText @bind-Value="@changePsw.NewPSWRepeat" type="password" class="form-control"
+          placeholder="Confirm New Paassword" id="confirmPassword" name="confirmPassword" required />
+
+        <button type="submit" style="border-radius:5px">Confirm</button>
+      </div>
+
+      <div class="container pb-5 login-cancel" style="border-radius:10px">
+        <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
+      </div>
+    </EditForm>
+  </div>
+</div>
+
+@* Payment *@
+<div class="modal" id="paymentModal">
+  <div class="container paypalBtn">
+    <div class="container pt-5 h-auto"><h2 style="text-align: center;">Thank you for signing up for Kolby's Picks!</h2> 
+        <p style="text-align: center;">This is a $5 monthly subscription which includes all Moneyline AI picks and Kolby's Daily Picks, both for NBA, NFL, MLB and NHL, also includes 1 week free trial.</p>
+        <h6 style="text-align: center;">Please Click one of the links below to proceed with payment!</h6>
+        </div>
+    <div class="container paypalBtnHolder">
+        <div class="largeScreenAdjust" id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
+    </div>
+    <div class="container pb-5 login-cancel">
+      <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
+    </div>
+  </div>
+</div>
+
 @code {
   string cookieValue = "";
   protected override async Task OnInitializedAsync()
     {
     cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
-  }
-
-  public async Task showSignupModal()
-  {
-    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showSignupModal", "true", null, null, null, null);
-    NavigationManager.NavigateTo("/",forceLoad:true);
   }
 
   public async Task renderMLB()
@@ -140,16 +344,6 @@
   public async Task renderNHL()
   {
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showNHL", "true", null, null, null, null);
-    NavigationManager.NavigateTo("/",forceLoad:true);
-  }
-  public async Task renderLogin()
-  {
-    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showLogin", "true", null, null, null, null);
-    NavigationManager.NavigateTo("/",forceLoad:true);
-  }
-  public async Task renderContact()
-  {
-    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showContact", "true", null, null, null, null);
     NavigationManager.NavigateTo("/",forceLoad:true);
   }
   public async Task renderAccount()
@@ -217,4 +411,370 @@
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showMLS", "true", null, null, null, null);
     NavigationManager.NavigateTo("/",forceLoad:true);
   }
+
+  public async Task contactPressed(){
+    await JSRuntime.InvokeVoidAsync("showContactModal");
+  }
+}
+
+
+@* Signup Code *@
+@code{
+
+  public async Task signupPressed(){
+    await JSRuntime.InvokeVoidAsync("showSignupModal");
+  }
+  public async Task CancelPressed()
+  {
+    await JSRuntime.InvokeVoidAsync("closeModals");
+  }
+  private IMongoCollection<User> _newUser;
+
+  public class User
+    {
+
+        public ObjectId _id { get; set; }
+        public string LoginID { get; set; }
+        public string PasswordID { get; set; }
+        public string PaidConfirm { get; set; }
+
+
+    }
+  public class LoginInfoResponseModel
+  {
+    [JsonPropertyName("LoginID")]
+
+    public string LoginId { get; set; }
+
+    [JsonPropertyName("PasswordID")]
+    public string PasswordId { get; set; }
+    [JsonPropertyName("PaidConfirm")]
+
+    public string PaidConfirm { get; set; }
+  }
+
+  public class DocumentModel
+  {
+    [JsonPropertyName("document")]
+    public LoginInfoResponseModel Document { get; set; }
+  }
+
+  public class DocumentsModel
+  {
+    [JsonPropertyName("documents")]
+    public List<LoginInfoResponseModel> Documents { get; set; }
+  }
+
+  public class MongoDbRequestModel
+  {
+    public string collection { get; set; }
+    public string database { get; set; }
+    public string dataSource { get; set; }
+  }
+  public class SignupDataModel
+  {
+    public string Email { get; set; }
+    public string Psw { get; set; }
+    public string PswRepeat { get; set; }
+
+  }
+  private SignupDataModel signupData = new SignupDataModel();
+
+  private async void HandleSignupSubmit()
+  {
+    const string connectionUri = "mongodb+srv://kolbyzboesel:Kolby344@sportsscores.anxznpk.mongodb.net/?retryWrites=true&w=majority";
+        var settings = MongoClientSettings.FromConnectionString(connectionUri);
+        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+        var client = new MongoClient(settings);
+        var usersList = client.GetDatabase("Login_Data");
+        _newUser = usersList.GetCollection<User>("Login_Info");
+
+        var username = signupData.Email;
+        var password = signupData.Psw;
+        var confirm_password = signupData.PswRepeat;
+
+        var filter = Builders<User>.Filter
+            .Eq(r => r.LoginID, username.ToString());
+
+        if(username.ToString().Contains("@"))
+        {
+            if (_newUser.Find(filter).FirstOrDefault() == null)
+            {
+              if (password == confirm_password)
+              {
+                User newUser = new()
+                {
+                    LoginID = username,
+                    PasswordID = password,
+                    PaidConfirm = "No",
+                };
+
+                await _newUser.InsertOneAsync(newUser);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentUser", username, null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentPassword", password, null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "No", null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "signedUp", "yes", null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "loggedIn");
+
+                await showPaypal();
+              }
+              else if(password != confirm_password)
+              {
+                await JSRuntime.InvokeAsync<object>("Alert", "Passwords Do Not Match!");
+              }
+            }
+            else if (_newUser.Find(filter).FirstOrDefault() != null)
+            {
+              await JSRuntime.InvokeAsync<object>("Alert", "Username Already Taken!");     
+            }
+        }else if(!username.ToString().Contains("@"))
+        {
+          await JSRuntime.InvokeAsync<object>("Alert", "Invalid Email, Please Include " + "@" + " Symbol!");
+        }
+  }
+}
+
+@* Login Code *@
+@code{
+
+ public async Task loginPressed(){
+    await JSRuntime.InvokeVoidAsync("showLoginModal");
+  }
+  private string ErrorMessage { get; set; }
+  public class LoginDataModel
+  {
+    public string Email { get; set; }
+    public string Password { get; set; }
+  }
+  private LoginDataModel loginData = new LoginDataModel();
+
+  private async void HandleLoginSubmit()
+  {
+        var username = loginData.Email;
+        var password = loginData.Password;
+
+        // Retrieve the user's data from MongoDB
+        var client = new RestClient("https://eastus2.azure.data.mongodb-api.com/app/data-sdfbt/endpoint/data/v1/action/find");
+        var result = await GetData(client);
+
+        if (result != null)
+        {
+            DocumentsModel users = System.Text.Json.JsonSerializer.Deserialize<DocumentsModel>(result.Content);
+            var currentUser = users.Documents.FirstOrDefault(x => string.Equals(x.LoginId, username, StringComparison.OrdinalIgnoreCase));
+
+            if (currentUser == null)
+            {
+                await JSRuntime.InvokeAsync<object>("Alert", "Invalid Username!");
+            }
+            else
+            {
+                if (currentUser.PasswordId == password && currentUser.PaidConfirm == "Yes")
+                {
+                    var context = HttpContextAccessor.HttpContext;
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "true", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedIn", "yes", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "PaidConfirm", "Yes", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentUser", currentUser, null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "signedUp");
+                    NavigationManager.NavigateTo("/AccountHome", forceLoad: true);
+                } else if(currentUser.PaidConfirm == "No")
+                {
+                    HttpContextAccessor.HttpContext.Response.Cookies.Append("PaidConfirm", "No");
+                    await showPaypal();
+
+                }
+                else{
+                  await JSRuntime.InvokeAsync<object>("Alert", "Invalid Password!");
+                }
+            }
+        }
+  }
+
+  public static LoginInfoResponseModel FindOneModel { get; set; }
+  public static List<LoginInfoResponseModel> FindModel { get; set; }
+  private static async Task<RestResponse> FindOne()
+  {
+    var client = new RestClient("https://eastus2.azure.data.mongodb-api.com/app/data-sdfbt/endpoint/data/v1/action/findOne");
+    return await GetData(client);
+  }
+  private static async Task<RestResponse> Find()
+  {
+    var client = new RestClient("https://eastus2.azure.data.mongodb-api.com/app/data-sdfbt/endpoint/data/v1/action/find");
+    return await GetData(client);
+  }
+
+  private static async Task<RestResponse> GetData(RestClient client)
+  {
+    var request = new RestRequest();
+    request.AddHeader("Content-Type", "application/json");
+    request.AddHeader("Access-Control-Request-Headers", "*");
+    request.AddHeader("api-key", "KjIhB7ZvgPZ9i0DfnrU27gsf7uiWOdq91F8MIacza4y3mg80PI7Vw4xzzGm5B4rp");
+
+    var requestModel = new MongoDbRequestModel
+    {
+        collection = "Login_Info",
+        dataSource = "SportsScores",
+        database = "Login_Data",
+    };
+
+    var body = JsonSerializer.Serialize(requestModel);
+    request.AddStringBody(body, DataFormat.Json);
+    var result = await client.PostAsync(request);
+    return result;
+  }
+
+  @* Change Email Code *@
+      private ChangeEmailDataModel changeEmail = new ChangeEmailDataModel();
+    private IMongoCollection<updateUser> _updateUser;
+
+    public class ChangeEmailDataModel
+    {
+    public string Email { get; set; }
+    public string EmailRepeat { get; set; }
+    public string Password { get; set; }
+
+    }
+    public class updateUser
+    {
+
+        public ObjectId _id { get; set; }
+        public string LoginID { get; set; }
+        public string PasswordID { get; set; }
+        public string PaidConfirm { get; set; }
+
+
+    }
+    private async void HandleChangeEmailSubmit()
+    {
+      const string connectionUri = "mongodb+srv://kolbyzboesel:Kolby344@sportsscores.anxznpk.mongodb.net/?retryWrites=true&w=majority";
+        var settings = MongoClientSettings.FromConnectionString(connectionUri);
+        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+        var client = new MongoClient(settings);
+        var usersList = client.GetDatabase("Login_Data");
+        _updateUser = usersList.GetCollection<updateUser>("Login_Info");
+
+        var username = HttpContextAccessor.HttpContext.Request.Cookies["CurrentUser"];
+
+        var filter = Builders<updateUser>.Filter
+            .Eq(r => r.LoginID, username.ToString());
+
+        var oldUser = _updateUser.Find(filter).First();
+        var oldId = oldUser._id;
+        var oldPassword = oldUser.PasswordID;
+        var oldUsername = oldUser.LoginID;
+
+        var newEmail = changeEmail.Email;
+        var confirmEmail = changeEmail.EmailRepeat;
+        var password = changeEmail.Password;
+        
+        if(newEmail.ToString().Contains("@")){
+            if(newEmail == confirmEmail){
+                if(oldPassword == password){
+                    updateUser updateUser = new()
+                    {
+                        _id = oldId,
+                        LoginID = newEmail,
+                        PasswordID = oldPassword,
+                        PaidConfirm = "Yes",
+                    };
+
+                    await _updateUser.ReplaceOneAsync(filter, updateUser);
+
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "CurrentUser", newEmail, null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "ChangedEmail", "yes", null, null, null, null);
+                    await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "ChangedPassword");
+                    await JSRuntime.InvokeVoidAsync("closeModals");
+                } else {
+                    await JSRuntime.InvokeAsync<object>("Alert", "Incorrect Password");
+                }
+            }else{
+                await JSRuntime.InvokeAsync<object>("Alert", "Email Does Not Match");
+            }
+        } else {
+            await JSRuntime.InvokeAsync<object>("Alert", "Invalid Email, Please Include " + "@" + " Symbol");
+        }
+    }
+
+  @* Change Password Code *@
+      private ChangePswDataModel changePsw = new ChangePswDataModel();
+      private IMongoCollection<updatePassword> _updatePsw;
+
+      public class ChangePswDataModel
+    {
+    public string OldPSW { get; set; }
+    public string NewPSW { get; set; }
+    public string NewPSWRepeat { get; set; }
+
+    }
+    public class updatePassword
+    {
+
+        public ObjectId _id { get; set; }
+        public string LoginID { get; set; }
+        public string PasswordID { get; set; }
+        public string PaidConfirm { get; set; }
+
+
+    }
+    private async void HandleChangePasswordSubmit()
+    {
+      const string connectionUri = "mongodb+srv://kolbyzboesel:Kolby344@sportsscores.anxznpk.mongodb.net/?retryWrites=true&w=majority";
+        var settings = MongoClientSettings.FromConnectionString(connectionUri);
+        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
+        var client = new MongoClient(settings);
+        var usersList = client.GetDatabase("Login_Data");
+        _updatePsw = usersList.GetCollection<updatePassword>("Login_Info");
+
+        var username = HttpContextAccessor.HttpContext.Request.Cookies["CurrentUser"];
+
+        var filter = Builders<updatePassword>.Filter
+            .Eq(r => r.LoginID, username.ToString());
+
+        var oldUser = _updatePsw.Find(filter).First();
+        var oldId = oldUser._id;
+        var oldPassword = oldUser.PasswordID;
+        var oldUsername = oldUser.LoginID;
+
+        var oldConfirmPassword = changePsw.OldPSW;
+        var newPassword = changePsw.NewPSW;
+        var confirmPassword = changePsw.NewPSWRepeat;
+
+        if (oldPassword == oldConfirmPassword)
+        {
+            if (newPassword == confirmPassword)
+            {
+                updatePassword updateUser = new()
+                {
+                    _id = oldId,
+                    LoginID = oldUsername,
+                    PasswordID = newPassword,
+                    PaidConfirm = "Yes",
+                };
+
+                await _updatePsw.ReplaceOneAsync(filter, updateUser);
+
+                await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "ChangedPassword", "yes", null, null, null, null);
+                await JSRuntime.InvokeVoidAsync("cookieInterop.deleteCookie", "ChangedEmail");
+                await JSRuntime.InvokeVoidAsync("closeModals");
+            }
+            else
+            {
+              await JSRuntime.InvokeAsync<object>("Alert", "Passwords do not match");
+
+            }
+        }
+        else
+        {
+              await JSRuntime.InvokeAsync<object>("Alert", "Incorrect Password");
+        }
+    }
+
+    @* Payment Code *@
+    public async Task showPaypal()
+    {
+        await JSRuntime.InvokeVoidAsync("closeModals");
+        await JSRuntime.InvokeVoidAsync("showPaymentModal");
+        await JSRuntime.InvokeVoidAsync("renderPaypal");
+    }
+
 }

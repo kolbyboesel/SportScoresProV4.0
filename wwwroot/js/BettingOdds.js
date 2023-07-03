@@ -7,23 +7,23 @@ const NFL_URL =
   "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
 const Prem_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_epl/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const SerieA_URL =
+const SerieA_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_italy_serie_a/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const Ligue1_URL =
+const Ligue1_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_france_ligue_one/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const Laliga_URL =
+const Laliga_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_spain_la_liga/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const Bundesliga_URL =
+const Bundesliga_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_germany_bundesliga/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const CBB_URL =
+const CBB_URL =
   "https://odds.p.rapidapi.com/v4/sports/basketball_ncaab/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const CFB_URL =
+const CFB_URL =
   "https://odds.p.rapidapi.com/v4/sports/americanfootball_ncaaf/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const CollegeBaseball_URL =
+const CollegeBaseball_URL =
   "https://odds.p.rapidapi.com/v4/sports/baseball_ncaa/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  const MLS_URL =
+const MLS_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_usa_mls/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
-  let awaySpread = 0;
+let awaySpread = 0;
 let homeSpread = 0;
 let homeSpreadOdds = 0;
 let awaySpreadOdds = 0;
@@ -34,11 +34,11 @@ let underValue = 0;
 let overOdds = 0;
 let underOdds = 0;
 let completedDate = 0;
-function AddNoDataTxt(){
-  return `<div class="col-12 no-score-info"><h1>Sorry, no data is available, please check back later!</h1></div>`
+function AddNoDataTxt() {
+  return `<div class="col-12 no-score-info"><h1>Sorry, no data is available, please check back later!</h1></div>`;
 }
 
-function removeAllActiveBet(){
+function removeAllActiveBet() {
   let nba = document.getElementById("nbabet");
   nba.classList.remove("active");
   let mlb = document.getElementById("mlbbet");
@@ -70,32 +70,48 @@ function removeAllActiveBet(){
 async function showNBAOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NBA Betting Odds</div>`;
   html += buildOddsBoard(await getData(NBA_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerNBA");
   container.innerHTML = html;
 }
 async function showMLBOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">MLB Betting Odds</div>`;
   html += buildOddsBoard(await getData(MLB_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerMLB");
   container.innerHTML = html;
 }
 async function showNFLOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NFL Betting Odds</div>`;
   html += buildOddsBoard(await getData(NFL_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerNFL");
   container.innerHTML = html;
 }
 async function showNHLOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">NHL Betting Odds</div>`;
   html += buildOddsBoard(await getData(NHL_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerNHL");
   container.innerHTML = html;
 }
@@ -103,8 +119,12 @@ async function showNHLOdds() {
 async function showCFBOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">College Football Betting Odds</div>`;
   html += buildOddsBoard(await getData(CFB_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerCFB");
   container.innerHTML = html;
 }
@@ -112,8 +132,12 @@ async function showCFBOdds() {
 async function showCollegeBaseballOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">College Baseball Betting Odds</div>`;
   html += buildOddsBoard(await getData(CollegeBaseball_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerCBaseball");
   container.innerHTML = html;
 }
@@ -121,8 +145,12 @@ async function showCollegeBaseballOdds() {
 async function showCollegeBasketballlOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">College Basketball Betting Odds</div>`;
   html += buildOddsBoard(await getData(CBB_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerNCAAB");
   container.innerHTML = html;
 }
@@ -130,8 +158,12 @@ async function showCollegeBasketballlOdds() {
 async function showPremOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Premier League Betting Odds</div>`;
   html += buildOddsBoard(await getData(Prem_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerPrem");
   container.innerHTML = html;
 }
@@ -139,8 +171,12 @@ async function showPremOdds() {
 async function showLigue1Odds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Ligue 1 Betting Odds</div>`;
   html += buildOddsBoard(await getData(Ligue1_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerLigue1");
   container.innerHTML = html;
 }
@@ -148,8 +184,12 @@ async function showLigue1Odds() {
 async function showBundesligaOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Bundesliga Betting Odds</div>`;
   html += buildOddsBoard(await getData(Bundesliga_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerBundesliga");
   container.innerHTML = html;
 }
@@ -157,8 +197,12 @@ async function showBundesligaOdds() {
 async function showLaligaOdds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">LaLiga Betting Odds</div>`;
   html += buildOddsBoard(await getData(Laliga_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerLaLiga");
   container.innerHTML = html;
 }
@@ -166,8 +210,12 @@ async function showLaligaOdds() {
 async function showSerieAodds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">Serie A Betting Odds</div>`;
   html += buildOddsBoard(await getData(SerieA_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerSerieA");
   container.innerHTML = html;
 }
@@ -175,12 +223,15 @@ async function showSerieAodds() {
 async function showMLSodds() {
   $("body").removeClass("offcanvas-menu");
   let html = "";
-  html += `<div class="pageHeader containerPad">MLS Betting Odds</div>`;
   html += buildOddsBoard(await getData(MLS_URL));
+
+  if (html == "") {
+    html += AddNoDataTxt();
+  }
+
   let container = document.querySelector("." + "containerMLS");
   container.innerHTML = html;
 }
-
 
 async function showAccountMLB() {
   removeAllActiveBet();
@@ -191,13 +242,12 @@ async function showAccountMLB() {
 
   html += buildOddsBoard(await getData(MLB_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
   let container = document.querySelector("." + "betOddsContainer");
   container.innerHTML = html;
-  
 }
 
 async function showAccountNBA() {
@@ -209,7 +259,7 @@ async function showAccountNBA() {
 
   html += buildOddsBoard(await getData(NBA_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -226,7 +276,7 @@ async function showAccountNFL() {
 
   html += buildOddsBoard(await getData(NFL_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -243,7 +293,7 @@ async function showAccountNHL() {
 
   html += buildOddsBoard(await getData(NHL_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -255,12 +305,12 @@ async function showAccountCFB() {
   removeAllActiveBet();
   let currentBtn = document.getElementById("cfbbet");
   currentBtn.classList.add("active");
-  
+
   let html = "";
 
   html += buildOddsBoard(await getData(CFB_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -277,7 +327,7 @@ async function showAccountCBB() {
 
   html += buildOddsBoard(await getData(CBB_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -294,7 +344,7 @@ async function showAccountCBaseball() {
 
   html += buildOddsBoard(await getData(CollegeBaseball_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -311,7 +361,7 @@ async function showAccountPrem() {
 
   html += buildOddsBoard(await getData(Prem_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -328,7 +378,7 @@ async function showAccountLaliga() {
 
   html += buildOddsBoard(await getData(Laliga_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -345,7 +395,7 @@ async function showAccountLigue1() {
 
   html += buildOddsBoard(await getData(Ligue1_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -362,7 +412,7 @@ async function showAccountBundesliga() {
 
   html += buildOddsBoard(await getData(Bundesliga_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -379,7 +429,7 @@ async function showAccountSerieA() {
 
   html += buildOddsBoard(await getData(SerieA_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -396,7 +446,7 @@ async function showAccountMLS() {
 
   html += buildOddsBoard(await getData(MLS_URL));
 
-  if(html == ""){
+  if (html == "") {
     html += AddNoDataTxt();
   }
 
@@ -485,14 +535,22 @@ function generateOddsBoard(currentGame) {
       </div>
       <div class="row team" style="border-left: none; border-top:none; border-right:none;">
         <div class="col-auto bet-main-element">${currentGame.away_team}</div>
-        <div class="col mobileText bet-odds-grid">${awaySpread + "(" + awaySpreadOdds + ")"}</div>
-        <div class="col mobileText bet-odds-grid">${overValue + "(" + overOdds + ")"}</div>
+        <div class="col mobileText bet-odds-grid">${
+          awaySpread + "(" + awaySpreadOdds + ")"
+        }</div>
+        <div class="col mobileText bet-odds-grid">${
+          overValue + "(" + overOdds + ")"
+        }</div>
         <div class="col mobileText bet-odds-grid">${awayMoneyline}</div>
       </div>
       <div class="row team">
         <div class="col-auto bet-main-element">${currentGame.home_team}</div>
-        <div class="col mobileText bet-odds-grid">${homeSpread + "(" + homeSpreadOdds + ")"}</div>
-        <div class="col mobileText bet-odds-grid">${underValue + "(" + underOdds + ")"}</div>
+        <div class="col mobileText bet-odds-grid">${
+          homeSpread + "(" + homeSpreadOdds + ")"
+        }</div>
+        <div class="col mobileText bet-odds-grid">${
+          underValue + "(" + underOdds + ")"
+        }</div>
         <div class="col mobileText bet-odds-grid">${homeMoneyline}</div>
       </div>`;
 

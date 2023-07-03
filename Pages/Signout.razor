@@ -1,0 +1,47 @@
+@page "/Signout"
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+
+<PageTitle>Signout</PageTitle>
+
+<head>
+  <link rel="stylesheet" href="/css/style.css" asp-append-version="true" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<style>
+body {
+  background-image: url('https://images.squarespace-cdn.com/content/v1/5b352a76f93fd4a1745161a8/1530580533507-XFJITGNH91P5QQGMSX4Q/layout-background.jpg?format=2500w');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<header class="w3-container w3-center" style="height: 25%; padding-top: 20%;">
+  <h1 class="w3-margin w3-jumbo"
+    style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Daily Sports Scores
+  </h1>
+  <h2
+    style="color: white; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size:2vh">Please create an account to see daily AI betting picks, as well as my daily picks!
+  </h2>
+</header>
+
+<footer class="footer text-muted" style="position: absolute;">
+        <div class="container footerText" style="color: white;">
+            &copy; 2023 - Sport Scores - <a style="color: white;" asp-area="" asp-page="/Privacy">Privacy</a> - Please Contact kolbyzboesel@gmail.com With Bugs and Improvement Ideas
+        </div>
+</footer>
+
+@code
+{
+  protected override async Task OnInitializedAsync()
+  {
+    await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "loggedInStatus", "false", null, null, null, null);
+    NavigationManager.NavigateTo("/", forceLoad:true);
+  }
+}

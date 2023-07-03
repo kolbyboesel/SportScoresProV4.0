@@ -4,34 +4,28 @@
 
 <PageTitle>Betting Odds</PageTitle>
 
-<head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-</head>
 <div class="headerImage mobileSetting">Betting Odds</div>
 <div class="container no-gutters">
-<div class="row no-gutters responsiveScrollContainer">
-<i class="arrow left leftArrow" style="display: none;"></i>
-  <div class="scrollmenu mobileScroll">
-  <a onclick=showAccountNBA() href="" id="nbabet" class="w3-hover-text-white">NBA</a>
-  <a onclick=showAccountMLB() href="" id="mlbbet" class="w3-hover-text-white">MLB</a>
-  <a onclick=showAccountNHL() href="" id="nhlbet" class="w3-hover-text-white">NHL</a>
-  <a onclick=showAccountNFL() href="" id="nflbet" class="w3-hover-text-white">NFL</a>
-  <a onclick=showAccountCFB() href="" id="cfbbet" class="w3-hover-text-white">College Football</a>
-  <a onclick=showAccountCBB() href="" id="cbbbet" class="w3-hover-text-white">College Basketball</a>
-  <a onclick=showAccountCBaseball() href="" id="cbaseballbet" class="w3-hover-text-white">College Baseball</a>
-  <a onclick=showAccountPrem() href="" id="prembet" class="w3-hover-text-white">Premier League</a>
-  <a onclick=showAccountLaliga() href="" id="laligabet" class="w3-hover-text-white">LaLiga</a>
-  <a onclick=showAccountLigue1() href="" id="ligue1bet" class="w3-hover-text-white">Ligue 1</a>
-  <a onclick=showAccountBundesliga() href="" id="bundbet" class="w3-hover-text-white">Bundesliga</a>
-  <a onclick=showAccountSerieA() href="" id="serieabet" class="w3-hover-text-white">Serie A</a>
-  <a onclick=showAccountMLS() href="" id="mlsbet" class="w3-hover-text-white">MLS</a>
+  <div class="row no-gutters responsiveScrollContainer">
+    <div class="scrollmenu mobileScroll">
+      <a onclick=showAccountNBA() href="" id="nbabet" class="w3-hover-text-white">NBA</a>
+      <a onclick=showAccountMLB() href="" id="mlbbet" class="w3-hover-text-white">MLB</a>
+      <a onclick=showAccountNHL() href="" id="nhlbet" class="w3-hover-text-white">NHL</a>
+      <a onclick=showAccountNFL() href="" id="nflbet" class="w3-hover-text-white">NFL</a>
+      <a onclick=showAccountCFB() href="" id="cfbbet" class="w3-hover-text-white">College Football</a>
+      <a onclick=showAccountCBB() href="" id="cbbbet" class="w3-hover-text-white">College Basketball</a>
+      <a onclick=showAccountCBaseball() href="" id="cbaseballbet" class="w3-hover-text-white">College Baseball</a>
+      <a onclick=showAccountPrem() href="" id="prembet" class="w3-hover-text-white">Premier League</a>
+      <a onclick=showAccountLaliga() href="" id="laligabet" class="w3-hover-text-white">LaLiga</a>
+      <a onclick=showAccountLigue1() href="" id="ligue1bet" class="w3-hover-text-white">Ligue 1</a>
+      <a onclick=showAccountBundesliga() href="" id="bundbet" class="w3-hover-text-white">Bundesliga</a>
+      <a onclick=showAccountSerieA() href="" id="serieabet" class="w3-hover-text-white">Serie A</a>
+      <a onclick=showAccountMLS() href="" id="mlsbet" class="w3-hover-text-white">MLS</a>
+    </div>
   </div>
-  <i class="arrow right rightArrow" style="display: none;"></i>
+  <div class="row no-gutters score-container-scroll indexContainerPad xs-padding-betting betOddsContainer">
   </div>
-<div class="row no-gutters score-container-scroll indexContainerPad xs-padding-betting betOddsContainer">
 </div>
-  </div>
-
 @code
 {
     private string innerHtmlValue;

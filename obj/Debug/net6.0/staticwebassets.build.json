@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hU7loja8Inl+2n/PeA7ZIortyN6RCPEmXC5EcmknsE4=",
+  "Hash": "I36KrDgPUPgzMr7k20H/Rr+Pokw/RL1GcUZl06/lk5o=",
   "Source": "SportScoresPro",
   "BasePath": "_content/SportScoresPro",
   "Mode": "Default",
@@ -884,23 +884,6 @@
       "OriginalItemSpec": "wwwroot/js/Imports/popper.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/MLBNews.js",
-      "SourceId": "SportScoresPro",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
-      "BasePath": "_content/SportScoresPro",
-      "RelativePath": "js/MLBNews.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/MLBNews.js"
-    },
-    {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/NavbarManagement.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
@@ -918,12 +901,12 @@
       "OriginalItemSpec": "wwwroot/js/NavbarManagement.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/NBANews.js",
+      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/News.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
-      "RelativePath": "js/NBANews.js",
+      "RelativePath": "js/News.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -932,7 +915,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/NBANews.js"
+      "OriginalItemSpec": "wwwroot/js/News.js"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Scoreboard.js",

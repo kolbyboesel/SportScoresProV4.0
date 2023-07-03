@@ -55,6 +55,7 @@ a:hover {
 .content {
   width: 100vw;
   height: fit-content;
+  top: 85px;
 }
 
 .background-image {

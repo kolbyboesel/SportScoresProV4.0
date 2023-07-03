@@ -87,80 +87,6 @@
         }
       },
       {
-        "HashCode": 1573018671,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1888051537,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.LivePages.LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 271291681,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AllBetOdds"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 775752453,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.LivePages.AllBetOdds"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -734776306,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
@@ -642,6 +568,80 @@
         }
       },
       {
+        "HashCode": 351656263,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.AccountHome",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2133880724,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.AccountHome",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -941362732,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.ConfirmPayment",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ConfirmPayment"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.ConfirmPayment",
+          "Common.TypeNameIdentifier": "ConfirmPayment",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 775957028,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.ConfirmPayment",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.ConfirmPayment"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.ConfirmPayment",
+          "Common.TypeNameIdentifier": "ConfirmPayment",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": 624582333,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.HomePage",
@@ -716,75 +716,75 @@
         }
       },
       {
-        "HashCode": 351656263,
+        "HashCode": 1573018671,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.AccountHome",
+        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AccountHome"
+            "TagName": "LiveScores"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 2133880724,
+        "HashCode": -1888051537,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.AccountHome",
+        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.AccountHome"
+            "TagName": "SportScoresPro.Pages.LivePages.LiveScores"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -941362732,
+        "HashCode": 271291681,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.ConfirmPayment",
+        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ConfirmPayment"
+            "TagName": "AllBetOdds"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.ConfirmPayment",
-          "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 775957028,
+        "HashCode": 775752453,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.ConfirmPayment",
+        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.ConfirmPayment"
+            "TagName": "SportScoresPro.Pages.LivePages.AllBetOdds"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.ConfirmPayment",
-          "Common.TypeNameIdentifier": "ConfirmPayment",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }

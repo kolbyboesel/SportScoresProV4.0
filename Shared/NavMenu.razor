@@ -306,19 +306,20 @@
 @* Payment *@
 <div class="modal" id="paymentModal">
   <div class="container paypalBtn">
-    <div class="container pt-5 h-auto"><h2 style="text-align: center;">Thank you for signing up for Kolby's Picks!</h2> 
-        <p style="text-align: center;">This is a $5 monthly subscription which includes all Moneyline AI picks and Kolby's Daily Picks, both for NBA, NFL, MLB and NHL, also includes 1 week free trial.</p>
-        <h6 style="text-align: center;">Please Click one of the links below to proceed with payment!</h6>
-        </div>
+    <div class="container pt-5 h-auto">
+      <h2 style="text-align: center;">Thank you for signing up for Kolby's Picks!</h2>
+      <p style="text-align: center;">This is a $5 monthly subscription which includes all Moneyline AI picks and Kolby's
+        Daily Picks, both for NBA, NFL, MLB and NHL, also includes 1 week free trial.</p>
+      <h6 style="text-align: center;">Please Click one of the links below to proceed with payment!</h6>
+    </div>
     <div class="container paypalBtnHolder">
-        <div class="largeScreenAdjust" id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
+      <div class="largeScreenAdjust" id="paypal-button-container-P-6TS59700HA1617635MRDVNHY"></div>
     </div>
     <div class="container pb-5 login-cancel">
       <a type="button" @onclick=CancelPressed href="" class="cancelbtn" style="border-radius:5px">Cancel</a>
     </div>
   </div>
 </div>
-
 @code {
   string cookieValue = "";
   protected override async Task OnInitializedAsync()

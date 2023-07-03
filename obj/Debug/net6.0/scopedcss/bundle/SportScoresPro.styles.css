@@ -12,15 +12,17 @@
   height: calc(100vh - 85px);
   position: absolute;
   width: 100%;
+  top: 85px;
 }
 
 @media screen and (max-width: 800px) {
   .navmenu[b-uo0aacx1aq] {
-    height: 90px!important;
+    height: 90px !important;
   }
 
   .page[b-uo0aacx1aq] {
     height: calc(100vh - 85px);
+    top: 90px;
   }
 }
 /* _content/SportScoresPro/Shared/NavMenu.razor.rz.scp.css */

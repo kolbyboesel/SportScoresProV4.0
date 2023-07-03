@@ -237,7 +237,7 @@ a:hover {
 
 .img-style {
   width: 250px;
-  height: fit-content;
+  height: auto;
   margin: auto;
 }
 

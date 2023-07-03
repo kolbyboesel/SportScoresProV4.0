@@ -365,6 +365,7 @@ html {
   position: fixed;
   padding-top: 30px;
   overflow: auto;
+  top: 150px;
 }
 
 .sport-container-scroll {
@@ -374,6 +375,7 @@ html {
   position: fixed;
   padding-top: 30px;
   overflow: auto;
+  top: 85px;
 }
 
 .headerImage {

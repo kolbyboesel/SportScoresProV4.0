@@ -375,6 +375,7 @@ html {
   bottom: 0;
   position: fixed;
   padding-top: 30px;
+  padding-bottom: 100px;
   overflow: auto;
   top: 150px;
 }

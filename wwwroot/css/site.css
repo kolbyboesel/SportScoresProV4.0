@@ -157,6 +157,17 @@ a:hover {
   text-decoration: underline;
   font-size: 3vh;
 }
+
+.border-bottom-none {
+  border-bottom-style: none !important;
+}
+
+.pr-0 {
+  padding-right: 0 !important;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
 /* Mobile Screen Adjust */
 
 @media screen and (max-width: 766px) {
@@ -512,6 +523,10 @@ html {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.soccer-best-bet {
+  height: 350px !important;
 }
 
 .sportsNews {

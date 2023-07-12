@@ -13,599 +13,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1545088209,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.ErrorTxt",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ErrorTxt"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.ErrorTxt",
-          "Common.TypeNameIdentifier": "ErrorTxt",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1619063138,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.ErrorTxt",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.ErrorTxt"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.ErrorTxt",
-          "Common.TypeNameIdentifier": "ErrorTxt",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -758460709,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.Signout",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Signout"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.Signout",
-          "Common.TypeNameIdentifier": "Signout",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 653315863,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.Signout",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.Signout"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.Signout",
-          "Common.TypeNameIdentifier": "Signout",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -734776306,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PremierLeague"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
-          "Common.TypeNameIdentifier": "PremierLeague",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -973687255,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.PremierLeague"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
-          "Common.TypeNameIdentifier": "PremierLeague",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -252927188,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.SerieA",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SerieA"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
-          "Common.TypeNameIdentifier": "SerieA",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1230580963,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.SerieA",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.SerieA"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
-          "Common.TypeNameIdentifier": "SerieA",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1312697743,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CollegeBaseball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-          "Common.TypeNameIdentifier": "CollegeBaseball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 161926552,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.CollegeBaseball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-          "Common.TypeNameIdentifier": "CollegeBaseball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -252463159,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CollegeBasketball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-          "Common.TypeNameIdentifier": "CollegeBasketball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1320974451,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.CollegeBasketball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-          "Common.TypeNameIdentifier": "CollegeBasketball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 704246997,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.LaLiga",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LaLiga"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.LaLiga",
-          "Common.TypeNameIdentifier": "LaLiga",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 783367787,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.LaLiga",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.LaLiga"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.LaLiga",
-          "Common.TypeNameIdentifier": "LaLiga",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 443240048,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Ligue1"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
-          "Common.TypeNameIdentifier": "Ligue1",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 583543438,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.Ligue1"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
-          "Common.TypeNameIdentifier": "Ligue1",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -2025601568,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.MLS",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MLS"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLS",
-          "Common.TypeNameIdentifier": "MLS",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1192131120,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.MLS",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.MLS"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLS",
-          "Common.TypeNameIdentifier": "MLS",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 256480680,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NFL",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NFL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
-          "Common.TypeNameIdentifier": "NFL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1075985628,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NFL",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.NFL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
-          "Common.TypeNameIdentifier": "NFL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1975039187,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NHL",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NHL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1935839257,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NHL",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.NHL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1970383077,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CollegeFootball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
-          "Common.TypeNameIdentifier": "CollegeFootball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1092337366,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.CollegeFootball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
-          "Common.TypeNameIdentifier": "CollegeFootball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1905427669,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.MLB",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MLB"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
-          "Common.TypeNameIdentifier": "MLB",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -2132329706,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.MLB",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.MLB"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
-          "Common.TypeNameIdentifier": "MLB",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 773877818,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Bundesliga"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
-          "Common.TypeNameIdentifier": "Bundesliga",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -489863122,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.Bundesliga"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
-          "Common.TypeNameIdentifier": "Bundesliga",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 206867251,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NBA",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NBA"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NBA",
-          "Common.TypeNameIdentifier": "NBA",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -2117105911,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NBA",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.NBA"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NBA",
-          "Common.TypeNameIdentifier": "NBA",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 351656263,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.AccountHome",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2133880724,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.AccountHome",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -941362732,
+        "HashCode": 1181395064,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.ConfirmPayment",
         "AssemblyName": "SportScoresPro",
@@ -623,7 +31,7 @@
         }
       },
       {
-        "HashCode": 775957028,
+        "HashCode": 1817374516,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.ConfirmPayment",
         "AssemblyName": "SportScoresPro",
@@ -642,7 +50,44 @@
         }
       },
       {
-        "HashCode": 624582333,
+        "HashCode": 246210085,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.ErrorTxt",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ErrorTxt"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.ErrorTxt",
+          "Common.TypeNameIdentifier": "ErrorTxt",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1336802541,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.ErrorTxt",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.ErrorTxt"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.ErrorTxt",
+          "Common.TypeNameIdentifier": "ErrorTxt",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1493817318,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.HomePage",
         "AssemblyName": "SportScoresPro",
@@ -660,7 +105,7 @@
         }
       },
       {
-        "HashCode": 478314051,
+        "HashCode": 1405879593,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.HomePage",
         "AssemblyName": "SportScoresPro",
@@ -679,81 +124,7 @@
         }
       },
       {
-        "HashCode": 1065596436,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.Index",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -2127441840,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.Index",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.Index",
-          "Common.TypeNameIdentifier": "Index",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1573018671,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1888051537,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.LivePages.LiveScores"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
-          "Common.TypeNameIdentifier": "LiveScores",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 271291681,
+        "HashCode": -789654050,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
         "AssemblyName": "SportScoresPro",
@@ -771,7 +142,7 @@
         }
       },
       {
-        "HashCode": 775752453,
+        "HashCode": -807203950,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
         "AssemblyName": "SportScoresPro",
@@ -790,44 +161,695 @@
         }
       },
       {
-        "HashCode": 1604197084,
+        "HashCode": -100599015,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.App",
+        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "LiveScores"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "SportScoresPro",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1363389178,
+        "HashCode": 803296772,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.App",
+        "Name": "SportScoresPro.Pages.LivePages.LiveScores",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.App"
+            "TagName": "SportScoresPro.Pages.LivePages.LiveScores"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.App",
-          "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "SportScoresPro",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.LiveScores",
+          "Common.TypeNameIdentifier": "LiveScores",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1368939523,
+        "HashCode": -1572860407,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.Signout",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Signout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.Signout",
+          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -670973613,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.Signout",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.Signout"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.Signout",
+          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -290813636,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Bundesliga"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
+          "Common.TypeNameIdentifier": "Bundesliga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 989244652,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.Bundesliga"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
+          "Common.TypeNameIdentifier": "Bundesliga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1609465578,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CollegeBaseball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+          "Common.TypeNameIdentifier": "CollegeBaseball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1279726425,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.CollegeBaseball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+          "Common.TypeNameIdentifier": "CollegeBaseball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1566546168,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CollegeBasketball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+          "Common.TypeNameIdentifier": "CollegeBasketball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1832576160,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.CollegeBasketball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+          "Common.TypeNameIdentifier": "CollegeBasketball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1577929318,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CollegeFootball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
+          "Common.TypeNameIdentifier": "CollegeFootball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -12745947,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.CollegeFootball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
+          "Common.TypeNameIdentifier": "CollegeFootball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1999723440,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.LaLiga",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "LaLiga"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.LaLiga",
+          "Common.TypeNameIdentifier": "LaLiga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1596796496,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.LaLiga",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.LaLiga"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.LaLiga",
+          "Common.TypeNameIdentifier": "LaLiga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1460415775,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Ligue1"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
+          "Common.TypeNameIdentifier": "Ligue1",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -627108987,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.Ligue1"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
+          "Common.TypeNameIdentifier": "Ligue1",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -153185803,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.MLB",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MLB"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
+          "Common.TypeNameIdentifier": "MLB",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1098249656,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.MLB",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.MLB"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
+          "Common.TypeNameIdentifier": "MLB",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1786449126,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.MLS",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MLS"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLS",
+          "Common.TypeNameIdentifier": "MLS",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1205715124,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.MLS",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.MLS"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLS",
+          "Common.TypeNameIdentifier": "MLS",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2104843436,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NBA",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NBA"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NBA",
+          "Common.TypeNameIdentifier": "NBA",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -693702417,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NBA",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.NBA"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NBA",
+          "Common.TypeNameIdentifier": "NBA",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1997754987,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NFL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
+          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1646107952,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.NFL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
+          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1573956674,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NHL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NHL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 195315871,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NHL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.NHL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1957815726,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "PremierLeague"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
+          "Common.TypeNameIdentifier": "PremierLeague",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -991401208,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.PremierLeague"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
+          "Common.TypeNameIdentifier": "PremierLeague",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1551180336,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.SerieA",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SerieA"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
+          "Common.TypeNameIdentifier": "SerieA",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -20736448,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.SerieA",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.SerieA"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
+          "Common.TypeNameIdentifier": "SerieA",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1972807888,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.AccountHome",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2034566251,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.AccountHome",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1522054777,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.Index",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.Index",
+          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -69554577,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.Index",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.Index",
+          "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 920805255,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Shared.SurveyPrompt",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Shared.SurveyPrompt",
+          "Common.TypeNameIdentifier": "SurveyPrompt",
+          "Common.TypeNamespace": "SportScoresPro.Shared",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1377548701,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Shared.SurveyPrompt",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title",
+              "Common.GloballyQualifiedTypeName": "global::System.String"
+            }
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Shared.SurveyPrompt",
+          "Common.TypeNameIdentifier": "SurveyPrompt",
+          "Common.TypeNamespace": "SportScoresPro.Shared",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1558571684,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Shared.MainLayout",
         "AssemblyName": "SportScoresPro",
@@ -858,7 +880,7 @@
         }
       },
       {
-        "HashCode": 471596443,
+        "HashCode": 596997198,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Shared.MainLayout",
         "AssemblyName": "SportScoresPro",
@@ -890,7 +912,7 @@
         }
       },
       {
-        "HashCode": 787176314,
+        "HashCode": 1447100554,
         "Kind": "Components.ChildContent",
         "Name": "SportScoresPro.Shared.MainLayout.Body",
         "AssemblyName": "SportScoresPro",
@@ -911,7 +933,7 @@
         }
       },
       {
-        "HashCode": 1161938041,
+        "HashCode": 286782774,
         "Kind": "Components.ChildContent",
         "Name": "SportScoresPro.Shared.MainLayout.Body",
         "AssemblyName": "SportScoresPro",
@@ -933,66 +955,7 @@
         }
       },
       {
-        "HashCode": -343173739,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Shared.SurveyPrompt",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Shared.SurveyPrompt",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Common.TypeNamespace": "SportScoresPro.Shared",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1985993871,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Shared.SurveyPrompt",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Shared.SurveyPrompt"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Title",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Title",
-              "Common.GloballyQualifiedTypeName": "global::System.String"
-            }
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Shared.SurveyPrompt",
-          "Common.TypeNameIdentifier": "SurveyPrompt",
-          "Common.TypeNamespace": "SportScoresPro.Shared",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1737644072,
+        "HashCode": -1616345273,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Shared.NavMenu",
         "AssemblyName": "SportScoresPro",
@@ -1010,7 +973,7 @@
         }
       },
       {
-        "HashCode": -1725070252,
+        "HashCode": 324063698,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Shared.NavMenu",
         "AssemblyName": "SportScoresPro",
@@ -1029,7 +992,44 @@
         }
       },
       {
-        "HashCode": -1738307089,
+        "HashCode": 2083729592,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.App",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "SportScoresPro",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -275285098,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.App",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.App"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.App",
+          "Common.TypeNameIdentifier": "App",
+          "Common.TypeNamespace": "SportScoresPro",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1674996970,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1113,7 +1113,7 @@
         }
       },
       {
-        "HashCode": -1222062690,
+        "HashCode": -1405604935,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1198,7 +1198,7 @@
         }
       },
       {
-        "HashCode": 1948649767,
+        "HashCode": -2056182300,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1231,7 +1231,7 @@
         }
       },
       {
-        "HashCode": -1513763857,
+        "HashCode": -318953746,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1265,7 +1265,7 @@
         }
       },
       {
-        "HashCode": -245499112,
+        "HashCode": 2122913259,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1286,7 +1286,7 @@
         }
       },
       {
-        "HashCode": 872294441,
+        "HashCode": 1813427227,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1308,7 +1308,7 @@
         }
       },
       {
-        "HashCode": 38541376,
+        "HashCode": 1055736487,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1413,7 +1413,7 @@
         }
       },
       {
-        "HashCode": 1258034371,
+        "HashCode": -1378252197,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1519,7 +1519,7 @@
         }
       },
       {
-        "HashCode": -817348344,
+        "HashCode": -1830267744,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1552,7 +1552,7 @@
         }
       },
       {
-        "HashCode": 437538427,
+        "HashCode": 252363979,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1586,7 +1586,7 @@
         }
       },
       {
-        "HashCode": -1743920861,
+        "HashCode": -889036025,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1619,7 +1619,7 @@
         }
       },
       {
-        "HashCode": 1333988788,
+        "HashCode": 37258282,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.NotAuthorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1653,7 +1653,7 @@
         }
       },
       {
-        "HashCode": -1470093056,
+        "HashCode": -171033900,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1686,7 +1686,7 @@
         }
       },
       {
-        "HashCode": 1749413305,
+        "HashCode": 837570259,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorized",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1720,7 +1720,7 @@
         }
       },
       {
-        "HashCode": 1025526561,
+        "HashCode": 967405406,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1741,7 +1741,7 @@
         }
       },
       {
-        "HashCode": 366600339,
+        "HashCode": 293346485,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeView.Authorizing",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1763,7 +1763,7 @@
         }
       },
       {
-        "HashCode": -2071526337,
+        "HashCode": -528932048,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1794,7 +1794,7 @@
         }
       },
       {
-        "HashCode": 1933449548,
+        "HashCode": 956289077,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1826,7 +1826,7 @@
         }
       },
       {
-        "HashCode": -941321934,
+        "HashCode": 885480724,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1847,7 +1847,7 @@
         }
       },
       {
-        "HashCode": 97311163,
+        "HashCode": -812165895,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Authorization.CascadingAuthenticationState.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Authorization",
@@ -1869,7 +1869,7 @@
         }
       },
       {
-        "HashCode": -877385172,
+        "HashCode": -2078666805,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -1944,7 +1944,7 @@
         }
       },
       {
-        "HashCode": 1960773007,
+        "HashCode": -2077124121,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2020,7 +2020,7 @@
         }
       },
       {
-        "HashCode": 1569037929,
+        "HashCode": -1727296939,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2041,7 +2041,7 @@
         }
       },
       {
-        "HashCode": -1605539892,
+        "HashCode": 1321967672,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.CascadingValue<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2063,7 +2063,7 @@
         }
       },
       {
-        "HashCode": -1559393320,
+        "HashCode": -232665778,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.DynamicComponent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2105,7 +2105,7 @@
         }
       },
       {
-        "HashCode": 227115823,
+        "HashCode": -1074085227,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.DynamicComponent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2148,7 +2148,7 @@
         }
       },
       {
-        "HashCode": 1517309105,
+        "HashCode": -760056170,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2190,7 +2190,7 @@
         }
       },
       {
-        "HashCode": 1649915531,
+        "HashCode": 196389071,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.LayoutView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2233,7 +2233,7 @@
         }
       },
       {
-        "HashCode": -1641846141,
+        "HashCode": -801268348,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2254,7 +2254,7 @@
         }
       },
       {
-        "HashCode": -1416533898,
+        "HashCode": -1310583338,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.LayoutView.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2276,7 +2276,7 @@
         }
       },
       {
-        "HashCode": -270640951,
+        "HashCode": -1649700096,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2318,7 +2318,7 @@
         }
       },
       {
-        "HashCode": 2110085481,
+        "HashCode": -400005354,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.RouteView",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2361,7 +2361,7 @@
         }
       },
       {
-        "HashCode": -255812552,
+        "HashCode": -1340141946,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2469,7 +2469,7 @@
         }
       },
       {
-        "HashCode": 1504282423,
+        "HashCode": 105603336,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2578,7 +2578,7 @@
         }
       },
       {
-        "HashCode": -336397099,
+        "HashCode": -623041262,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2599,7 +2599,7 @@
         }
       },
       {
-        "HashCode": -334704778,
+        "HashCode": -688072408,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.NotFound",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2621,7 +2621,7 @@
         }
       },
       {
-        "HashCode": -200982023,
+        "HashCode": 1990400394,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2654,7 +2654,7 @@
         }
       },
       {
-        "HashCode": 1662281434,
+        "HashCode": 952874139,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Found",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2688,7 +2688,7 @@
         }
       },
       {
-        "HashCode": 190806852,
+        "HashCode": -1793795838,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Navigating",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2709,7 +2709,7 @@
         }
       },
       {
-        "HashCode": 652586549,
+        "HashCode": 1554304239,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.Router.Navigating",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -2731,7 +2731,7 @@
         }
       },
       {
-        "HashCode": -86231601,
+        "HashCode": -415934939,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -2750,7 +2750,7 @@
         }
       },
       {
-        "HashCode": -708920026,
+        "HashCode": -1396159127,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.DataAnnotationsValidator",
         "AssemblyName": "Microsoft.AspNetCore.Components.Forms",
@@ -2770,7 +2770,7 @@
         }
       },
       {
-        "HashCode": -279253525,
+        "HashCode": -777029386,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2875,7 +2875,7 @@
         }
       },
       {
-        "HashCode": 2028694169,
+        "HashCode": 359059164,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -2981,7 +2981,7 @@
         }
       },
       {
-        "HashCode": 2102238133,
+        "HashCode": 1388326575,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3014,7 +3014,7 @@
         }
       },
       {
-        "HashCode": 1645635606,
+        "HashCode": 1669395154,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.EditForm.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3048,7 +3048,7 @@
         }
       },
       {
-        "HashCode": 663808132,
+        "HashCode": -29173037,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3120,7 +3120,7 @@
         }
       },
       {
-        "HashCode": -2123079376,
+        "HashCode": -308890197,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3193,7 +3193,7 @@
         }
       },
       {
-        "HashCode": -1202151779,
+        "HashCode": -1953313561,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3301,7 +3301,7 @@
         }
       },
       {
-        "HashCode": -1148399495,
+        "HashCode": -1806898632,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3410,7 +3410,7 @@
         }
       },
       {
-        "HashCode": -757815229,
+        "HashCode": 185493556,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputFile",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3452,7 +3452,7 @@
         }
       },
       {
-        "HashCode": 1470177272,
+        "HashCode": -302009331,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputFile",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3495,7 +3495,7 @@
         }
       },
       {
-        "HashCode": -544192066,
+        "HashCode": 1275902250,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3592,7 +3592,7 @@
         }
       },
       {
-        "HashCode": 1265032077,
+        "HashCode": -1578029452,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3690,7 +3690,7 @@
         }
       },
       {
-        "HashCode": 1835183323,
+        "HashCode": 1098456681,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadio<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3754,7 +3754,7 @@
         }
       },
       {
-        "HashCode": 1921724567,
+        "HashCode": -257615523,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadio<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3819,7 +3819,7 @@
         }
       },
       {
-        "HashCode": 941242358,
+        "HashCode": 1370578607,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -3927,7 +3927,7 @@
         }
       },
       {
-        "HashCode": -2014537198,
+        "HashCode": -1015337024,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4036,7 +4036,7 @@
         }
       },
       {
-        "HashCode": -1419696313,
+        "HashCode": -526452126,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4057,7 +4057,7 @@
         }
       },
       {
-        "HashCode": 1602723463,
+        "HashCode": 353798981,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4079,7 +4079,7 @@
         }
       },
       {
-        "HashCode": -353487112,
+        "HashCode": 684064447,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4177,7 +4177,7 @@
         }
       },
       {
-        "HashCode": -986858894,
+        "HashCode": -1599697837,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4276,7 +4276,7 @@
         }
       },
       {
-        "HashCode": -1666709615,
+        "HashCode": -2140809204,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4297,7 +4297,7 @@
         }
       },
       {
-        "HashCode": 264005333,
+        "HashCode": 1255867900,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4319,7 +4319,7 @@
         }
       },
       {
-        "HashCode": -1772102478,
+        "HashCode": 1634891131,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4391,7 +4391,7 @@
         }
       },
       {
-        "HashCode": -1980006060,
+        "HashCode": -1743306925,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4464,7 +4464,7 @@
         }
       },
       {
-        "HashCode": -1644969381,
+        "HashCode": 697527458,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4536,7 +4536,7 @@
         }
       },
       {
-        "HashCode": 572190967,
+        "HashCode": 1450310837,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4609,7 +4609,7 @@
         }
       },
       {
-        "HashCode": -928086615,
+        "HashCode": -1109477976,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4663,7 +4663,7 @@
         }
       },
       {
-        "HashCode": 309221533,
+        "HashCode": -260960588,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationMessage<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4718,7 +4718,7 @@
         }
       },
       {
-        "HashCode": 947695213,
+        "HashCode": -781303588,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4759,7 +4759,7 @@
         }
       },
       {
-        "HashCode": -1257712290,
+        "HashCode": -115007002,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Forms.ValidationSummary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4801,7 +4801,7 @@
         }
       },
       {
-        "HashCode": 1274016361,
+        "HashCode": -1636891475,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4842,7 +4842,7 @@
         }
       },
       {
-        "HashCode": 735004079,
+        "HashCode": 2060795983,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.FocusOnNavigate",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4884,7 +4884,7 @@
         }
       },
       {
-        "HashCode": -1558176194,
+        "HashCode": -787609502,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -4947,7 +4947,7 @@
         }
       },
       {
-        "HashCode": 1884335031,
+        "HashCode": 2091573862,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5011,7 +5011,7 @@
         }
       },
       {
-        "HashCode": 1215787365,
+        "HashCode": -710896058,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5032,7 +5032,7 @@
         }
       },
       {
-        "HashCode": 1264032697,
+        "HashCode": 103383497,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Routing.NavLink.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5054,7 +5054,7 @@
         }
       },
       {
-        "HashCode": -1249631367,
+        "HashCode": -2083970013,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5086,7 +5086,7 @@
         }
       },
       {
-        "HashCode": 2033230149,
+        "HashCode": -1541313406,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5119,7 +5119,7 @@
         }
       },
       {
-        "HashCode": 2037627517,
+        "HashCode": -1609390807,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5140,7 +5140,7 @@
         }
       },
       {
-        "HashCode": 375587154,
+        "HashCode": -1491571176,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadContent.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5162,7 +5162,7 @@
         }
       },
       {
-        "HashCode": 989694889,
+        "HashCode": -584085158,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5181,7 +5181,7 @@
         }
       },
       {
-        "HashCode": -1400654311,
+        "HashCode": -1719843389,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.HeadOutlet",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5201,7 +5201,7 @@
         }
       },
       {
-        "HashCode": 435084233,
+        "HashCode": 1685231831,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5233,7 +5233,7 @@
         }
       },
       {
-        "HashCode": -1744705762,
+        "HashCode": 311957472,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5266,7 +5266,7 @@
         }
       },
       {
-        "HashCode": 1148919734,
+        "HashCode": -1489269793,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5287,7 +5287,7 @@
         }
       },
       {
-        "HashCode": 2120182565,
+        "HashCode": -892231780,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.PageTitle.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5309,7 +5309,7 @@
         }
       },
       {
-        "HashCode": -1069436598,
+        "HashCode": 1293350697,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5372,7 +5372,7 @@
         }
       },
       {
-        "HashCode": 1737907870,
+        "HashCode": -1442778801,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5436,7 +5436,7 @@
         }
       },
       {
-        "HashCode": -1431473609,
+        "HashCode": 1278025874,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5457,7 +5457,7 @@
         }
       },
       {
-        "HashCode": 687451541,
+        "HashCode": -866576613,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5479,7 +5479,7 @@
         }
       },
       {
-        "HashCode": -1664717795,
+        "HashCode": 268442998,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ErrorContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5512,7 +5512,7 @@
         }
       },
       {
-        "HashCode": 1845620071,
+        "HashCode": 1610110070,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.ErrorBoundary.ErrorContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5546,7 +5546,7 @@
         }
       },
       {
-        "HashCode": -188459933,
+        "HashCode": 1322133050,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5668,7 +5668,7 @@
         }
       },
       {
-        "HashCode": -1676497106,
+        "HashCode": 397509765,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5791,7 +5791,7 @@
         }
       },
       {
-        "HashCode": -786248002,
+        "HashCode": 1651318621,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5824,7 +5824,7 @@
         }
       },
       {
-        "HashCode": -689871502,
+        "HashCode": -519637832,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ChildContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5858,7 +5858,7 @@
         }
       },
       {
-        "HashCode": -1238588054,
+        "HashCode": -604879323,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5891,7 +5891,7 @@
         }
       },
       {
-        "HashCode": -1659549473,
+        "HashCode": -1291616880,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.ItemContent",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5925,7 +5925,7 @@
         }
       },
       {
-        "HashCode": -986081053,
+        "HashCode": 432291170,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5958,7 +5958,7 @@
         }
       },
       {
-        "HashCode": 1938467161,
+        "HashCode": -1859673540,
         "Kind": "Components.ChildContent",
         "Name": "Microsoft.AspNetCore.Components.Web.Virtualization.Virtualize<TItem>.Placeholder",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -5992,7 +5992,7 @@
         }
       },
       {
-        "HashCode": -576650852,
+        "HashCode": -80573648,
         "Kind": "Components.EventHandler",
         "Name": "onfocus",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6075,7 +6075,7 @@
         }
       },
       {
-        "HashCode": -151772845,
+        "HashCode": 1437539224,
         "Kind": "Components.EventHandler",
         "Name": "onblur",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6158,7 +6158,7 @@
         }
       },
       {
-        "HashCode": 2146202247,
+        "HashCode": -1779650649,
         "Kind": "Components.EventHandler",
         "Name": "onfocusin",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6241,7 +6241,7 @@
         }
       },
       {
-        "HashCode": -1203544683,
+        "HashCode": -1023819881,
         "Kind": "Components.EventHandler",
         "Name": "onfocusout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6324,7 +6324,7 @@
         }
       },
       {
-        "HashCode": -1867288942,
+        "HashCode": 2026015579,
         "Kind": "Components.EventHandler",
         "Name": "onmouseover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6407,7 +6407,7 @@
         }
       },
       {
-        "HashCode": -907517713,
+        "HashCode": -1084723803,
         "Kind": "Components.EventHandler",
         "Name": "onmouseout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6490,7 +6490,7 @@
         }
       },
       {
-        "HashCode": -1489299923,
+        "HashCode": 1666573843,
         "Kind": "Components.EventHandler",
         "Name": "onmousemove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6573,7 +6573,7 @@
         }
       },
       {
-        "HashCode": -257446974,
+        "HashCode": -1840552231,
         "Kind": "Components.EventHandler",
         "Name": "onmousedown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6656,7 +6656,7 @@
         }
       },
       {
-        "HashCode": 878320319,
+        "HashCode": -493921721,
         "Kind": "Components.EventHandler",
         "Name": "onmouseup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6739,7 +6739,7 @@
         }
       },
       {
-        "HashCode": -25754636,
+        "HashCode": -1514875514,
         "Kind": "Components.EventHandler",
         "Name": "onclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6822,7 +6822,7 @@
         }
       },
       {
-        "HashCode": -930297381,
+        "HashCode": -582771917,
         "Kind": "Components.EventHandler",
         "Name": "ondblclick",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6905,7 +6905,7 @@
         }
       },
       {
-        "HashCode": 1665269504,
+        "HashCode": 1850464433,
         "Kind": "Components.EventHandler",
         "Name": "onwheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -6988,7 +6988,7 @@
         }
       },
       {
-        "HashCode": 1727575635,
+        "HashCode": 216623951,
         "Kind": "Components.EventHandler",
         "Name": "onmousewheel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7071,7 +7071,7 @@
         }
       },
       {
-        "HashCode": -1387708639,
+        "HashCode": -1014436568,
         "Kind": "Components.EventHandler",
         "Name": "oncontextmenu",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7154,7 +7154,7 @@
         }
       },
       {
-        "HashCode": 1268758052,
+        "HashCode": -1576720455,
         "Kind": "Components.EventHandler",
         "Name": "ondrag",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7237,7 +7237,7 @@
         }
       },
       {
-        "HashCode": -87411711,
+        "HashCode": -1446745294,
         "Kind": "Components.EventHandler",
         "Name": "ondragend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7320,7 +7320,7 @@
         }
       },
       {
-        "HashCode": 1706552484,
+        "HashCode": 472475595,
         "Kind": "Components.EventHandler",
         "Name": "ondragenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7403,7 +7403,7 @@
         }
       },
       {
-        "HashCode": 768267868,
+        "HashCode": 506224896,
         "Kind": "Components.EventHandler",
         "Name": "ondragleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7486,7 +7486,7 @@
         }
       },
       {
-        "HashCode": -1309596641,
+        "HashCode": 591945375,
         "Kind": "Components.EventHandler",
         "Name": "ondragover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7569,7 +7569,7 @@
         }
       },
       {
-        "HashCode": -1583612917,
+        "HashCode": 119840442,
         "Kind": "Components.EventHandler",
         "Name": "ondragstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7652,7 +7652,7 @@
         }
       },
       {
-        "HashCode": 1378646355,
+        "HashCode": -228972853,
         "Kind": "Components.EventHandler",
         "Name": "ondrop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7735,7 +7735,7 @@
         }
       },
       {
-        "HashCode": 663943002,
+        "HashCode": 915247335,
         "Kind": "Components.EventHandler",
         "Name": "onkeydown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7818,7 +7818,7 @@
         }
       },
       {
-        "HashCode": -1934485969,
+        "HashCode": -808191631,
         "Kind": "Components.EventHandler",
         "Name": "onkeyup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7901,7 +7901,7 @@
         }
       },
       {
-        "HashCode": -769066038,
+        "HashCode": -518202768,
         "Kind": "Components.EventHandler",
         "Name": "onkeypress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -7984,7 +7984,7 @@
         }
       },
       {
-        "HashCode": -1917081204,
+        "HashCode": -1369928771,
         "Kind": "Components.EventHandler",
         "Name": "onchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8067,7 +8067,7 @@
         }
       },
       {
-        "HashCode": 1231950142,
+        "HashCode": 1222637667,
         "Kind": "Components.EventHandler",
         "Name": "oninput",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8150,7 +8150,7 @@
         }
       },
       {
-        "HashCode": -1792810568,
+        "HashCode": 1256835169,
         "Kind": "Components.EventHandler",
         "Name": "oninvalid",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8233,7 +8233,7 @@
         }
       },
       {
-        "HashCode": -1842958450,
+        "HashCode": -1402413688,
         "Kind": "Components.EventHandler",
         "Name": "onreset",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8316,7 +8316,7 @@
         }
       },
       {
-        "HashCode": -216100357,
+        "HashCode": 681339531,
         "Kind": "Components.EventHandler",
         "Name": "onselect",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8399,7 +8399,7 @@
         }
       },
       {
-        "HashCode": -1472011247,
+        "HashCode": 1778491694,
         "Kind": "Components.EventHandler",
         "Name": "onselectstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8482,7 +8482,7 @@
         }
       },
       {
-        "HashCode": -841781658,
+        "HashCode": 2040167330,
         "Kind": "Components.EventHandler",
         "Name": "onselectionchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8565,7 +8565,7 @@
         }
       },
       {
-        "HashCode": -1417309476,
+        "HashCode": -1330895477,
         "Kind": "Components.EventHandler",
         "Name": "onsubmit",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8648,7 +8648,7 @@
         }
       },
       {
-        "HashCode": -134879834,
+        "HashCode": -2096267138,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8731,7 +8731,7 @@
         }
       },
       {
-        "HashCode": -469512932,
+        "HashCode": -366231334,
         "Kind": "Components.EventHandler",
         "Name": "onbeforecut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8814,7 +8814,7 @@
         }
       },
       {
-        "HashCode": 1169018461,
+        "HashCode": -567291255,
         "Kind": "Components.EventHandler",
         "Name": "onbeforepaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8897,7 +8897,7 @@
         }
       },
       {
-        "HashCode": 1318965382,
+        "HashCode": -2001791586,
         "Kind": "Components.EventHandler",
         "Name": "oncopy",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -8980,7 +8980,7 @@
         }
       },
       {
-        "HashCode": -1971454774,
+        "HashCode": 1405943071,
         "Kind": "Components.EventHandler",
         "Name": "oncut",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9063,7 +9063,7 @@
         }
       },
       {
-        "HashCode": 519330723,
+        "HashCode": -1846742672,
         "Kind": "Components.EventHandler",
         "Name": "onpaste",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9146,7 +9146,7 @@
         }
       },
       {
-        "HashCode": 1677907016,
+        "HashCode": -1138135286,
         "Kind": "Components.EventHandler",
         "Name": "ontouchcancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9229,7 +9229,7 @@
         }
       },
       {
-        "HashCode": 290231539,
+        "HashCode": 721526756,
         "Kind": "Components.EventHandler",
         "Name": "ontouchend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9312,7 +9312,7 @@
         }
       },
       {
-        "HashCode": 1984268113,
+        "HashCode": -1879768403,
         "Kind": "Components.EventHandler",
         "Name": "ontouchmove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9395,7 +9395,7 @@
         }
       },
       {
-        "HashCode": 137568980,
+        "HashCode": -2032121933,
         "Kind": "Components.EventHandler",
         "Name": "ontouchstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9478,7 +9478,7 @@
         }
       },
       {
-        "HashCode": -912840229,
+        "HashCode": 1581807112,
         "Kind": "Components.EventHandler",
         "Name": "ontouchenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9561,7 +9561,7 @@
         }
       },
       {
-        "HashCode": 387611983,
+        "HashCode": 220800342,
         "Kind": "Components.EventHandler",
         "Name": "ontouchleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9644,7 +9644,7 @@
         }
       },
       {
-        "HashCode": 1012120247,
+        "HashCode": -1665241637,
         "Kind": "Components.EventHandler",
         "Name": "ongotpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9727,7 +9727,7 @@
         }
       },
       {
-        "HashCode": -1640287310,
+        "HashCode": 1491542721,
         "Kind": "Components.EventHandler",
         "Name": "onlostpointercapture",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9810,7 +9810,7 @@
         }
       },
       {
-        "HashCode": 905733714,
+        "HashCode": -7609811,
         "Kind": "Components.EventHandler",
         "Name": "onpointercancel",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9893,7 +9893,7 @@
         }
       },
       {
-        "HashCode": 2123502034,
+        "HashCode": 574814132,
         "Kind": "Components.EventHandler",
         "Name": "onpointerdown",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -9976,7 +9976,7 @@
         }
       },
       {
-        "HashCode": 2014018585,
+        "HashCode": -201197670,
         "Kind": "Components.EventHandler",
         "Name": "onpointerenter",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10059,7 +10059,7 @@
         }
       },
       {
-        "HashCode": -260361523,
+        "HashCode": -437219838,
         "Kind": "Components.EventHandler",
         "Name": "onpointerleave",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10142,7 +10142,7 @@
         }
       },
       {
-        "HashCode": 1994500109,
+        "HashCode": -534631587,
         "Kind": "Components.EventHandler",
         "Name": "onpointermove",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10225,7 +10225,7 @@
         }
       },
       {
-        "HashCode": -815138589,
+        "HashCode": -1188082154,
         "Kind": "Components.EventHandler",
         "Name": "onpointerout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10308,7 +10308,7 @@
         }
       },
       {
-        "HashCode": 654000483,
+        "HashCode": 1916652326,
         "Kind": "Components.EventHandler",
         "Name": "onpointerover",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10391,7 +10391,7 @@
         }
       },
       {
-        "HashCode": -993784422,
+        "HashCode": 246022571,
         "Kind": "Components.EventHandler",
         "Name": "onpointerup",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10474,7 +10474,7 @@
         }
       },
       {
-        "HashCode": -1095772041,
+        "HashCode": 236986931,
         "Kind": "Components.EventHandler",
         "Name": "oncanplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10557,7 +10557,7 @@
         }
       },
       {
-        "HashCode": -582481697,
+        "HashCode": 599053623,
         "Kind": "Components.EventHandler",
         "Name": "oncanplaythrough",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10640,7 +10640,7 @@
         }
       },
       {
-        "HashCode": 150444583,
+        "HashCode": -629297695,
         "Kind": "Components.EventHandler",
         "Name": "oncuechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10723,7 +10723,7 @@
         }
       },
       {
-        "HashCode": 603751839,
+        "HashCode": 294882441,
         "Kind": "Components.EventHandler",
         "Name": "ondurationchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10806,7 +10806,7 @@
         }
       },
       {
-        "HashCode": -161218186,
+        "HashCode": 1814368658,
         "Kind": "Components.EventHandler",
         "Name": "onemptied",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10889,7 +10889,7 @@
         }
       },
       {
-        "HashCode": 110524524,
+        "HashCode": 1024412738,
         "Kind": "Components.EventHandler",
         "Name": "onpause",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -10972,7 +10972,7 @@
         }
       },
       {
-        "HashCode": -431151527,
+        "HashCode": -1306648533,
         "Kind": "Components.EventHandler",
         "Name": "onplay",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11055,7 +11055,7 @@
         }
       },
       {
-        "HashCode": -1393225586,
+        "HashCode": 253628915,
         "Kind": "Components.EventHandler",
         "Name": "onplaying",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11138,7 +11138,7 @@
         }
       },
       {
-        "HashCode": -1976043922,
+        "HashCode": 474951585,
         "Kind": "Components.EventHandler",
         "Name": "onratechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11221,7 +11221,7 @@
         }
       },
       {
-        "HashCode": 919285901,
+        "HashCode": 1232406422,
         "Kind": "Components.EventHandler",
         "Name": "onseeked",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11304,7 +11304,7 @@
         }
       },
       {
-        "HashCode": 243007662,
+        "HashCode": 1357603249,
         "Kind": "Components.EventHandler",
         "Name": "onseeking",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11387,7 +11387,7 @@
         }
       },
       {
-        "HashCode": 94463888,
+        "HashCode": 716622902,
         "Kind": "Components.EventHandler",
         "Name": "onstalled",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11470,7 +11470,7 @@
         }
       },
       {
-        "HashCode": -2105450464,
+        "HashCode": -880014512,
         "Kind": "Components.EventHandler",
         "Name": "onstop",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11553,7 +11553,7 @@
         }
       },
       {
-        "HashCode": -240652,
+        "HashCode": 859521322,
         "Kind": "Components.EventHandler",
         "Name": "onsuspend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11636,7 +11636,7 @@
         }
       },
       {
-        "HashCode": -493309105,
+        "HashCode": 1836519167,
         "Kind": "Components.EventHandler",
         "Name": "ontimeupdate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11719,7 +11719,7 @@
         }
       },
       {
-        "HashCode": 471479329,
+        "HashCode": 1494156790,
         "Kind": "Components.EventHandler",
         "Name": "onvolumechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11802,7 +11802,7 @@
         }
       },
       {
-        "HashCode": 1490382283,
+        "HashCode": 1924508436,
         "Kind": "Components.EventHandler",
         "Name": "onwaiting",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11885,7 +11885,7 @@
         }
       },
       {
-        "HashCode": -1531726845,
+        "HashCode": 960125157,
         "Kind": "Components.EventHandler",
         "Name": "onloadstart",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -11968,7 +11968,7 @@
         }
       },
       {
-        "HashCode": 1604009556,
+        "HashCode": 768034141,
         "Kind": "Components.EventHandler",
         "Name": "ontimeout",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12051,7 +12051,7 @@
         }
       },
       {
-        "HashCode": -1758668589,
+        "HashCode": -2104433861,
         "Kind": "Components.EventHandler",
         "Name": "onabort",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12134,7 +12134,7 @@
         }
       },
       {
-        "HashCode": -1715644982,
+        "HashCode": 554249628,
         "Kind": "Components.EventHandler",
         "Name": "onload",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12217,7 +12217,7 @@
         }
       },
       {
-        "HashCode": 2002834486,
+        "HashCode": -2078476662,
         "Kind": "Components.EventHandler",
         "Name": "onloadend",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12300,7 +12300,7 @@
         }
       },
       {
-        "HashCode": 1632613391,
+        "HashCode": 1101614008,
         "Kind": "Components.EventHandler",
         "Name": "onprogress",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12383,7 +12383,7 @@
         }
       },
       {
-        "HashCode": 74495385,
+        "HashCode": 13724877,
         "Kind": "Components.EventHandler",
         "Name": "onerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12466,7 +12466,7 @@
         }
       },
       {
-        "HashCode": -828193765,
+        "HashCode": -384432792,
         "Kind": "Components.EventHandler",
         "Name": "onactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12549,7 +12549,7 @@
         }
       },
       {
-        "HashCode": -1799681512,
+        "HashCode": 391366286,
         "Kind": "Components.EventHandler",
         "Name": "onbeforeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12632,7 +12632,7 @@
         }
       },
       {
-        "HashCode": -866114418,
+        "HashCode": 401171438,
         "Kind": "Components.EventHandler",
         "Name": "onbeforedeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12715,7 +12715,7 @@
         }
       },
       {
-        "HashCode": -1764955980,
+        "HashCode": 2071800574,
         "Kind": "Components.EventHandler",
         "Name": "ondeactivate",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12798,7 +12798,7 @@
         }
       },
       {
-        "HashCode": 2056975627,
+        "HashCode": 1419642173,
         "Kind": "Components.EventHandler",
         "Name": "onended",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12881,7 +12881,7 @@
         }
       },
       {
-        "HashCode": 1003046153,
+        "HashCode": -1069216090,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -12964,7 +12964,7 @@
         }
       },
       {
-        "HashCode": -1559930524,
+        "HashCode": 801613820,
         "Kind": "Components.EventHandler",
         "Name": "onfullscreenerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13047,7 +13047,7 @@
         }
       },
       {
-        "HashCode": 1030333554,
+        "HashCode": -59082187,
         "Kind": "Components.EventHandler",
         "Name": "onloadeddata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13130,7 +13130,7 @@
         }
       },
       {
-        "HashCode": 580208335,
+        "HashCode": -1288224911,
         "Kind": "Components.EventHandler",
         "Name": "onloadedmetadata",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13213,7 +13213,7 @@
         }
       },
       {
-        "HashCode": -895560715,
+        "HashCode": -913341627,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockchange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13296,7 +13296,7 @@
         }
       },
       {
-        "HashCode": 1902642986,
+        "HashCode": 1873521410,
         "Kind": "Components.EventHandler",
         "Name": "onpointerlockerror",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13379,7 +13379,7 @@
         }
       },
       {
-        "HashCode": -258288433,
+        "HashCode": 597446840,
         "Kind": "Components.EventHandler",
         "Name": "onreadystatechange",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13462,7 +13462,7 @@
         }
       },
       {
-        "HashCode": -1142038802,
+        "HashCode": -716309986,
         "Kind": "Components.EventHandler",
         "Name": "onscroll",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13545,7 +13545,7 @@
         }
       },
       {
-        "HashCode": -1502493267,
+        "HashCode": -451299415,
         "Kind": "Components.EventHandler",
         "Name": "ontoggle",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13628,7 +13628,7 @@
         }
       },
       {
-        "HashCode": 1214489176,
+        "HashCode": 1522835588,
         "Kind": "Components.Splat",
         "Name": "Attributes",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -13667,7 +13667,7 @@
         }
       },
       {
-        "HashCode": -1636511890,
+        "HashCode": 462257616,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
@@ -13984,7 +13984,7 @@
         }
       },
       {
-        "HashCode": -252879638,
+        "HashCode": 62404563,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14183,7 +14183,7 @@
         }
       },
       {
-        "HashCode": 360503808,
+        "HashCode": 750568087,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14312,7 +14312,7 @@
         }
       },
       {
-        "HashCode": 496774794,
+        "HashCode": 160259207,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14369,7 +14369,7 @@
         }
       },
       {
-        "HashCode": 874047117,
+        "HashCode": 2030421373,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14503,7 +14503,7 @@
         }
       },
       {
-        "HashCode": 417179788,
+        "HashCode": -65663287,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14551,7 +14551,7 @@
         }
       },
       {
-        "HashCode": 1655352019,
+        "HashCode": 890667922,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -14970,7 +14970,7 @@
         }
       },
       {
-        "HashCode": -1844524757,
+        "HashCode": 628383644,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15074,7 +15074,7 @@
         }
       },
       {
-        "HashCode": -1372426796,
+        "HashCode": -1892222419,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15122,7 +15122,7 @@
         }
       },
       {
-        "HashCode": 1213422253,
+        "HashCode": -835069221,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15194,7 +15194,7 @@
         }
       },
       {
-        "HashCode": -1880510102,
+        "HashCode": 1935081318,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15229,7 +15229,7 @@
         }
       },
       {
-        "HashCode": -871731677,
+        "HashCode": -276599266,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15427,7 +15427,7 @@
         }
       },
       {
-        "HashCode": 355221328,
+        "HashCode": 416179098,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15457,7 +15457,7 @@
         }
       },
       {
-        "HashCode": 515694419,
+        "HashCode": -1469660480,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15540,7 +15540,7 @@
         }
       },
       {
-        "HashCode": -2117576768,
+        "HashCode": -1608734383,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PersistComponentStateTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15571,7 +15571,7 @@
         }
       },
       {
-        "HashCode": 462065154,
+        "HashCode": 617801594,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15726,7 +15726,7 @@
         }
       },
       {
-        "HashCode": 545863579,
+        "HashCode": 1328165509,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15787,7 +15787,7 @@
         }
       },
       {
-        "HashCode": -243571522,
+        "HashCode": -1145695808,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15831,7 +15831,7 @@
         }
       },
       {
-        "HashCode": -1814007718,
+        "HashCode": -479638722,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15866,7 +15866,7 @@
         }
       },
       {
-        "HashCode": 904163481,
+        "HashCode": 842586534,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -15902,7 +15902,7 @@
         }
       },
       {
-        "HashCode": 648190459,
+        "HashCode": -1237433138,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -15998,7 +15998,7 @@
         }
       },
       {
-        "HashCode": 872964736,
+        "HashCode": 1105239383,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16120,7 +16120,7 @@
         }
       },
       {
-        "HashCode": 968990627,
+        "HashCode": -1749882971,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16242,7 +16242,7 @@
         }
       },
       {
-        "HashCode": 1568669254,
+        "HashCode": 29836487,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16375,7 +16375,7 @@
         }
       },
       {
-        "HashCode": -1242518488,
+        "HashCode": -1397782186,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16508,7 +16508,7 @@
         }
       },
       {
-        "HashCode": -1381003659,
+        "HashCode": -116786791,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16641,7 +16641,7 @@
         }
       },
       {
-        "HashCode": 1846759402,
+        "HashCode": -1886256258,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16774,7 +16774,7 @@
         }
       },
       {
-        "HashCode": -393838608,
+        "HashCode": 140667859,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -16907,7 +16907,7 @@
         }
       },
       {
-        "HashCode": 385086347,
+        "HashCode": -1296161323,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17040,7 +17040,7 @@
         }
       },
       {
-        "HashCode": -901764323,
+        "HashCode": 1330592789,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17173,7 +17173,7 @@
         }
       },
       {
-        "HashCode": 1366863,
+        "HashCode": 329734839,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17306,7 +17306,7 @@
         }
       },
       {
-        "HashCode": -755500857,
+        "HashCode": 635322567,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17439,7 +17439,7 @@
         }
       },
       {
-        "HashCode": -1281242158,
+        "HashCode": 1928453868,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17572,7 +17572,7 @@
         }
       },
       {
-        "HashCode": 476239183,
+        "HashCode": 1390428464,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17705,7 +17705,7 @@
         }
       },
       {
-        "HashCode": -289309717,
+        "HashCode": -1975879646,
         "Kind": "Components.Bind",
         "Name": "Bind_value",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17838,7 +17838,7 @@
         }
       },
       {
-        "HashCode": -2040009197,
+        "HashCode": -261070512,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -17960,7 +17960,7 @@
         }
       },
       {
-        "HashCode": -1770264416,
+        "HashCode": -1134384247,
         "Kind": "Components.Bind",
         "Name": "Bind",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -18082,7 +18082,7 @@
         }
       },
       {
-        "HashCode": 1108373409,
+        "HashCode": -1592153688,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18169,7 +18169,7 @@
         }
       },
       {
-        "HashCode": -1324578190,
+        "HashCode": -1420643070,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputCheckbox",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18257,7 +18257,7 @@
         }
       },
       {
-        "HashCode": 132374290,
+        "HashCode": 2026323850,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18344,7 +18344,7 @@
         }
       },
       {
-        "HashCode": 418084132,
+        "HashCode": 1411660133,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputDate<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18432,7 +18432,7 @@
         }
       },
       {
-        "HashCode": 544002954,
+        "HashCode": -7361822,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18519,7 +18519,7 @@
         }
       },
       {
-        "HashCode": -920351507,
+        "HashCode": 367678280,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputNumber<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18607,7 +18607,7 @@
         }
       },
       {
-        "HashCode": -2002171580,
+        "HashCode": -503035551,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18694,7 +18694,7 @@
         }
       },
       {
-        "HashCode": -731637991,
+        "HashCode": 2054629022,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputRadioGroup<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18782,7 +18782,7 @@
         }
       },
       {
-        "HashCode": -338374021,
+        "HashCode": -1552319921,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18869,7 +18869,7 @@
         }
       },
       {
-        "HashCode": -1123913118,
+        "HashCode": -1223349617,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputSelect<TValue>",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -18957,7 +18957,7 @@
         }
       },
       {
-        "HashCode": 1928312855,
+        "HashCode": 1702225829,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19044,7 +19044,7 @@
         }
       },
       {
-        "HashCode": -1549384345,
+        "HashCode": -1899551859,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputText",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19132,7 +19132,7 @@
         }
       },
       {
-        "HashCode": 237307082,
+        "HashCode": 1903974193,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19219,7 +19219,7 @@
         }
       },
       {
-        "HashCode": 224249430,
+        "HashCode": -186441527,
         "Kind": "Components.Bind",
         "Name": "Microsoft.AspNetCore.Components.Forms.InputTextArea",
         "AssemblyName": "Microsoft.AspNetCore.Components.Web",
@@ -19307,7 +19307,7 @@
         }
       },
       {
-        "HashCode": 1888772060,
+        "HashCode": -1235652588,
         "Kind": "Components.Ref",
         "Name": "Ref",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -19346,7 +19346,7 @@
         }
       },
       {
-        "HashCode": -529095908,
+        "HashCode": -280411418,
         "Kind": "Components.Key",
         "Name": "Key",
         "AssemblyName": "Microsoft.AspNetCore.Components",
@@ -19390,49 +19390,24 @@
   "RootNamespace": "SportScoresPro",
   "Documents": [
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/AccountHome.razor",
-      "TargetPath": "Pages\\AccountHome.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/LivePages/LiveScores.razor",
+      "TargetPath": "Pages\\LivePages\\LiveScores.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/_Imports.razor",
-      "TargetPath": "_Imports.razor",
-      "FileKind": "componentImport"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ErrorTxt.razor",
-      "TargetPath": "Pages\\ErrorTxt.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Ligue1.razor",
+      "TargetPath": "Pages\\SportPages\\Ligue1.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeFootball.razor",
-      "TargetPath": "Pages\\SportPages\\CollegeFootball.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Shared/NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Index.razor",
-      "TargetPath": "Pages\\Index.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Bundesliga.razor",
+      "TargetPath": "Pages\\SportPages\\Bundesliga.razor",
       "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBaseball.razor",
-      "TargetPath": "Pages\\SportPages\\CollegeBaseball.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/App.razor",
-      "TargetPath": "App.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Signout.razor",
-      "TargetPath": "Pages\\Signout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
-      "FileKind": "mvc"
     },
     {
       "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/PremierLeague.razor",
@@ -19445,18 +19420,8 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLB.razor",
-      "TargetPath": "Pages\\SportPages\\MLB.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/HomePage.razor",
-      "TargetPath": "Pages\\HomePage.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Shared/MainLayout.razor",
-      "TargetPath": "Shared\\MainLayout.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/SerieA.razor",
+      "TargetPath": "Pages\\SportPages\\SerieA.razor",
       "FileKind": "component"
     },
     {
@@ -19465,43 +19430,43 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ConfirmPayment.razor",
-      "TargetPath": "Pages\\ConfirmPayment.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/HomePage.razor",
+      "TargetPath": "Pages\\HomePage.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/SerieA.razor",
-      "TargetPath": "Pages\\SportPages\\SerieA.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/App.razor",
+      "TargetPath": "App.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NHL.razor",
-      "TargetPath": "Pages\\SportPages\\NHL.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ErrorTxt.razor",
+      "TargetPath": "Pages\\ErrorTxt.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLS.razor",
-      "TargetPath": "Pages\\SportPages\\MLS.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Signout.razor",
+      "TargetPath": "Pages\\Signout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBasketball.razor",
-      "TargetPath": "Pages\\SportPages\\CollegeBasketball.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/LaLiga.razor",
+      "TargetPath": "Pages\\SportPages\\LaLiga.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NFL.razor",
-      "TargetPath": "Pages\\SportPages\\NFL.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Shared/MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Shared/NavMenu.razor",
-      "TargetPath": "Shared\\NavMenu.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBaseball.razor",
+      "TargetPath": "Pages\\SportPages\\CollegeBaseball.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NBA.razor",
-      "TargetPath": "Pages\\SportPages\\NBA.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Index.razor",
+      "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
     },
     {
@@ -19510,28 +19475,63 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ConfirmPayment.razor",
+      "TargetPath": "Pages\\ConfirmPayment.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NHL.razor",
+      "TargetPath": "Pages\\SportPages\\NHL.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLB.razor",
+      "TargetPath": "Pages\\SportPages\\MLB.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLS.razor",
+      "TargetPath": "Pages\\SportPages\\MLS.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/AccountHome.razor",
+      "TargetPath": "Pages\\AccountHome.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NBA.razor",
+      "TargetPath": "Pages\\SportPages\\NBA.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBasketball.razor",
+      "TargetPath": "Pages\\SportPages\\CollegeBasketball.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeFootball.razor",
+      "TargetPath": "Pages\\SportPages\\CollegeFootball.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/_Host.cshtml",
       "TargetPath": "Pages\\_Host.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/LaLiga.razor",
-      "TargetPath": "Pages\\SportPages\\LaLiga.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/LivePages/LiveScores.razor",
-      "TargetPath": "Pages\\LivePages\\LiveScores.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Bundesliga.razor",
-      "TargetPath": "Pages\\SportPages\\Bundesliga.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Ligue1.razor",
-      "TargetPath": "Pages\\SportPages\\Ligue1.razor",
+      "FilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NFL.razor",
+      "TargetPath": "Pages\\SportPages\\NFL.razor",
       "FileKind": "component"
     }
   ],

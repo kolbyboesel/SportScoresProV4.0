@@ -50,6 +50,27 @@ async function getBetData(url) {
   }
 }
 
+async function getSoccerBetData() {
+  try {
+    let res = await fetch(
+      "https://betminer.p.rapidapi.com/bm/predictions/list/2023-07-12/2023-07-12",
+      soccerOptions
+    );
+    let result = await res.text();
+    return JSON.parse(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+const soccerOptions = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "7c01195a20mshbc9188a6ca4f5a5p1ce61cjsn5e640810eca6",
+    "X-RapidAPI-Host": "betminer.p.rapidapi.com",
+  },
+};
+
 function getEventDay(epochTIS) {
   let milliseconds = epochTIS * 1000;
   let date = new Date(milliseconds);
@@ -298,24 +319,10 @@ async function showPremBets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("premai");
   currentBtn.classList.add("active");
-  let currentDate = getCurrentDate();
-  let nextDay = getDatePlusOne();
 
   let html = "";
 
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + currentDate
-    ),
-    "containerPrem"
-  );
-
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + nextDay
-    ),
-    "containerPrem"
-  );
+  html += buildSoccerBetBoard(await getSoccerBetData(), "containerPrem");
 
   if (html == "") {
     html += AddNoDataTxt();
@@ -329,24 +336,10 @@ async function showLaligaBets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("laligaai");
   currentBtn.classList.add("active");
-  let currentDate = getCurrentDate();
-  let nextDay = getDatePlusOne();
 
   let html = "";
 
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + currentDate
-    ),
-    "containerLaliga"
-  );
-
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + nextDay
-    ),
-    "containerLaliga"
-  );
+  html += buildSoccerBetBoard(await getSoccerBetData(), "containerLaliga");
 
   if (html == "") {
     html += AddNoDataTxt();
@@ -360,24 +353,10 @@ async function showSerieABets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("serieaai");
   currentBtn.classList.add("active");
-  let currentDate = getCurrentDate();
-  let nextDay = getDatePlusOne();
 
   let html = "";
 
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + currentDate
-    ),
-    "containerSerieA"
-  );
-
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + nextDay
-    ),
-    "containerSerieA"
-  );
+  html += buildSoccerBetBoard(await getSoccerBetData(), "containerSerieA");
 
   if (html == "") {
     html += AddNoDataTxt();
@@ -391,24 +370,10 @@ async function showLigue1Bets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("ligue1ai");
   currentBtn.classList.add("active");
-  let currentDate = getCurrentDate();
-  let nextDay = getDatePlusOne();
 
   let html = "";
 
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + currentDate
-    ),
-    "containerLigue1"
-  );
-
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + nextDay
-    ),
-    "containerLigue1"
-  );
+  html += buildSoccerBetBoard(await getSoccerBetData(), "containerLigue1");
 
   if (html == "") {
     html += AddNoDataTxt();
@@ -422,24 +387,10 @@ async function showBundesligaBets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("bundai");
   currentBtn.classList.add("active");
-  let currentDate = getCurrentDate();
-  let nextDay = getDatePlusOne();
 
   let html = "";
 
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + currentDate
-    ),
-    "containerBundesliga"
-  );
-
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + nextDay
-    ),
-    "containerBundesliga"
-  );
+  html += buildSoccerBetBoard(await getSoccerBetData(), "containerBundesliga");
 
   if (html == "") {
     html += AddNoDataTxt();
@@ -453,24 +404,10 @@ async function showMLSBets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("mlsai");
   currentBtn.classList.add("active");
-  let currentDate = getCurrentDate();
-  let nextDay = getDatePlusOne();
 
   let html = "";
 
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + currentDate
-    ),
-    "containerMLS"
-  );
-
-  html += buildBestBetBoard(
-    await getBetData(
-      "https://betigolo-predictions.p.rapidapi.com/icehockey/" + nextDay
-    ),
-    "containerMLS"
-  );
+  html += buildSoccerBetBoard(await getSoccerBetData(), "containerMLS");
 
   if (html == "") {
     html += AddNoDataTxt();
@@ -697,6 +634,114 @@ function buildBestBetBoard(allOdds, containerName) {
   return html;
 }
 
+function buildSoccerBetBoard(allOdds, containerName) {
+  let html = "";
+  let homeTeam = 0;
+  let awayTeam = 0;
+
+  let homeForm = 0;
+  let awayForm = 0;
+
+  let homeMoneylineVal = 0;
+  let awayMoneylineVal = 0;
+
+  let drawVal = 0;
+  let scorePredict = 0;
+  let bothTeamsScore = 0;
+
+  let firstOver = 0;
+  let secondOver = 0;
+  let thirdOver = 0;
+
+  let firstOverVal = 0;
+  let secondOverVal = 0;
+  let thirdOverVal = 0;
+
+  allOdds.forEach((currentGame) => {
+    if (
+      currentGame.country === "USA" &&
+      currentGame.competition === "Major League Soccer" &&
+      containerName === "containerMLS"
+    ) {
+      homeTeam = currentGame.homeTeam;
+      awayTeam = currentGame.awayTeam;
+      homeMoneylineVal = round(currentGame.home_win_odds, 2);
+      awayMoneylineVal = round(currentGame.away_win_odds, 2);
+      homeForm = currentGame.homeform;
+      awayForm = currentGame.awayform;
+      drawVal = round(currentGame.draw_odds, 2);
+      scorePredict = currentGame.correctscore;
+      bothTeamsScore = currentGame.both_teams_to_score;
+      firstOver = currentGame.over15goals;
+      secondOver = currentGame.over25goals;
+      thirdOver = currentGame.over35goals;
+      firstOverVal = 1.5;
+      secondOverVal = 2.5;
+      thirdOverVal = 3.5;
+      html += generateSoccerBestBetBoard(
+        currentGame,
+        homeTeam,
+        awayTeam,
+        homeMoneylineVal,
+        awayMoneylineVal,
+        homeForm,
+        awayForm,
+        drawVal,
+        scorePredict,
+        bothTeamsScore,
+        firstOver,
+        secondOver,
+        thirdOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal
+      );
+    }
+
+    /*Add other 5 leagues when available*/
+    if (
+      currentGame.country === "Test" &&
+      currentGame.competition === "Test" &&
+      containerName === "Test"
+    ) {
+      homeTeam = currentGame.homeTeam;
+      awayTeam = currentGame.awayTeam;
+      homeMoneylineVal = round(currentGame.home_win_odds, 2);
+      awayMoneylineVal = round(currentGame.away_win_odds, 2);
+      homeForm = currentGame.homeform;
+      awayForm = currentGame.awayform;
+      drawVal = round(currentGame.draw_odds, 2);
+      scorePredict = currentGame.correctscore;
+      bothTeamsScore = currentGame.both_teams_to_score;
+      firstOver = currentGame.over15goals;
+      secondOver = currentGame.over25goals;
+      thirdOver = currentGame.over35goals;
+      firstOverVal = 1.5;
+      secondOverVal = 2.5;
+      thirdOverVal = 3.5;
+      html += generateSoccerBestBetBoard(
+        currentGame,
+        homeTeam,
+        awayTeam,
+        homeMoneylineVal,
+        awayMoneylineVal,
+        homeForm,
+        awayForm,
+        drawVal,
+        scorePredict,
+        bothTeamsScore,
+        firstOver,
+        secondOver,
+        thirdOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal
+      );
+    }
+  });
+  return html;
+}
+
 function generateBestBetBoard(
   currentGame,
   homeTeam,
@@ -745,6 +790,71 @@ function generateBestBetBoard(
         <div class="col center-text">${fourthOver}%</div>
         <div class="col center-text">${fifthOver}%</div>
 
+      </div>`;
+
+  htmlSegment += `
+      </div>
+    </div>`;
+
+  return htmlSegment;
+}
+
+function generateSoccerBestBetBoard(
+  currentGame,
+  homeTeam,
+  awayTeam,
+  homeMoneylineVal,
+  awayMoneylineVal,
+  homeForm,
+  awayForm,
+  drawVal,
+  scorePredict,
+  bothTeamsScore,
+  firstOver,
+  secondOver,
+  thirdOver,
+  firstOverVal,
+  secondOverVal,
+  thirdOverVal
+) {
+  let htmlSegment = `<div class="col-12 center-elements pt-3 pb-3"><div class="container bestBets soccer-best-bet">`;
+
+  htmlSegment += `<div class="row header border-bottom">
+        <div class="col">Team Name</div>
+        <div class="col right-text">Moneyline</div>
+      </div>
+      <div class="row team" style="border-left: none; border-top:none; border-right:none;">
+        <div class="col-auto">${awayTeam} (Form: ${awayForm})</div>
+        <div class="col right-text">${awayMoneylineVal}%</div>
+      </div>
+     
+      <div class="row team">
+        <div class="col-auto">${homeTeam} (Form: ${homeForm})</div>
+        <div class="col right-text">${homeMoneylineVal}%</div>
+      </div> 
+
+      <div class="row header border-top border-bottom-none" style="border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
+      <div class="col center-text">Draw %</div>
+      <div class="col center-text">Score Prediction</div>
+      <div class="col center-text">Both Teams to Score</div>
+      </div>
+      
+      <div class="row team">
+        <div class="col center-text">${drawVal}%</div>
+        <div class="col center-text">${scorePredict}</div>
+        <div class="col center-text">${bothTeamsScore}%</div>
+      </div>
+
+      <div class="row header border-top border-bottom-none" style="border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
+      <div class="col center-text">Over ${firstOverVal}</div>
+      <div class="col center-text">Over ${secondOverVal}</div>
+      <div class="col center-text">Over ${thirdOverVal}</div>
+      </div>
+      
+      <div class="row team">
+        <div class="col center-text">${firstOver}%</div>
+        <div class="col center-text">${secondOver}%</div>
+        <div class="col center-text">${thirdOver}%</div>
       </div>`;
 
   htmlSegment += `

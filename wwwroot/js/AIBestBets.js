@@ -51,9 +51,13 @@ async function getBetData(url) {
 }
 
 async function getSoccerBetData() {
+  let currentDate = getCurrentDate().substring(0, 10);
   try {
     let res = await fetch(
-      "https://betminer.p.rapidapi.com/bm/predictions/list/2023-07-12/2023-07-12",
+      "https://betminer.p.rapidapi.com/bm/predictions/list/" +
+        currentDate +
+        "/" +
+        currentDate,
       soccerOptions
     );
     let result = await res.text();
@@ -698,11 +702,170 @@ function buildSoccerBetBoard(allOdds, containerName) {
       );
     }
 
-    /*Add other 5 leagues when available*/
     if (
-      currentGame.country === "Test" &&
-      currentGame.competition === "Test" &&
-      containerName === "Test"
+      currentGame.country === "England" &&
+      currentGame.competition === "Premier League" &&
+      containerName === "containerPrem"
+    ) {
+      homeTeam = currentGame.homeTeam;
+      awayTeam = currentGame.awayTeam;
+      homeMoneylineVal = round(currentGame.home_win_odds, 2);
+      awayMoneylineVal = round(currentGame.away_win_odds, 2);
+      homeForm = currentGame.homeform;
+      awayForm = currentGame.awayform;
+      drawVal = round(currentGame.draw_odds, 2);
+      scorePredict = currentGame.correctscore;
+      bothTeamsScore = currentGame.both_teams_to_score;
+      firstOver = currentGame.over15goals;
+      secondOver = currentGame.over25goals;
+      thirdOver = currentGame.over35goals;
+      firstOverVal = 1.5;
+      secondOverVal = 2.5;
+      thirdOverVal = 3.5;
+      html += generateSoccerBestBetBoard(
+        currentGame,
+        homeTeam,
+        awayTeam,
+        homeMoneylineVal,
+        awayMoneylineVal,
+        homeForm,
+        awayForm,
+        drawVal,
+        scorePredict,
+        bothTeamsScore,
+        firstOver,
+        secondOver,
+        thirdOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal
+      );
+    }
+
+    if (
+      currentGame.country === "Germany" &&
+      currentGame.competition === "Bundesliga" &&
+      containerName === "containerBundesliga"
+    ) {
+      homeTeam = currentGame.homeTeam;
+      awayTeam = currentGame.awayTeam;
+      homeMoneylineVal = round(currentGame.home_win_odds, 2);
+      awayMoneylineVal = round(currentGame.away_win_odds, 2);
+      homeForm = currentGame.homeform;
+      awayForm = currentGame.awayform;
+      drawVal = round(currentGame.draw_odds, 2);
+      scorePredict = currentGame.correctscore;
+      bothTeamsScore = currentGame.both_teams_to_score;
+      firstOver = currentGame.over15goals;
+      secondOver = currentGame.over25goals;
+      thirdOver = currentGame.over35goals;
+      firstOverVal = 1.5;
+      secondOverVal = 2.5;
+      thirdOverVal = 3.5;
+      html += generateSoccerBestBetBoard(
+        currentGame,
+        homeTeam,
+        awayTeam,
+        homeMoneylineVal,
+        awayMoneylineVal,
+        homeForm,
+        awayForm,
+        drawVal,
+        scorePredict,
+        bothTeamsScore,
+        firstOver,
+        secondOver,
+        thirdOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal
+      );
+    }
+
+    if (
+      currentGame.country === "Spain" &&
+      currentGame.competition === "La Liga" &&
+      containerName === "containerLaliga"
+    ) {
+      homeTeam = currentGame.homeTeam;
+      awayTeam = currentGame.awayTeam;
+      homeMoneylineVal = round(currentGame.home_win_odds, 2);
+      awayMoneylineVal = round(currentGame.away_win_odds, 2);
+      homeForm = currentGame.homeform;
+      awayForm = currentGame.awayform;
+      drawVal = round(currentGame.draw_odds, 2);
+      scorePredict = currentGame.correctscore;
+      bothTeamsScore = currentGame.both_teams_to_score;
+      firstOver = currentGame.over15goals;
+      secondOver = currentGame.over25goals;
+      thirdOver = currentGame.over35goals;
+      firstOverVal = 1.5;
+      secondOverVal = 2.5;
+      thirdOverVal = 3.5;
+      html += generateSoccerBestBetBoard(
+        currentGame,
+        homeTeam,
+        awayTeam,
+        homeMoneylineVal,
+        awayMoneylineVal,
+        homeForm,
+        awayForm,
+        drawVal,
+        scorePredict,
+        bothTeamsScore,
+        firstOver,
+        secondOver,
+        thirdOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal
+      );
+    }
+
+    if (
+      currentGame.country === "Italy" &&
+      currentGame.competition === "Serie A" &&
+      containerName === "containerSerieA"
+    ) {
+      homeTeam = currentGame.homeTeam;
+      awayTeam = currentGame.awayTeam;
+      homeMoneylineVal = round(currentGame.home_win_odds, 2);
+      awayMoneylineVal = round(currentGame.away_win_odds, 2);
+      homeForm = currentGame.homeform;
+      awayForm = currentGame.awayform;
+      drawVal = round(currentGame.draw_odds, 2);
+      scorePredict = currentGame.correctscore;
+      bothTeamsScore = currentGame.both_teams_to_score;
+      firstOver = currentGame.over15goals;
+      secondOver = currentGame.over25goals;
+      thirdOver = currentGame.over35goals;
+      firstOverVal = 1.5;
+      secondOverVal = 2.5;
+      thirdOverVal = 3.5;
+      html += generateSoccerBestBetBoard(
+        currentGame,
+        homeTeam,
+        awayTeam,
+        homeMoneylineVal,
+        awayMoneylineVal,
+        homeForm,
+        awayForm,
+        drawVal,
+        scorePredict,
+        bothTeamsScore,
+        firstOver,
+        secondOver,
+        thirdOver,
+        firstOverVal,
+        secondOverVal,
+        thirdOverVal
+      );
+    }
+
+    if (
+      currentGame.country === "France" &&
+      currentGame.competition === "Ligue 1" &&
+      containerName === "containerLigue1"
     ) {
       homeTeam = currentGame.homeTeam;
       awayTeam = currentGame.awayTeam;

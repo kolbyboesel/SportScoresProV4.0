@@ -925,7 +925,7 @@ function generateBestBetBoard(
   let htmlSegment = `<div class="col-12 center-elements pt-3 pb-3"><div class="container bestBets">`;
 
   htmlSegment += `<div class="row header border-bottom">
-        <div class="col">Team Name</div>
+        <div class="col">Team</div>
         <div class="col right-text">Moneyline</div>
       </div>
       <div class="row team" style="border-left: none; border-top:none; border-right:none;">
@@ -983,7 +983,7 @@ function generateSoccerBestBetBoard(
   let htmlSegment = `<div class="col-12 center-elements pt-3 pb-3"><div class="container bestBets soccer-best-bet">`;
 
   htmlSegment += `<div class="row header border-bottom">
-        <div class="col">Team Name</div>
+        <div class="col">Team</div>
         <div class="col right-text">Moneyline</div>
       </div>
       <div class="row team" style="border-left: none; border-top:none; border-right:none;">
@@ -997,7 +997,7 @@ function generateSoccerBestBetBoard(
       </div> 
 
       <div class="row header border-top border-bottom-none" style="border-top-style:solid;border-top-left-radius:0px!important;border-top-right-radius:0px!important">
-      <div class="col center-text">Draw %</div>
+      <div class="col center-text">Draw</div>
       <div class="col center-text">Score Prediction</div>
       <div class="col center-text">Both Teams to Score</div>
       </div>

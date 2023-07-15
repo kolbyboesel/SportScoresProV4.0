@@ -716,43 +716,6 @@
         }
       },
       {
-        "HashCode": -1972807888,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.AccountHome",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2034566251,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.AccountHome",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.AccountHome"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
-          "Common.TypeNameIdentifier": "AccountHome",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -1522054777,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.Index",
@@ -784,6 +747,43 @@
         "Metadata": {
           "Common.TypeName": "SportScoresPro.Pages.Index",
           "Common.TypeNameIdentifier": "Index",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1972807888,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.AccountHome",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 2034566251,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.AccountHome",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.AccountHome"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.AccountHome",
+          "Common.TypeNameIdentifier": "AccountHome",
           "Common.TypeNamespace": "SportScoresPro.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

@@ -51,6 +51,15 @@ async function renderPaypal()
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+let coll = document.getElementsByClassName(".scoreboard-collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    coll[i].classList.toggle("active");
+  });
+}
 </script>
 
     <script src="_framework/blazor.server.js"></script>

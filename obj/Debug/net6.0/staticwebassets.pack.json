@@ -1,12 +1,16 @@
 {
   "Files": [
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/scopedcss/projectbundle/SportScoresPro.bundle.scp.css",
-      "PackagePath": "staticwebassets/SportScoresPro.bundle.scp.css"
-    },
-    {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/.DS_Store",
       "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/MainLayout.css",
+      "PackagePath": "staticwebassets/css/MainLayout.css"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/NavMenu.css",
+      "PackagePath": "staticwebassets/css/NavMenu.css"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/bootstrap/bootstrap.min.css",

@@ -21,10 +21,7 @@
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/staticwebassets.pack.json
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/staticwebassets.build.json
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/staticwebassets.development.json
-/Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
-/Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/scopedcss/bundle/SportScoresPro.styles.css
-/Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/scopedcss/projectbundle/SportScoresPro.bundle.scp.css
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/SportScoresPro.dll
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/refint/SportScoresPro.dll
 /Users/kolbyboesel/Desktop/SportScoresPro/obj/Debug/net6.0/SportScoresPro.pdb

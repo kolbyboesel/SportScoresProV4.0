@@ -121,6 +121,31 @@ function formatDateAI(rawDate) {
   return dateRaw.toLocaleDateString() + " Start Time: " + startTime;
 }
 
+function formatEpochDate(epochTIS) {
+  let milliseconds = epochTIS * 1000;
+  let date = new Date(milliseconds);
+  date.setHours(date.getHours());
+  let dateRaw = new Date(date);
+  let startTime = dateRaw.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  let minutes = dateRaw.getMinutes();
+  if (minutes < 10) {
+    minutes = "0" + minutes;
+  }
+
+  if (dateRaw.getHours() < 12) {
+    startTime = dateRaw.getHours() + ":" + minutes + " AM";
+  } else if (dateRaw.getHours() == 12) {
+    startTime = dateRaw.getHours() + ":" + minutes + " PM";
+  } else {
+    startTime = dateRaw.getHours() - 12 + ":" + minutes + " PM";
+  }
+
+  return dateRaw.toLocaleDateString() + " Start Time: " + startTime;
+}
+
 async function showNBABets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("nbaai");
@@ -455,6 +480,7 @@ function buildBestBetBoard(allOdds, containerName) {
     let currentLeague = currentGame.league_name;
     let currentDay = getCurrentDay();
     let eventDay = getEventDay(currentGame.match_dat);
+    let eventStart = formatEpochDate(currentGame.match_dat);
     if (
       containerName === "containerMLB" &&
       currentGame.country_name === "USA" &&
@@ -490,7 +516,8 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOverVal,
         thirdOverVal,
         fourthOverVal,
-        fifthOverVal
+        fifthOverVal,
+        eventStart
       );
     }
 
@@ -529,7 +556,8 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOverVal,
         thirdOverVal,
         fourthOverVal,
-        fifthOverVal
+        fifthOverVal,
+        eventStart
       );
     }
 
@@ -568,7 +596,8 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOverVal,
         thirdOverVal,
         fourthOverVal,
-        fifthOverVal
+        fifthOverVal,
+        eventStart
       );
     }
 
@@ -608,7 +637,8 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOverVal,
         thirdOverVal,
         fourthOverVal,
-        fifthOverVal
+        fifthOverVal,
+        eventStart
       );
     }
 
@@ -647,7 +677,8 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOverVal,
         thirdOverVal,
         fourthOverVal,
-        fifthOverVal
+        fifthOverValue,
+        eventStart
       );
     }
   });

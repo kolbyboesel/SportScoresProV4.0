@@ -584,7 +584,7 @@ function generateScoreboard(
   dateTimeValue,
   containerName
 ) {
-  let htmlSegment = `<div class="col-lg-6 center-elements pt-3 pb-3"><div class="container scoreboard scoreboard-collapsible">`;
+  let htmlSegment = `<div class="col-lg-6 center-elements pt-3 pb-3"><div class="container scoreboard">`;
   let gameStatus;
 
   if (currentScore.completed) {

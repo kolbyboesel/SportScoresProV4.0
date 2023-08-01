@@ -432,7 +432,6 @@ async function showBundesligaBets() {
   removeAllActiveAI();
   let currentBtn = document.getElementById("bundai");
   currentBtn.classList.add("active");
-
   let html = "";
 
   html += buildSoccerBetBoard(await getSoccerBetData(), "containerBundesliga");
@@ -1094,3 +1093,5 @@ function generateSoccerBestBetBoard(
 
   return htmlSegment;
 }
+
+showBundesligaBets();

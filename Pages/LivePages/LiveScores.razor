@@ -15,23 +15,25 @@
 <div class="container no-gutters">
   <div class="row no-gutters responsiveScrollContainer">
     <div class="scrollmenu mobileScroll">
-      <a onclick=showLiveNBA() href="" id="nbalive" class="w3-hover-text-white">NBA</a>
-      <a onclick=showLiveMLB() href="" id="mlblive" class="w3-hover-text-white">MLB</a>
-      <a onclick=showLiveNHL() href="" id="nhllive" class="w3-hover-text-white">NHL</a>
-      <a onclick=showLiveNFL() href="" id="nfllive" class="w3-hover-text-white">NFL</a>
-      <a onclick=showLiveCBB() href="" id="cbblive" class="w3-hover-text-white">College Basketball</a>
-      <a onclick=showLiveCFB() href="" id="cfblive" class="w3-hover-text-white">College Football</a>
-      <a onclick=showLiveCBaseball() href="" id="cbaseballlive" class="w3-hover-text-white">College Baseball</a>
-      <a onclick=showLivePrem() href="" id="premlive" class="w3-hover-text-white">Premier League</a>
-      <a onclick=showLiveBundesliga() href="" id="bundlive" class="w3-hover-text-white">Bundesliga</a>
-      <a onclick=showLiveLaliga() href="" id="laligalive" class="w3-hover-text-white">LaLiga</a>
-      <a onclick=showLiveSerieA() href="" id="seriealive" class="w3-hover-text-white">Serie A</a>
-      <a onclick=showLiveLigue1() href="" id="ligue1live" class="w3-hover-text-white">Ligue 1</a>
-      <a onclick=showLiveMLS() href="" id="mlslive" class="w3-hover-text-white">MLS</a>
+      <a @onclick=showNBALive href="" id="nbalive" class="w3-hover-text-white">NBA</a>
+      <a @onclick=showMLBLive href="" id="mlblive" class="w3-hover-text-white">MLB</a>
+      <a @onclick=showNHLLive href="" id="nhllive" class="w3-hover-text-white">NHL</a>
+      <a @onclick=showNFLLive href="" id="nfllive" class="w3-hover-text-white">NFL</a>
+      <a @onclick=showCBBLive href="" id="cbblive" class="w3-hover-text-white">College Basketball</a>
+      <a @onclick=showCFBLive href="" id="cfblive" class="w3-hover-text-white">College Football</a>
+      <a @onclick=showCBaseballLive href="" id="cbaseballlive" class="w3-hover-text-white">College Baseball</a>
+      <a @onclick=showPremLive href="" id="premlive" class="w3-hover-text-white">Premier League</a>
+      <a @onclick=showBundesligaLive href="" id="bundlive" class="w3-hover-text-white">Bundesliga</a>
+      <a @onclick=showLaLigaLive href="" id="laligalive" class="w3-hover-text-white">LaLiga</a>
+      <a @onclick=showSerieALive href="" id="seriealive" class="w3-hover-text-white">Serie A</a>
+      <a @onclick=showLigue1Live href="" id="ligue1live" class="w3-hover-text-white">Ligue 1</a>
+      <a @onclick=showMLSLive href="" id="mlslive" class="w3-hover-text-white">MLS</a>
     </div>
   </div>
 
+<div class="loading liveLoading" style="display: none;">Loading&#8230;</div>
   <div class="row no-gutters score-container-scroll indexContainerPad xs-padding liveScoresContainer">
+      <div class="page-text">Click One of the Sports Above to View Current Live Scores</div>
   </div>
 </div>
 @code
@@ -42,7 +44,72 @@ protected override async Task OnAfterRenderAsync(bool firstRender)
 {
 innerHtmlValue = "";
 await JSRuntime.InvokeVoidAsync("liveActive");
-await JSRuntime.InvokeVoidAsync("showLiveMLB");
+if(firstRender){
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 64,"MLB","liveScoresContainer", "liveLoading", "mlblive");
+}
+}
+public async Task showMLBLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 64,"MLB","liveScoresContainer", "liveLoading", "mlblive");
+}
+
+public async Task showNFLLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 63,"NFL","liveScoresContainer", "liveLoading", "nfllive");
+}
+
+public async Task showNBALive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 2,"NBA","liveScoresContainer", "liveLoading", "nbalive");
+}
+
+public async Task showNHLLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 4,"NHL","liveScoresContainer", "liveLoading", "nhllive");
+}
+public async Task showCBaseballLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 64,"NCAA, Regular Season","liveScoresContainer", "liveLoading", "cbaseballlive");
+}
+
+public async Task showCBBLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 2,"NCAA Men","liveScoresContainer", "liveLoading", "cbblive");
+}
+
+public async Task showCFBLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 63,"NCAA, Regular Season","liveScoresContainer", "liveLoading", "cfblive");
+}
+
+public async Task showPremLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 1,"Premier League","liveScoresContainer", "liveLoading", "premlive");
+}
+
+public async Task showBundesligaLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 1,"Bundesliga","liveScoresContainer", "liveLoading", "bundlive");
+}
+
+public async Task showLaLigaLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 1,"LaLiga","liveScoresContainer", "liveLoading", "laligalive");
+}
+
+public async Task showLigue1Live()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 1,"Ligue 1","liveScoresContainer", "liveLoading", "ligue1live");
+}
+
+public async Task showSerieALive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 1,"Serie A","liveScoresContainer", "liveLoading", "seriealive");
+}
+
+public async Task showMLSLive()
+{
+  await JSRuntime.InvokeVoidAsync("loadScoreboard", "Y", 1 ,"MLS","liveScoresContainer", "liveLoading", "mlslive");
 }
 
 }

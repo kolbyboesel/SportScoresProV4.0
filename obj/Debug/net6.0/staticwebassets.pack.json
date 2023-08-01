@@ -169,6 +169,10 @@
       "PackagePath": "staticwebassets/images/slamLogo.png"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/soccerExample.png",
+      "PackagePath": "staticwebassets/images/soccerExample.png"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/yahooLogo.png",
       "PackagePath": "staticwebassets/images/yahooLogo.png"
     },
@@ -213,16 +217,16 @@
       "PackagePath": "staticwebassets/js/News.js"
     },
     {
-      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Scoreboard.js",
-      "PackagePath": "staticwebassets/js/Scoreboard.js"
-    },
-    {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/SportsAI.js",
       "PackagePath": "staticwebassets/js/SportsAI.js"
     },
     {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/StyleInjection.js",
       "PackagePath": "staticwebassets/js/StyleInjection.js"
+    },
+    {
+      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/buildScoreboard.js",
+      "PackagePath": "staticwebassets/js/buildScoreboard.js"
     },
     {
       "Id": "obj/Debug/net6.0/staticwebassets/msbuild.SportScoresPro.Microsoft.AspNetCore.StaticWebAssets.props",

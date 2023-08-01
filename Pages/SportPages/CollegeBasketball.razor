@@ -10,50 +10,192 @@
   }
 </style>
 <div class="headerImage mobileSetting"><img class="h-inherit" src="/images/ncaaLogo.png"></div>
-<div class="site-mobile-menu site-navbar-target">
-  <div class="site-mobile-menu-body">
-    <ul class="site-nav-wrap">
-      <li><a @onclick=renderHome href="">Home</a></li>
-      <li><a @onclick=renderLiveScores href="">Live Scores</a></li>
-      <li><a @onclick=renderBettingOdds href="">Betting Odds</a></li>
-      <li><a onclick=showCBBScores()>College Basketball Scores</a></li>
-      <li><a onclick=showCollegeBasketballlOdds()>College Basketball Betting Odds</a></li>
-      @if (cookieValue == "true")
-      {
-      <li><a href="/Signout">Sign Out</a></li>
-      <li><a @onclick=renderAccount href="">Account Hub</a></li>
-      } else {
-      <li><a @onclick=showSignupModal href="">Sign Up</a></li>
-      <li><a @onclick=renderLogin href="">Login</a></li>
-      }
-    </ul>
-  </div>
-</div> <!-- .site-mobile-menu -->
 <!-- NAVBAR -->
 <header class="site-navbar mt-3" style="top:1rem!important">
   <div class="container-fluid">
     <div class="row align-items-center">
       <div class="site-logo col-6" style="width: 40%;"></div>
 
-      <nav class="mx-auto site-navigation sport-specific-dropdown">
+      <nav class="mx-auto site-navigation sport-specific-dropdown center-elements">
         <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-          <li class="has-children" style="left:50%">
             <a class="nav-link active"><img src="/images/ncaaLogo.png" style="height: 6vh;"></a>
-            <ul class="dropdown">
-              <li><a onclick=showCBBScores()>College Basketball Scores</a></li>
-              <li><a onclick=showCollegeBasketballlOdds()>College Basketball Betting Odds</a></li>
-            </ul>
-          </li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
+<div class="container no-gutters">
+  <div class="row no-gutters responsiveSearchContainer">
+    <div id="NCAABSearch" class="container date-search-container pt-0 mlbSearch">
+      <div class="row width-100">
+        <div class="col center-elements">
+          <a type="button" @onclick=showScoreSearch href="" class="btn search-btn" style="border-radius:5px">Scores</a>
+        </div>
+        <div class="col center-elements">
+          <a type="button" @onclick=showBetSearch href="" class="btn search-btn" style="border-radius:5px">Betting
+            Odds</a>
+        </div>
+      </div>
+    </div>
 
-<div class="row no-gutters sport-container-scroll indexContainerPad xs-padding-betting containerNCAAB"></div>
+    <EditForm id="NCAABScoreSearch" Model="@currentSearch" OnValidSubmit="HandleScoreSearch"
+      class="date-search-bar scoreSearch" style="display: none;">
+
+      <div class="container date-search-container pt-0">
+        <div class="row width-100">
+
+          <div class="col center-elements sm-align-end">
+            <a type="button" @onclick=dateBack href="" class="btn search-btn" style="border-radius:5px">Back</a>
+          </div>
+
+          <div class="col center-elements">
+            <div class="row">
+              <label for="month" class="col-auto center-elements dateLabel">Month</label>
+              <InputNumber @bind-Value="@currentSearch.Month" type="text" class="form-control col-8 col-md-12"
+                placeholder="Month" id="month" name="month" max="12" min="1" required />
+            </div>
+          </div>
+
+          <div class="col center-elements">
+            <div class="row">
+              <label for="day" class="col-auto center-elements dateLabel">Day</label>
+              <InputNumber @bind-Value="@currentSearch.Day" type="text" class="form-control col-8 col-md-12"
+                placeholder="Day" id="day" name="day" max="31" min="1" required />
+            </div>
+          </div>
+
+          <div class="col center-elements">
+            <div class="row">
+
+              <label for="year" class="col-auto center-elements dateLabel">Year
+              </label>
+              <InputNumber @bind-Value="@currentSearch.Year" type="password" class="form-control col-8 col-md-12"
+                placeholder="Year" id="year" name="year" max="2030" min="2000" required />
+            </div>
+          </div>
+
+          <div class="col center-elements">
+            <button type="submit" class="search-btn" style="border-radius:5px">Search</button>
+          </div>
+        </div>
+      </div>
+    </EditForm>
+    <EditForm id="NCAABBetSearch" Model="@currentSearch" OnValidSubmit="HandleBetSearch" class="date-search-bar betSearch"
+      style="display: none;">
+
+      <div class="container date-search-container pt-0">
+        <div class="row width-100">
+
+          <div class="col center-elements sm-align-end">
+            <a type="button" @onclick=dateBack href="" class="btn search-btn" style="border-radius:5px">Back</a>
+          </div>
+
+          <div class="col center-elements">
+            <div class="row">
+              <label for="month" class="col-auto center-elements dateLabel">Month</label>
+              <InputNumber @bind-Value="@currentSearch.Month" type="text" class="form-control col-8 col-md-12"
+                placeholder="Month" id="month" name="month" max="12" min="1" required />
+            </div>
+          </div>
+
+          <div class="col center-elements">
+            <div class="row">
+              <label for="day" class="col-auto center-elements dateLabel">Day</label>
+              <InputNumber @bind-Value="@currentSearch.Day" type="text" class="form-control col-8 col-md-12"
+                placeholder="Day" id="day" name="day" max="31" min="1" required />
+            </div>
+          </div>
+
+          <div class="col center-elements">
+            <div class="row">
+
+              <label for="year" class="col-auto center-elements dateLabel">Year
+              </label>
+              <InputNumber @bind-Value="@currentSearch.Year" type="password" class="form-control col-8 col-md-12"
+                placeholder="Year" id="year" name="year" max="2030" min="2000" required />
+            </div>
+          </div>
+
+          <div class="col center-elements">
+            <button type="submit" class="search-btn" style="border-radius:5px">Search</button>
+          </div>
+        </div>
+      </div>
+    </EditForm>
+  </div>
+  <div class="loading NCAABLoading" style="display: none;">Loading&#8230;</div>
+
+  <div class="row no-gutters indexContainerPad xs-padding containerNCAAB">
+    <div class="page-text">Choose an Option Above To Search For Scores or Betting Odds by Date</div>
+  </div>
+</div>
 
 @code {
 
+ public class DateSearchModel
+  {
+    public int Year { get; set; }
+    public int Month { get; set; }
+    public int Day { get; set; }
+
+  }
+  private DateSearchModel currentSearch = new DateSearchModel();
+
+  private async void HandleScoreSearch()
+  {
+        var Day = currentSearch.Day;
+        var Month = currentSearch.Month;
+        var Year = currentSearch.Year;
+        string confirmDay = "";
+        string confirmMonth = "";
+        string confirmYear = "";
+
+          if(Day < 10)
+          {
+            confirmDay = "0" + Day.ToString();
+          }else{
+            confirmDay = Day.ToString();
+          };
+          if(Month < 10)
+          {
+            confirmMonth = "0" + Month.ToString();
+          }else{
+            confirmMonth = Month.ToString();
+            };
+          confirmYear = Year.ToString();
+ 
+        var date = confirmYear + "-" + confirmMonth + "-" + confirmDay;
+
+        await JSRuntime.InvokeVoidAsync("loadScoreboard", "N", 2,"NCAA Men","containerNCAAB", "NCAABLoading", "null", date);
+  }
+
+    private async void HandleBetSearch()
+  {
+        var Day = currentSearch.Day;
+        var Month = currentSearch.Month;
+        var Year = currentSearch.Year;
+        string confirmDay = "";
+        string confirmMonth = "";
+        string confirmYear = "";
+
+          if(Day < 10)
+          {
+            confirmDay = "0" + Day.ToString();
+          }else{
+            confirmDay = Day.ToString();
+          };
+          if(Month < 10)
+          {
+            confirmMonth = "0" + Month.ToString();
+          }else{
+            confirmMonth = Month.ToString();
+            };
+          confirmYear = Year.ToString();
+ 
+        var date = confirmYear + "-" + confirmMonth + "-" + confirmDay;
+
+        await JSRuntime.InvokeVoidAsync("loadScoreboard", "N", 2,"NCAA Men","containerNCAAB", "NCAABLoading", "null", date);
+  }
   string cookieValue = "";
   protected override async Task OnInitializedAsync()
   {
@@ -64,7 +206,6 @@
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         innerHtmlValue = "";
-        await JSRuntime.InvokeVoidAsync("showCBBScores");
     }
 
 
@@ -100,5 +241,19 @@
   {
     await JSRuntime.InvokeVoidAsync("cookieInterop.setCookie", "showHome", "true", null, null, null, null);
     NavigationManager.NavigateTo("/",forceLoad:true);
+  }
+
+  public async Task dateBack()
+  {
+    await JSRuntime.InvokeVoidAsync("showSportNav", "NCAABSearch", "NCAABScoreSearch", "NCAABBetSearch");
+  }
+
+  public async Task showBetSearch()
+  {
+    await JSRuntime.InvokeVoidAsync("showBetSearch", "NCAABSearch", "NCAABBetSearch");
+  }
+  public async Task showScoreSearch()
+  {
+    await JSRuntime.InvokeVoidAsync("showScoreSearch", "NCAABSearch", "NCAABScoreSearch");
   }
 }

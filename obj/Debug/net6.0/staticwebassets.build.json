@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eIxlghacs4qX9LVqO9Wzi2dIAMUDXQDLHOxD69GefZo=",
+  "Hash": "vSfrQzUCQ8sfeJMtWA+pPTIE99xfKgX0BQ4mG0txhwY=",
   "Source": "SportScoresPro",
   "BasePath": "_content/SportScoresPro",
   "Mode": "Default",
@@ -731,6 +731,23 @@
       "OriginalItemSpec": "wwwroot/images/slamLogo.png"
     },
     {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/soccerExample.png",
+      "SourceId": "SportScoresPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "BasePath": "_content/SportScoresPro",
+      "RelativePath": "images/soccerExample.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/soccerExample.png"
+    },
+    {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/yahooLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
@@ -780,6 +797,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/BettingOdds.js"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/buildScoreboard.js",
+      "SourceId": "SportScoresPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "BasePath": "_content/SportScoresPro",
+      "RelativePath": "js/buildScoreboard.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/buildScoreboard.js"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/CookieManagement.js",
@@ -916,23 +950,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/News.js"
-    },
-    {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Scoreboard.js",
-      "SourceId": "SportScoresPro",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
-      "BasePath": "_content/SportScoresPro",
-      "RelativePath": "js/Scoreboard.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/js/Scoreboard.js"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/SportsAI.js",

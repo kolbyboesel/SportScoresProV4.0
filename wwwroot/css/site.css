@@ -20,6 +20,28 @@ p {
   font-weight: 300 !important;
 }
 
+.bold-font {
+  color: black;
+  font: caption;
+}
+
+.page-text {
+  color: white;
+  width: 100%;
+  height: 1%;
+  padding-top: 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 2vh;
+}
+
+.glyphicon-calendar:before {
+  content: "\e109";
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -61,6 +83,28 @@ a:hover {
 .background-image {
   height: 100%;
   width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+  .sm-align-end {
+    align-content: end !important;
+  }
+}
+
+.col-8 {
+  width: 66.6666667%;
+}
+
+@media screen and (max-width: 720px) {
+  .col-md-12 {
+    width: 86% !important;
+  }
+}
+
+@media screen and (max-width: 1184px) {
+  .col-lg-12 {
+    width: 100% !important;
+  }
 }
 
 .display-flex {
@@ -107,7 +151,11 @@ a:hover {
   -ms-transform: rotate(315deg);
   -o-transform: rotate(315deg);
 }
-
+@media screen and (max-width: 1184px) {
+  .mobile-m-hide {
+    display: none !important;
+  }
+}
 .fa-phone:before {
   content: "\f095";
 }
@@ -151,6 +199,11 @@ a:hover {
   height: inherit !important;
 }
 
+.width-100 {
+  width: 100% !important;
+  margin-left: 0px;
+}
+
 .pageHeader {
   color: white;
   text-align: center;
@@ -168,6 +221,13 @@ a:hover {
 .pl-0 {
   padding-left: 0 !important;
 }
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
 /* Mobile Screen Adjust */
 
 @media screen and (max-width: 766px) {
@@ -236,6 +296,7 @@ a:hover {
 .indexContainerPad {
   padding-left: 200px;
   padding-right: 200px;
+  padding-top: 20px;
 }
 
 .infoContainer {
@@ -433,6 +494,15 @@ html {
   height: 6.5vh;
 }
 
+.responsiveSearchContainer {
+  width: 100% !important;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #f44336;
+  min-height: 6vh;
+}
+
 .scrollmenu {
   padding-left: 10px;
   padding-right: 10px;
@@ -472,6 +542,14 @@ html {
     width: 100% !important;
     display: flex;
     justify-content: center;
+    height: fit-content !important;
+  }
+
+  .responsiveSearchContainer {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    height: fit-content !important;
   }
 }
 
@@ -483,17 +561,55 @@ html {
 
 .sport-specific-dropdown {
   width: 20% !important;
-  left: 15% !important;
+  left: 25% !important;
   position: fixed !important;
   top: 0rem !important;
+  height: 85px;
 }
 
+.date-search-bar {
+  width: 100% !important;
+  background-color: #f44336 !important;
+}
+
+.date-search-container {
+  width: 100% !important;
+  display: flex;
+}
+
+.search-btn {
+  color: white !important;
+  background-color: #dbb5b2 !important;
+  border-color: #dbb5b2 !important;
+}
+
+.search-btn:hover {
+  color: #f44336 !important;
+  background-color: white !important;
+  border-color: white !important;
+}
+
+.dateLabel {
+  color: white;
+}
 /* Scoreboard Styles */
 
 .scoreboard {
   width: 100%;
   border-radius: 10px;
-  height: 150px;
+  height: 190px;
+  background-color: white;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.scoreboard-upcoming {
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
   background-color: white;
   box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.25);
   -webkit-border-radius: 10px;
@@ -595,6 +711,17 @@ html {
   border-bottom-style: solid;
   border-width: 1px;
   color: black;
+}
+
+.periodHeader {
+  align-items: center;
+  border-bottom-style: solid;
+  border-width: 1px;
+  color: black;
+}
+
+.periodScore {
+  text-align: center;
 }
 
 .border-bottom {
@@ -804,7 +931,7 @@ span.psw {
 /*Loading Screen for ConfirmPayment*/
 .loading {
   position: fixed;
-  z-index: 999;
+  z-index: 999999;
   height: 2em;
   width: 2em;
   overflow: show;
@@ -855,22 +982,20 @@ span.psw {
   -o-animation: spinner 150ms infinite linear;
   animation: spinner 150ms infinite linear;
   border-radius: 0.5em;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
-    rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
-    rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
-    rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
-    rgba(255, 255, 255, 0.75) -1.5em 0 0 0,
-    rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
-    rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
-    rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
-  box-shadow: rgba(255, 255, 255, 0.75) 1.5em 0 0 0,
-    rgba(255, 255, 255, 0.75) 1.1em 1.1em 0 0,
-    rgba(255, 255, 255, 0.75) 0 1.5em 0 0,
-    rgba(255, 255, 255, 0.75) -1.1em 1.1em 0 0,
-    rgba(255, 255, 255, 0.75) -1.5em 0 0 0,
-    rgba(255, 255, 255, 0.75) -1.1em -1.1em 0 0,
-    rgba(255, 255, 255, 0.75) 0 -1.5em 0 0,
-    rgba(255, 255, 255, 0.75) 1.1em -1.1em 0 0;
+  -webkit-box-shadow: rgba(244, 67, 54, 0.75) 1.5em 0 0 0,
+    rgba(244, 67, 54, 0.75) 1.1em 1.1em 0 0, rgba(244, 67, 54, 0.75) 0 1.5em 0 0,
+    rgba(244, 67, 54, 0.75) -1.1em 1.1em 0 0,
+    rgba(244, 67, 54, 0.75) -1.5em 0 0 0,
+    rgba(244, 67, 54, 0.75) -1.1em -1.1em 0 0,
+    rgba(244, 67, 54, 0.75) 0 -1.5em 0 0,
+    rgba(244, 67, 54, 0.75) 1.1em -1.1em 0 0;
+  box-shadow: rgba(244, 67, 54, 0.75) 1.5em 0 0 0,
+    rgba(244, 67, 54, 0.75) 1.1em 1.1em 0 0, rgba(244, 67, 54, 0.75) 0 1.5em 0 0,
+    rgba(244, 67, 54, 0.75) -1.1em 1.1em 0 0,
+    rgba(244, 67, 54, 0.75) -1.5em 0 0 0,
+    rgba(244, 67, 54, 0.75) -1.1em -1.1em 0 0,
+    rgba(244, 67, 54, 0.75) 0 -1.5em 0 0,
+    rgba(244, 67, 54, 0.75) 1.1em -1.1em 0 0;
 }
 
 @media screen and (min-width: 992px) {

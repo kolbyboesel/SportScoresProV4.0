@@ -42,3 +42,26 @@ function closeModals() {
   changePasswordModal.style.display = "none";
   paymentModal.style.display = "none";
 }
+
+function showSportNav(elementID, scoreSearchID, betSearchID) {
+  let scoreForm = document.getElementById(scoreSearchID);
+  scoreForm.style.display = "none";
+  let betForm = document.getElementById(betSearchID);
+  betForm.style.display = "none";
+  let searchNav = document.getElementById(elementID);
+  searchNav.style.display = "flex";
+}
+
+function showScoreSearch(elementID, scoreSearchID) {
+  let scoreForm = document.getElementById(scoreSearchID);
+  scoreForm.style.display = "block";
+  let searchNav = document.getElementById(elementID);
+  searchNav.style.display = "none";
+}
+
+function showBetSearch(elementID, betSearchID) {
+  let betForm = document.getElementById(betSearchID);
+  betForm.style.display = "block";
+  let searchNav = document.getElementById(elementID);
+  searchNav.style.display = "none";
+}

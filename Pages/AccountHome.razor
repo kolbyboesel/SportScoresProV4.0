@@ -84,10 +84,7 @@
               string changedEmail = HttpContextAccessor.HttpContext.Request.Cookies["ChangedEmail"];
               string signedUp = HttpContextAccessor.HttpContext.Request.Cookies["signedUp"];
               string loggedIn = HttpContextAccessor.HttpContext.Request.Cookies["loggedIn"];
-              if(isLoggedIn != "true"){
-                NavigationManager.NavigateTo("/", forceLoad:true);
-              }
-              else if(confirmPayment == "No")
+              if(confirmPayment == "No")
               {
                 NavigationManager.NavigateTo("/Payment", forceLoad:true);
               }

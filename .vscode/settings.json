@@ -1,4 +1,5 @@
 {
   "appService.defaultWebAppToDeploy": "/subscriptions/d97d744b-01c9-48a3-9d26-64a27bfbc91d/resourceGroups/sportscores_group/providers/Microsoft.Web/sites/sportscores",
-  "appService.deploySubpath": "bin/Publish"
+  "appService.deploySubpath": "bin/Publish",
+  "cSpell.ignoreWords": ["Ligue"]
 }

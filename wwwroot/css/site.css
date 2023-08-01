@@ -199,6 +199,10 @@ a:hover {
   height: inherit !important;
 }
 
+.height-6vh {
+  height: 6vh !important;
+}
+
 .width-100 {
   width: 100% !important;
   margin-left: 0px;

@@ -15,6 +15,10 @@
   height: 100vh;
 }
 
+.margin-auto {
+  margin: auto !important;
+}
+
 p {
   color: #b3b3b3 !important;
   font-weight: 300 !important;
@@ -33,6 +37,27 @@ p {
   text-align: center;
   display: inline-block;
   font-size: 2vh;
+}
+
+@media screen and (min-width: 1100px) {
+  .sm-screen {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .lg-screen {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .no-gutters-sm {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .glyphicon-calendar:before {
@@ -622,18 +647,34 @@ html {
   -o-border-radius: 10px;
 }
 
+.hover-cursor:hover {
+  background-color: rgb(218, 218, 218);
+  cursor: pointer;
+}
+
+.gamePreview {
+  height: fit-content;
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.team-name-style {
+  font-size: 1.25rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.team-record-style {
+  font-size: 0.75rem;
+  color: revert;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .scoreboard-collapsible:hover {
   background-color: #ccc;
   cursor: pointer;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.scoreboard-content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
 }
 
 .betBoard {

@@ -43,11 +43,9 @@ function closeModals() {
   paymentModal.style.display = "none";
 }
 
-function showSportNav(elementID, scoreSearchID, betSearchID) {
+function showSportNav(elementID, scoreSearchID) {
   let scoreForm = document.getElementById(scoreSearchID);
   scoreForm.style.display = "none";
-  let betForm = document.getElementById(betSearchID);
-  betForm.style.display = "none";
   let searchNav = document.getElementById(elementID);
   searchNav.style.display = "flex";
 }

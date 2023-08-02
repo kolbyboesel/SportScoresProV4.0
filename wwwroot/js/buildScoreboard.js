@@ -27,6 +27,12 @@ const sportArray = [
   Ligue1,
   MLS,
 ];
+
+function clear(elementID) {
+  let container = document.querySelector("." + elementID);
+  container.innerHTML = "";
+}
+
 const url = "https://sofascores.p.rapidapi.com/v1/sports";
 const generalOptions = {
   method: "GET",
@@ -117,7 +123,8 @@ async function loadScoreboard(
       sportID,
       league,
       eventDateMin,
-      live
+      live,
+      loadingName
     );
   } else {
     html += buildUpcomingScoreboard(
@@ -125,7 +132,8 @@ async function loadScoreboard(
       containerName,
       sportID,
       league,
-      eventDateMin
+      eventDateMin,
+      loadingName
     );
   }
   if (
@@ -142,17 +150,28 @@ async function loadScoreboard(
   loadingContainer.style.display = "none";
   container.innerHTML = html;
 }
+
 function buildUpcomingScoreboard(
   allData,
   containerName,
   sportID,
   league,
-  date
+  date,
+  loadingContainer
 ) {
   let html = "";
   let eventInfo = allData.data;
   let dateConfirm = false;
   eventInfo.forEach((currentEvent) => {
+    let eventLeague = "";
+    if (currentEvent.tournament.uniqueTournament.name == undefined) {
+      eventLeague = currentEvent.tournament.name;
+    } else {
+      eventLeague = currentEvent.tournament.uniqueTournament.name;
+    }
+    let homeTeamID = currentEvent.homeTeam.id;
+    let awayTeamID = currentEvent.awayTeam.id;
+    let gameID = currentEvent.id;
     dateConfirm = false;
     let startTime = formatEventDate(currentEvent.startTimestamp);
     let compareDate = new Date(currentEvent.startTimestamp * 1000);
@@ -165,17 +184,19 @@ function buildUpcomingScoreboard(
     ) {
       dateConfirm = true;
     }
-    if (
-      currentEvent.tournament.uniqueTournament.name == league &&
-      dateConfirm == true
-    ) {
+    if (eventLeague == league && dateConfirm == true) {
       let homeTeam = currentEvent.homeTeam.name;
       let awayTeam = currentEvent.awayTeam.name;
       html += constructUpcomingScoreboard(
         currentEvent,
         startTime,
         homeTeam,
-        awayTeam
+        awayTeam,
+        gameID,
+        homeTeamID,
+        awayTeamID,
+        containerName,
+        loadingContainer
       );
     }
   });
@@ -188,12 +209,22 @@ function buildLiveScoreboard(
   sportID,
   league,
   date,
-  live
+  live,
+  loadingContainer
 ) {
   let html = "";
   let eventInfo = allData.data;
   let dateConfirm = false;
   eventInfo.forEach((currentEvent) => {
+    let eventLeague = "";
+    if (currentEvent.tournament.uniqueTournament.name != undefined) {
+      eventLeague = currentEvent.tournament.uniqueTournament.name;
+    } else {
+      eventLeague = currentEvent.tournament.name;
+    }
+    let homeTeamID = currentEvent.homeTeam.id;
+    let awayTeamID = currentEvent.awayTeam.id;
+    let gameID = currentEvent.id;
     dateConfirm = false;
     let startTime = formatEventDate(currentEvent.startTimestamp);
     let compareDate = new Date(currentEvent.startTimestamp * 1000);
@@ -209,10 +240,7 @@ function buildLiveScoreboard(
     if (live == "Y") {
       dateConfirm = true;
     }
-    if (
-      currentEvent.tournament.uniqueTournament.name == league &&
-      dateConfirm == true
-    ) {
+    if (eventLeague == league && dateConfirm == true) {
       let awayScore = currentEvent.awayScore.current;
       let homeScore = currentEvent.homeScore.current;
       let currentPeriod = currentEvent.status.description;
@@ -223,10 +251,10 @@ function buildLiveScoreboard(
       let homePeriodScores = [];
       let awayPeriodScores = [];
       let sport = "";
-      let awayStat1 = "";
-      let awayStat2 = "";
-      let homeStat1 = "";
-      let homeStat2 = "";
+      let awayStat1 = "NA";
+      let awayStat2 = "NA";
+      let homeStat1 = "NA";
+      let homeStat2 = "NA";
 
       if (sportID == "64" && league == "MLB") {
         numPeriods = 9;
@@ -288,15 +316,16 @@ function buildLiveScoreboard(
         }
         try {
           awayStat1 = currentEvent.awayScore.inningsBaseball.hits;
+        } catch (error) {}
+        try {
           awayStat2 = currentEvent.awayScore.inningsBaseball.errors;
+        } catch (error) {}
+        try {
           homeStat1 = currentEvent.homeScore.inningsBaseball.hits;
+        } catch (error) {}
+        try {
           homeStat2 = currentEvent.homeScore.inningsBaseball.errors;
-        } catch (error) {
-          awayStat1 = "NA";
-          awayStat2 = "NA";
-          homeStat1 = "NA";
-          homeStat2 = "NA";
-        }
+        } catch (error) {}
       }
 
       if (sportID == "64" && league == "NCAA, Regular Season") {
@@ -348,15 +377,16 @@ function buildLiveScoreboard(
 
         try {
           awayStat1 = currentEvent.awayScore.inningsBaseball.hits;
+        } catch (error) {}
+        try {
           awayStat2 = currentEvent.awayScore.inningsBaseball.errors;
+        } catch (error) {}
+        try {
           homeStat1 = currentEvent.homeScore.inningsBaseball.hits;
+        } catch (error) {}
+        try {
           homeStat2 = currentEvent.homeScore.inningsBaseball.errors;
-        } catch (error) {
-          awayStat1 = "NA";
-          awayStat2 = "NA";
-          homeStat1 = "NA";
-          homeStat2 = "NA";
-        }
+        } catch (error) {}
       }
 
       if (sportID == "63") {
@@ -506,7 +536,12 @@ function buildLiveScoreboard(
           homeStat1,
           homeStat2,
           awayStat1,
-          awayStat2
+          awayStat2,
+          gameID,
+          homeTeamID,
+          awayTeamID,
+          containerName,
+          loadingContainer
         );
       }
     }
@@ -529,7 +564,12 @@ function constructLiveScoreboard(
   homeStat1,
   homeStat2,
   awayStat1,
-  awayStat2
+  awayStat2,
+  gameID,
+  homeTeamID,
+  awayTeamID,
+  containerName,
+  loadingContainer
 ) {
   //Set Main Header
   if (currentPeriod == "Pause" && sport == "baseball") {
@@ -541,7 +581,30 @@ function constructLiveScoreboard(
   if (currentPeriod == "Ended") {
     currentPeriod = "Final";
   }
-  let htmlSegment = `<div class="col-12 center-elements pt-3 pb-3"><div class="container scoreboard">
+  let htmlSegment =
+    `<div class="col-12 center-elements pt-3 pb-3"><div class="container scoreboard hover-cursor" onclick=loadGamePreview(` +
+    '"Y"' +
+    "," +
+    '"' +
+    gameID +
+    '"' +
+    "," +
+    '"' +
+    homeTeamID +
+    '"' +
+    "," +
+    '"' +
+    awayTeamID +
+    '"' +
+    "," +
+    '"' +
+    containerName +
+    '"' +
+    "," +
+    '"' +
+    loadingContainer +
+    '"' +
+    `)>
     <div class="row header">
         <div class="col-auto headerElement">${startTime}</div>
         <div class="col headerElement" style="text-align:right">${currentPeriod}</div>
@@ -629,9 +692,37 @@ function constructUpcomingScoreboard(
   currentEvent,
   startTime,
   homeTeam,
-  awayTeam
+  awayTeam,
+  gameID,
+  homeTeamID,
+  awayTeamID,
+  containerName,
+  loadingContainer
 ) {
-  let htmlSegment = `<div class="col-6 col-lg-12 center-elements pt-3 pb-3"><div class="container scoreboard-upcoming">
+  let htmlSegment =
+    `<div class="col-6 col-lg-12 center-elements pt-3 pb-3"><div class="container scoreboard-upcoming hover-cursor" onclick=loadGamePreview(` +
+    '"N"' +
+    "," +
+    '"' +
+    gameID +
+    '"' +
+    "," +
+    '"' +
+    homeTeamID +
+    '"' +
+    "," +
+    '"' +
+    awayTeamID +
+    '"' +
+    "," +
+    '"' +
+    containerName +
+    '"' +
+    "," +
+    '"' +
+    loadingContainer +
+    '"' +
+    `)>
     <div class="row header">
         <div class="col-12 center-text headerElement">${startTime}</div>
     </div>

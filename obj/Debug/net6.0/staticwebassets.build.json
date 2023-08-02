@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "vSfrQzUCQ8sfeJMtWA+pPTIE99xfKgX0BQ4mG0txhwY=",
+  "Hash": "7grsMQNEk/4AB52vEBoWhKeU/LS9/TdqBC0itcHiO1Y=",
   "Source": "SportScoresPro",
   "BasePath": "_content/SportScoresPro",
   "Mode": "Default",
@@ -831,6 +831,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/CookieManagement.js"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/gamePreview.js",
+      "SourceId": "SportScoresPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "BasePath": "_content/SportScoresPro",
+      "RelativePath": "js/gamePreview.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/gamePreview.js"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Imports/bootstrap.min.js",

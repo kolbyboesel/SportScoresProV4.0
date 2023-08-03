@@ -198,38 +198,38 @@
         }
       },
       {
-        "HashCode": 469560971,
+        "HashCode": 1772858301,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
+        "Name": "SportScoresPro.Pages.Signout",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AllBetOdds"
+            "TagName": "Signout"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
+          "Common.TypeName": "SportScoresPro.Pages.Signout",
+          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1192078879,
+        "HashCode": 1066501158,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
+        "Name": "SportScoresPro.Pages.Signout",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.LivePages.AllBetOdds"
+            "TagName": "SportScoresPro.Pages.Signout"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
-          "Common.TypeNameIdentifier": "AllBetOdds",
-          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
+          "Common.TypeName": "SportScoresPro.Pages.Signout",
+          "Common.TypeNameIdentifier": "Signout",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -272,38 +272,38 @@
         }
       },
       {
-        "HashCode": 1772858301,
+        "HashCode": 469560971,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.Signout",
+        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Signout"
+            "TagName": "AllBetOdds"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.Signout",
-          "Common.TypeNameIdentifier": "Signout",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1066501158,
+        "HashCode": 1192078879,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.Signout",
+        "Name": "SportScoresPro.Pages.LivePages.AllBetOdds",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.Signout"
+            "TagName": "SportScoresPro.Pages.LivePages.AllBetOdds"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.Signout",
-          "Common.TypeNameIdentifier": "Signout",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.LivePages.AllBetOdds",
+          "Common.TypeNameIdentifier": "AllBetOdds",
+          "Common.TypeNamespace": "SportScoresPro.Pages.LivePages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -346,37 +346,37 @@
         }
       },
       {
-        "HashCode": 65167504,
+        "HashCode": -1641186745,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "Name": "SportScoresPro.Pages.SportPages.SerieA",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NFL"
+            "TagName": "SerieA"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
-          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
+          "Common.TypeNameIdentifier": "SerieA",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1101067347,
+        "HashCode": 675141347,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "Name": "SportScoresPro.Pages.SportPages.SerieA",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.SportPages.NFL"
+            "TagName": "SportScoresPro.Pages.SportPages.SerieA"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
-          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
+          "Common.TypeNameIdentifier": "SerieA",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -414,43 +414,6 @@
         "Metadata": {
           "Common.TypeName": "SportScoresPro.Pages.SportPages.NBA",
           "Common.TypeNameIdentifier": "NBA",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1641186745,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.SerieA",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SerieA"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
-          "Common.TypeNameIdentifier": "SerieA",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 675141347,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.SerieA",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.SerieA"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
-          "Common.TypeNameIdentifier": "SerieA",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -710,6 +673,43 @@
         "Metadata": {
           "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
           "Common.TypeNameIdentifier": "Bundesliga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 65167504,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NFL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
+          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1101067347,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.NFL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
+          "Common.TypeNameIdentifier": "NFL",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

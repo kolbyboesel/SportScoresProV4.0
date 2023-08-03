@@ -29,10 +29,13 @@
   <div class="row no-gutters responsiveSearchContainer">
     <div id="SerieASearch" class="container date-search-container pt-0 mlbSearch">
       <div class="row width-100">
-        <div class="col-6 margin-auto center-elements">
+        <div class="col-4 margin-auto center-elements">
           <a type="button" @onclick=showScoreSearch href="" class="btn search-btn" style="border-radius:5px">Scores</a>
         </div>
-        <div class="col-6 margin-auto center-elements" style="display: none;">
+        <div class="col-4 margin-auto center-elements">
+                <a type="button" onclick="showSerieAodds()" href="" class="btn search-btn" style="border-radius:5px">Betting Odds</a>
+        </div>
+        <div class="col-4 margin-auto center-elements" style="display: none;">
           <a type="button" @onclick=showStandings href="" class="btn search-btn" style="border-radius:5px">Standings</a>
         </div>
       </div>

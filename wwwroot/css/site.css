@@ -671,6 +671,10 @@ html {
   font-size: 0.75rem;
   color: revert;
 }
+
+.whitespace-nowrap {
+  white-space: nowrap !important;
+}
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .scoreboard-collapsible:hover {
   background-color: #ccc;

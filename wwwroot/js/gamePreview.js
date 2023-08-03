@@ -148,6 +148,10 @@ function generateGamePreview(
       awayMoneyline = "";
     }
   }
+  let coachHeader = "Coach";
+  if (sport == "Baseball") {
+    coachHeader = "Manager";
+  }
   let html = buildGamePreview(
     live,
     homeTeamLogo,
@@ -166,7 +170,8 @@ function generateGamePreview(
     shortHomeTeamName,
     shortAwayTeamName,
     homeLineup,
-    awayLineup
+    awayLineup,
+    coachHeader
   );
 
   return html;
@@ -190,7 +195,8 @@ function buildGamePreview(
   shortHomeTeamName,
   shortAwayTeamName,
   homeLineup,
-  awayLineup
+  awayLineup,
+  coachHeader
 ) {
   let html = "";
   html +=
@@ -284,7 +290,7 @@ function buildGamePreview(
                     </div>
             </div>`;
   }
-  html += `<div class=" p-2 bd-highlight">Manager: ${awayManager}</div>
+  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap">${coachHeader}: ${awayManager}</div>
                          </div>
                      </div>
 
@@ -306,7 +312,7 @@ function buildGamePreview(
                                 </div>
                             </div>`;
   }
-  html += `<div class=" p-2 bd-highlight">Manager: ${homeManager}</div>
+  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap{">${coachHeader}: ${homeManager}</div>
                                      </div>
                                  </div>
                          </div>

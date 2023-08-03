@@ -5,6 +5,8 @@ const NBA_URL =
   "https://odds.p.rapidapi.com/v4/sports/basketball_nba/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
 const NFL_URL =
   "https://odds.p.rapidapi.com/v4/sports/americanfootball_nfl/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
+const NHL_URL =
+  "https://odds.p.rapidapi.com/v4/sports/icehockey_nhl/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
 const Prem_URL =
   "https://odds.p.rapidapi.com/v4/sports/soccer_epl/odds?regions=us&oddsFormat=american&markets=spreads,totals,h2h&dateFormat=iso";
 const SerieA_URL =

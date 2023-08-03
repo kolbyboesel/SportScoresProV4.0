@@ -279,7 +279,7 @@ function buildGamePreview(
   for (let i = 0; i < awayLineup.length; i++) {
     html += `<div class="p-2 bd-highlight">
                      <div class="container no-gutters">
-                         <div class="row flex-nowrap">
+                         <div class="row flex-nowrap whitespace-nowrap">
                              <div class="col-auto">
                                  ${awayLineup[i][0]}
                              </div>
@@ -301,7 +301,7 @@ function buildGamePreview(
   for (let i = 0; i < homeLineup.length; i++) {
     html += `<div class="p-2 bd-highlight">
                                  <div class="container no-gutters">
-                                     <div class="row flex-nowrap">
+                                     <div class="row flex-nowrap whitespace-nowrap">
                                          <div class="col-auto">
                                              ${homeLineup[i][0]}
                                          </div>
@@ -312,7 +312,7 @@ function buildGamePreview(
                                 </div>
                             </div>`;
   }
-  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap{">${coachHeader}: ${homeManager}</div>
+  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap">${coachHeader}: ${homeManager}</div>
                                      </div>
                                  </div>
                          </div>

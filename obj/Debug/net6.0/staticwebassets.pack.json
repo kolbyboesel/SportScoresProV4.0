@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets/images/espnLogo.png"
     },
     {
+      "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/eventPreview.png",
+      "PackagePath": "staticwebassets/images/eventPreview.png"
+    },
+    {
       "Id": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/favicon.png",
       "PackagePath": "staticwebassets/images/favicon.png"
     },

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7grsMQNEk/4AB52vEBoWhKeU/LS9/TdqBC0itcHiO1Y=",
+  "Hash": "UX0tWeTqqjN72cRg73VkRMdDnZ1knqJoREOSrAHTK3g=",
   "Source": "SportScoresPro",
   "BasePath": "_content/SportScoresPro",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/espnLogo.png"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/eventPreview.png",
+      "SourceId": "SportScoresPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "BasePath": "_content/SportScoresPro",
+      "RelativePath": "images/eventPreview.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/eventPreview.png"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/favicon.png",

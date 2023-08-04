@@ -642,43 +642,6 @@
         }
       },
       {
-        "HashCode": 547296731,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NHL",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NHL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1637567076,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NHL",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.NHL"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": -1072026915,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
@@ -747,6 +710,43 @@
         "Metadata": {
           "Common.TypeName": "SportScoresPro.Pages.SportPages.SerieA",
           "Common.TypeNameIdentifier": "SerieA",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 547296731,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NHL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NHL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1637567076,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NHL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.NHL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

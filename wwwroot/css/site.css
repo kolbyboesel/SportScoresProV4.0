@@ -625,6 +625,7 @@ html {
   color: white !important;
   background-color: #dbb5b2 !important;
   border-color: #dbb5b2 !important;
+  height: 4vh;
 }
 
 .search-btn:hover {
@@ -637,6 +638,9 @@ html {
   color: #f44336ae !important;
   background-color: white !important;
   border-color: white !important;
+  display: flex;
+  text-align: center;
+  height: 4vh;
 }
 
 .date-search:hover {

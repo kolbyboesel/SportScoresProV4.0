@@ -272,185 +272,74 @@
         }
       },
       {
-        "HashCode": 172615599,
+        "HashCode": -1726392721,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.MLB",
+        "Name": "SportScoresPro.Pages.HomePage",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "MLB"
+            "TagName": "HomePage"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
-          "Common.TypeNameIdentifier": "MLB",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Common.TypeName": "SportScoresPro.Pages.HomePage",
+          "Common.TypeNameIdentifier": "HomePage",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -738860792,
+        "HashCode": -143680017,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.MLB",
+        "Name": "SportScoresPro.Pages.HomePage",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.SportPages.MLB"
+            "TagName": "SportScoresPro.Pages.HomePage"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
-          "Common.TypeNameIdentifier": "MLB",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Common.TypeName": "SportScoresPro.Pages.HomePage",
+          "Common.TypeNameIdentifier": "HomePage",
+          "Common.TypeNamespace": "SportScoresPro.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -377080304,
+        "HashCode": 1806734825,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
+        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Bundesliga"
+            "TagName": "Ligue1"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
-          "Common.TypeNameIdentifier": "Bundesliga",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
+          "Common.TypeNameIdentifier": "Ligue1",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1260727362,
+        "HashCode": 1676007955,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
+        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.SportPages.Bundesliga"
+            "TagName": "SportScoresPro.Pages.SportPages.Ligue1"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
-          "Common.TypeNameIdentifier": "Bundesliga",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1171940900,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CollegeBasketball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-          "Common.TypeNameIdentifier": "CollegeBasketball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1533284791,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.CollegeBasketball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
-          "Common.TypeNameIdentifier": "CollegeBasketball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1896495897,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CollegeBaseball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-          "Common.TypeNameIdentifier": "CollegeBaseball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 773642641,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.CollegeBaseball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
-          "Common.TypeNameIdentifier": "CollegeBaseball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 301959615,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CollegeFootball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
-          "Common.TypeNameIdentifier": "CollegeFootball",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1148191398,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.CollegeFootball"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
-          "Common.TypeNameIdentifier": "CollegeFootball",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
+          "Common.TypeNameIdentifier": "Ligue1",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -494,6 +383,117 @@
         }
       },
       {
+        "HashCode": 1171940900,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CollegeBasketball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+          "Common.TypeNameIdentifier": "CollegeBasketball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -1533284791,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.CollegeBasketball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBasketball",
+          "Common.TypeNameIdentifier": "CollegeBasketball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -377080304,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Bundesliga"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
+          "Common.TypeNameIdentifier": "Bundesliga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1260727362,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Bundesliga",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.Bundesliga"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Bundesliga",
+          "Common.TypeNameIdentifier": "Bundesliga",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1896495897,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CollegeBaseball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+          "Common.TypeNameIdentifier": "CollegeBaseball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 773642641,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.CollegeBaseball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeBaseball",
+          "Common.TypeNameIdentifier": "CollegeBaseball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": -1281278803,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.SportPages.MLS",
@@ -525,43 +525,6 @@
         "Metadata": {
           "Common.TypeName": "SportScoresPro.Pages.SportPages.MLS",
           "Common.TypeNameIdentifier": "MLS",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1806734825,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Ligue1"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
-          "Common.TypeNameIdentifier": "Ligue1",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1676007955,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.Ligue1"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
-          "Common.TypeNameIdentifier": "Ligue1",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -605,74 +568,37 @@
         }
       },
       {
-        "HashCode": 947684468,
+        "HashCode": 547296731,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "Name": "SportScoresPro.Pages.SportPages.NHL",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NFL"
+            "TagName": "NHL"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
-          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 217626668,
+        "HashCode": 1637567076,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "Name": "SportScoresPro.Pages.SportPages.NHL",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.SportPages.NFL"
+            "TagName": "SportScoresPro.Pages.SportPages.NHL"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
-          "Common.TypeNameIdentifier": "NFL",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1072026915,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "PremierLeague"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
-          "Common.TypeNameIdentifier": "PremierLeague",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 2127305770,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.PremierLeague"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
-          "Common.TypeNameIdentifier": "PremierLeague",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
+          "Common.TypeNameIdentifier": "NHL",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -716,75 +642,149 @@
         }
       },
       {
-        "HashCode": 547296731,
+        "HashCode": -1072026915,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NHL",
+        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NHL"
+            "TagName": "PremierLeague"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
+          "Common.TypeNameIdentifier": "PremierLeague",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 1637567076,
+        "HashCode": 2127305770,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.NHL",
+        "Name": "SportScoresPro.Pages.SportPages.PremierLeague",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.SportPages.NHL"
+            "TagName": "SportScoresPro.Pages.SportPages.PremierLeague"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.NHL",
-          "Common.TypeNameIdentifier": "NHL",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.PremierLeague",
+          "Common.TypeNameIdentifier": "PremierLeague",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -1726392721,
+        "HashCode": 172615599,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.HomePage",
+        "Name": "SportScoresPro.Pages.SportPages.MLB",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "HomePage"
+            "TagName": "MLB"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.HomePage",
-          "Common.TypeNameIdentifier": "HomePage",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
+          "Common.TypeNameIdentifier": "MLB",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": -143680017,
+        "HashCode": -738860792,
         "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.HomePage",
+        "Name": "SportScoresPro.Pages.SportPages.MLB",
         "AssemblyName": "SportScoresPro",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "SportScoresPro.Pages.HomePage"
+            "TagName": "SportScoresPro.Pages.SportPages.MLB"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.HomePage",
-          "Common.TypeNameIdentifier": "HomePage",
-          "Common.TypeNamespace": "SportScoresPro.Pages",
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.MLB",
+          "Common.TypeNameIdentifier": "MLB",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 947684468,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NFL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
+          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 217626668,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.NFL",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.NFL"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.NFL",
+          "Common.TypeNameIdentifier": "NFL",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 301959615,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CollegeFootball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
+          "Common.TypeNameIdentifier": "CollegeFootball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1148191398,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.CollegeFootball",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.CollegeFootball"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
+          "Common.TypeNameIdentifier": "CollegeFootball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }

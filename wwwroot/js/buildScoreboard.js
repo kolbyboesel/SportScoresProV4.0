@@ -837,4 +837,4 @@ function removeAllActiveLive() {
   mls.classList.remove("active");
 }
 
-loadScoreboard("Y", 64, "MLB", "liveScoresContainer", "liveLoading", "mlblive");
+//loadScoreboard("Y", 64, "MLB", "liveScoresContainer", "liveLoading", "mlblive");

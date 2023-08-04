@@ -90,7 +90,7 @@ public async Task searchScores(){
   }
   public async Task showStandings()
   {
-    await JSRuntime.InvokeVoidAsync("showStandings", "tid", "sid");
+    await JSRuntime.InvokeVoidAsync("showStandings", "tid", "sid", "containerCBaseball", "cbaseballLoading");
   }
   string cookieValue = "";
   protected override async Task OnInitializedAsync()

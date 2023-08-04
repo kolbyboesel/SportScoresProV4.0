@@ -50,7 +50,7 @@
           <a type="button" onclick="showPremOdds()" href="" class="btn search-btn no-gutters"
             style="border-radius:5px">Betting Odds</a>
         </div>
-        <div class="col-4 margin-auto center-elements" style="display: none;">
+        <div class="col-4 margin-auto center-elements">
           <a type="button" @onclick=showStandings href="" class="btn search-btn" style="border-radius:5px">Standings</a>
         </div>
       </div>
@@ -101,7 +101,7 @@
   }
   public async Task showStandings()
   {
-    await JSRuntime.InvokeVoidAsync("showStandings", "tid", "sid");
+    await JSRuntime.InvokeVoidAsync("showStandings", "52186","1", "containerPrem", "PremLoading");
   }
 
   string cookieValue = "";

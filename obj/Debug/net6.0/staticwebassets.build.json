@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UX0tWeTqqjN72cRg73VkRMdDnZ1knqJoREOSrAHTK3g=",
+  "Hash": "4wHA2JqUaQotEk4qBXLCLP/1HDJiur4+QgGaMzsmX3M=",
   "Source": "SportScoresPro",
   "BasePath": "_content/SportScoresPro",
   "Mode": "Default",
@@ -1001,6 +1001,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/SportsAI.js"
+    },
+    {
+      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/standings.js",
+      "SourceId": "SportScoresPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "BasePath": "_content/SportScoresPro",
+      "RelativePath": "js/standings.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/standings.js"
     },
     {
       "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/StyleInjection.js",

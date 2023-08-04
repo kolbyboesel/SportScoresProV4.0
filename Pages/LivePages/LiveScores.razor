@@ -12,7 +12,7 @@
   }
 </style>
 <div class="headerImage mobileSetting">Live Scores</div>
-<div class="container no-gutters">
+<div class="container no-gutters align-flex-start">
   <div class="row no-gutters responsiveScrollContainer">
     <div class="scrollmenu mobileScroll">
       <a @onclick=showNBALive href="" id="nbalive" class="w3-hover-text-white">NBA</a>
@@ -32,7 +32,7 @@
   </div>
 
 <div class="loading liveLoading" style="display: none;">Loading&#8230;</div>
-  <div class="row no-gutters score-container-scroll indexContainerPad xs-padding liveScoresContainer">
+  <div class="row no-gutters score-container-scroll indexContainerPad xs-padding overflow-auto liveScoresContainer">
       <div class="page-text">Click One of the Sports Above to View Current Live Scores</div>
   </div>
 </div>

@@ -4,7 +4,11 @@ async function loadGamePreview(
   homeTeamID,
   awayTeamID,
   containerName,
-  loadingContainer
+  loadingContainer,
+  league,
+  date,
+  sportID,
+  buttonID
 ) {
   let loadingContainerObj = document.querySelector("." + loadingContainer);
   loadingContainerObj.style.display = "revert";
@@ -15,7 +19,10 @@ async function loadGamePreview(
     "https://sofascores.p.rapidapi.com/v1/teams/logo?team_id=" + awayTeamID
   );
   let html = "";
-
+  let isLiveContainer = "N";
+  if (containerName == "liveScoresContainer") {
+    isLiveContainer = "Y";
+  }
   html += generateGamePreview(
     live,
     homeTeamLogo,
@@ -33,7 +40,14 @@ async function loadGamePreview(
       "https://sofascores.p.rapidapi.com/v1/events/odds/all?event_id=" +
         gameID +
         "&odds_format=decimal&provider_id=1"
-    )
+    ),
+    league,
+    date,
+    sportID,
+    containerName,
+    loadingContainer,
+    buttonID,
+    isLiveContainer
   );
 
   let container = document.querySelector("." + containerName);
@@ -48,7 +62,14 @@ function generateGamePreview(
   formData,
   lineupData,
   eventData,
-  oddData
+  oddData,
+  league,
+  date,
+  sportID,
+  containerName,
+  loadingContainer,
+  buttonID,
+  isLiveContainer
 ) {
   let form = formData.data;
   let lineup = lineupData.data;
@@ -171,7 +192,14 @@ function generateGamePreview(
     shortAwayTeamName,
     homeLineup,
     awayLineup,
-    coachHeader
+    coachHeader,
+    league,
+    date,
+    sportID,
+    containerName,
+    loadingContainer,
+    buttonID,
+    isLiveContainer
   );
 
   return html;
@@ -196,11 +224,47 @@ function buildGamePreview(
   shortAwayTeamName,
   homeLineup,
   awayLineup,
-  coachHeader
+  coachHeader,
+  league,
+  date,
+  sportID,
+  containerName,
+  loadingContainer,
+  buttonID,
+  isLiveContainer
 ) {
   let html = "";
   html +=
-    `<div class="container gamePreview">
+    `<div class="width-100 pb-3"><a type="button" class="btn cancelbtn float-right" onclick=loadScoreboard(` +
+    '"' +
+    isLiveContainer +
+    '"' +
+    "," +
+    '"' +
+    sportID +
+    '"' +
+    "," +
+    '"' +
+    league +
+    '"' +
+    "," +
+    '"' +
+    containerName +
+    '"' +
+    "," +
+    '"' +
+    loadingContainer +
+    '"' +
+    "," +
+    '"' +
+    buttonID +
+    '"' +
+    "," +
+    '"' +
+    date +
+    '"' +
+    `)>Close</a></div>
+    <div class="container gamePreview">
      <div class="row flex-nowrap">
          <div class="col center-elements">
              <div class="container no-gutters">
@@ -275,7 +339,7 @@ function buildGamePreview(
      <div class="row">
          <div class="col">
              <div class="d-flex flex-column bd-highlight mb-3">
-                <div class=" p-2 bd-highlight center-elements center-text">Away Starters</div>`;
+                <div class=" p-2 bd-highlight center-elements center-text header">Away Starters</div>`;
   for (let i = 0; i < awayLineup.length; i++) {
     html += `<div class="p-2 bd-highlight">
                      <div class="container no-gutters">
@@ -296,7 +360,7 @@ function buildGamePreview(
 
                      <div class="col">
                          <div class="d-flex flex-column bd-highlight mb-3 right-text">
-                         <div class=" p-2 bd-highlight center-elements center-text">Home Starters</div>`;
+                         <div class=" p-2 bd-highlight center-elements center-text header">Home Starters</div>`;
 
   for (let i = 0; i < homeLineup.length; i++) {
     html += `<div class="p-2 bd-highlight">

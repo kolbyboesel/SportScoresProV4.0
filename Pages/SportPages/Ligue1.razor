@@ -25,127 +25,76 @@
   </div>
 </header>
 
-<div class="container no-gutters">
+<div class="container no-gutters align-flex-start">
   <div class="row no-gutters responsiveSearchContainer">
     <div id="Ligue1Search" class="container date-search-container pt-0 mlbSearch">
       <div class="row width-100">
         <div class="col-4 margin-auto center-elements">
-          <a type="button" @onclick=showScoreSearch href="" class="btn search-btn" style="border-radius:5px">Scores</a>
+          <EditForm id="mlbScoreSearch" Model="@currentSearch" OnValidSubmit="searchScores">
+            <div class="container no-gutters">
+              <div class="row width-100">
+                <div class="col-8 center-elements no-gutters">
+                  <InputDate class="btn date-search" @bind-Value="currentSearch.selectedDate" style="overflow: hidden; border-bottom-right-radius: 0px;border-top-right-radius: 0px"/>
+                </div>
+                <div class="col-4 center-elements no-gutters">
+                  <button type="submit" class="btn search-btn" style="border-radius:5px; border-bottom-left-radius: 0px;border-top-left-radius: 0px"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </EditForm>
         </div>
         <div class="col-4 margin-auto center-elements">
-          <a type="button" onclick="showLigue1Odds()" href="" class="btn search-btn" style="border-radius:5px">Betting Odds</a>
+          <a type="button" onclick="showLigue1Odds()" href="" class="btn search-btn no-gutters" style="border-radius:5px">Betting Odds</a>
         </div>
         <div class="col-4 margin-auto center-elements" style="display: none;">
           <a type="button" @onclick=showStandings href="" class="btn search-btn" style="border-radius:5px">Standings</a>
         </div>
       </div>
     </div>
-
-    <EditForm id="Ligue1ScoreSearch" Model="@currentSearch" OnValidSubmit="HandleScoreSearch"
-      class="date-search-bar scoreSearch" style="display: none;">
-
-      <div class="container date-search-container pt-0">
-        <div class="row width-100">
-
-          <div class="col center-elements sm-align-end">
-            <a type="button" @onclick=dateBack href="" class="btn search-btn" style="border-radius:5px">Back</a>
-          </div>
-
-          <div class="col center-elements">
-            <div class="row">
-              <label for="month" class="col-auto center-elements dateLabel">Month</label>
-              <InputNumber @bind-Value="@currentSearch.Month" type="text" class="form-control col-8 col-md-12"
-                placeholder="Month" id="month" name="month" max="12" min="1" required />
-            </div>
-          </div>
-
-          <div class="col center-elements">
-            <div class="row">
-              <label for="day" class="col-auto center-elements dateLabel">Day</label>
-              <InputNumber @bind-Value="@currentSearch.Day" type="text" class="form-control col-8 col-md-12"
-                placeholder="Day" id="day" name="day" max="31" min="1" required />
-            </div>
-          </div>
-
-          <div class="col center-elements">
-            <div class="row">
-
-              <label for="year" class="col-auto center-elements dateLabel">Year
-              </label>
-              <InputNumber @bind-Value="@currentSearch.Year" type="password" class="form-control col-8 col-md-12"
-                placeholder="Year" id="year" name="year" max="2030" min="2000" required />
-            </div>
-          </div>
-
-          <div class="col center-elements">
-            <button type="submit" class="search-btn" style="border-radius:5px">Search</button>
-          </div>
-        </div>
-      </div>
-    </EditForm>
   </div>
   <div class="loading Ligue1Loading" style="display: none;">Loading&#8230;</div>
 
-  <div class="row no-gutters indexContainerPad xs-padding containerLigue1">
+  <div class="row no-gutters indexContainerPad xs-padding overflow-auto containerLigue1">
     <div class="page-text">Choose an Option Above To Search For Scores or Betting Odds by Date</div>
   </div>
 </div>
 @code {
-
-  public class DateSearchModel
+public class DateSearchModel
   {
-    public int Year { get; set; }
-    public int Month { get; set; }
-    public int Day { get; set; }
+    public DateTime selectedDate { get; set; }
 
   }
   private DateSearchModel currentSearch = new DateSearchModel();
 
-  private async void HandleScoreSearch()
-  {
-        var Day = currentSearch.Day;
-        var Month = currentSearch.Month;
-        var Year = currentSearch.Year;
-        string confirmDay = "";
-        string confirmMonth = "";
-        string confirmYear = "";
-
-          if(Day < 10)
-          {
-            confirmDay = "0" + Day.ToString();
-          }else{
-            confirmDay = Day.ToString();
-          };
-          if(Month < 10)
-          {
-            confirmMonth = "0" + Month.ToString();
-          }else{
-            confirmMonth = Month.ToString();
-            };
-          confirmYear = Year.ToString();
- 
-        var date = confirmYear + "-" + confirmMonth + "-" + confirmDay;
-
-        await JSRuntime.InvokeVoidAsync("loadScoreboard", "N", 1,"Ligue 1","containerLigue1", "Ligue1Loading", "null", date);
+public async Task searchScores(){
+    var userDate = currentSearch.selectedDate;
+    var stringYear = userDate.Year.ToString();
+    var month = userDate.Month;
+    var day = userDate.Day;
+    var stringMonth = "";
+    var stringDay = "";
+    if(month < 10){
+      stringMonth = "0" + month;
+    } else {
+      stringMonth = month.ToString();
+    }
+    if(day < 10){
+      stringDay = "0" + day;
+    } else {
+      stringDay = day.ToString();
+    }
+    var stringDate =  stringYear + "-" + stringMonth + "-" + stringDay;
+    await JSRuntime.InvokeVoidAsync("loadScoreboard", "N", 1,"Ligue 1","containerLigue1", "Ligue1Loading", "null", stringDate);
   }
-
-  public async Task dateBack()
-  {
-    await JSRuntime.InvokeVoidAsync("showSportNav", "Ligue1Search", "Ligue1ScoreSearch");
-  }
-
   public async Task showStandings()
   {
     await JSRuntime.InvokeVoidAsync("showStandings", "tid", "sid");
-  }
-  public async Task showScoreSearch()
-  {
-    await JSRuntime.InvokeVoidAsync("showScoreSearch", "Ligue1Search", "Ligue1ScoreSearch");
   }
 
   string cookieValue = "";
   protected override async Task OnInitializedAsync()
   {
+        currentSearch.selectedDate = DateTime.Now;
         cookieValue = HttpContextAccessor.HttpContext.Request.Cookies["loggedInStatus"];
   }
   private string innerHtmlValue = "";

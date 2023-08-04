@@ -84,6 +84,10 @@ function AddNoAvailableDataTxt() {
   return `<div class="page-text">No Games Available From the Selected Date</div>`;
 }
 
+function searchEventScores(searchDate) {
+  console.log(searchDate);
+}
+
 async function loadScoreboard(
   live,
   sportID,
@@ -95,7 +99,6 @@ async function loadScoreboard(
 ) {
   let loadingContainer = document.querySelector("." + loadingName);
   loadingContainer.style.display = "revert";
-
   let url = "";
   if (live == "Y") {
     removeAllActiveLive();
@@ -124,7 +127,9 @@ async function loadScoreboard(
       league,
       eventDateMin,
       live,
-      loadingName
+      loadingName,
+      date,
+      buttonID
     );
   } else {
     html += buildUpcomingScoreboard(
@@ -133,7 +138,9 @@ async function loadScoreboard(
       sportID,
       league,
       eventDateMin,
-      loadingName
+      loadingName,
+      date,
+      buttonID
     );
   }
   if (
@@ -157,7 +164,9 @@ function buildUpcomingScoreboard(
   sportID,
   league,
   date,
-  loadingContainer
+  loadingContainer,
+  eventDate,
+  buttonID
 ) {
   let html = "";
   let eventInfo = allData.data;
@@ -184,7 +193,14 @@ function buildUpcomingScoreboard(
     ) {
       dateConfirm = true;
     }
-    if (eventLeague == league && dateConfirm == true) {
+    let secondLeague = "";
+    if (league == "NFL") {
+      secondLeague = "NFL Preseason";
+    }
+    if (
+      (eventLeague == league || eventLeague == secondLeague) &&
+      dateConfirm == true
+    ) {
       let homeTeam = currentEvent.homeTeam.name;
       let awayTeam = currentEvent.awayTeam.name;
       html += constructUpcomingScoreboard(
@@ -196,7 +212,11 @@ function buildUpcomingScoreboard(
         homeTeamID,
         awayTeamID,
         containerName,
-        loadingContainer
+        loadingContainer,
+        sportID,
+        eventDate,
+        league,
+        buttonID
       );
     }
   });
@@ -210,7 +230,9 @@ function buildLiveScoreboard(
   league,
   date,
   live,
-  loadingContainer
+  loadingContainer,
+  eventDate,
+  buttonID
 ) {
   let html = "";
   let eventInfo = allData.data;
@@ -240,7 +262,14 @@ function buildLiveScoreboard(
     if (live == "Y") {
       dateConfirm = true;
     }
-    if (eventLeague == league && dateConfirm == true) {
+    let secondLeague = "";
+    if (league == "NFL") {
+      secondLeague = "NFL Preseason";
+    }
+    if (
+      (eventLeague == league || eventLeague == secondLeague) &&
+      dateConfirm == true
+    ) {
       let awayScore = currentEvent.awayScore.current;
       let homeScore = currentEvent.homeScore.current;
       let currentPeriod = currentEvent.status.description;
@@ -541,7 +570,11 @@ function buildLiveScoreboard(
           homeTeamID,
           awayTeamID,
           containerName,
-          loadingContainer
+          loadingContainer,
+          sportID,
+          eventDate,
+          league,
+          buttonID
         );
       }
     }
@@ -569,7 +602,11 @@ function constructLiveScoreboard(
   homeTeamID,
   awayTeamID,
   containerName,
-  loadingContainer
+  loadingContainer,
+  sportID,
+  eventDate,
+  league,
+  buttonID
 ) {
   //Set Main Header
   if (currentPeriod == "Pause" && sport == "baseball") {
@@ -603,6 +640,22 @@ function constructLiveScoreboard(
     "," +
     '"' +
     loadingContainer +
+    '"' +
+    "," +
+    '"' +
+    league +
+    '"' +
+    "," +
+    '"' +
+    eventDate +
+    '"' +
+    "," +
+    '"' +
+    sportID +
+    '"' +
+    "," +
+    '"' +
+    buttonID +
     '"' +
     `)>
     <div class="row header">
@@ -697,7 +750,11 @@ function constructUpcomingScoreboard(
   homeTeamID,
   awayTeamID,
   containerName,
-  loadingContainer
+  loadingContainer,
+  sportID,
+  eventDate,
+  league,
+  buttonID
 ) {
   let htmlSegment =
     `<div class="col-6 col-lg-12 center-elements pt-3 pb-3"><div class="container scoreboard-upcoming hover-cursor" onclick=loadGamePreview(` +
@@ -721,6 +778,22 @@ function constructUpcomingScoreboard(
     "," +
     '"' +
     loadingContainer +
+    '"' +
+    "," +
+    '"' +
+    league +
+    '"' +
+    "," +
+    '"' +
+    eventDate +
+    '"' +
+    "," +
+    '"' +
+    sportID +
+    '"' +
+    "," +
+    '"' +
+    buttonID +
     '"' +
     `)>
     <div class="row header">

@@ -100,6 +100,12 @@ async function loadScoreboard(
   let loadingContainer = document.querySelector("." + loadingName);
   loadingContainer.style.display = "revert";
   let url = "";
+  if (league == "NCAARegularSeason") {
+    league = "NCAA, Regular Season";
+  }
+  if (league == "Ligue1") {
+    league = "Ligue 1";
+  }
   if (live == "Y") {
     removeAllActiveLive();
     let currentBtn = document.getElementById(buttonID);
@@ -608,6 +614,12 @@ function constructLiveScoreboard(
   league,
   buttonID
 ) {
+  if (league == "NCAA, Regular Season") {
+    league = "NCAARegularSeason";
+  }
+  if (league == "Ligue 1") {
+    league = "Ligue1";
+  }
   //Set Main Header
   if (currentPeriod == "Pause" && sport == "baseball") {
     currentPeriod = "End of Inning";
@@ -756,6 +768,12 @@ function constructUpcomingScoreboard(
   league,
   buttonID
 ) {
+  if (league == "NCAA, Regular Season") {
+    league = "NCAARegularSeason";
+  }
+  if (league == "Ligue 1") {
+    league = "Ligue1";
+  }
   let htmlSegment =
     `<div class="col-6 col-lg-12 center-elements pt-3 pb-3"><div class="container scoreboard-upcoming hover-cursor" onclick=loadGamePreview(` +
     '"N"' +

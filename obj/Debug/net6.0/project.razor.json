@@ -309,43 +309,6 @@
         }
       },
       {
-        "HashCode": 1806734825,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Ligue1"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
-          "Common.TypeNameIdentifier": "Ligue1",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1676007955,
-        "Kind": "Components.Component",
-        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
-        "AssemblyName": "SportScoresPro",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "SportScoresPro.Pages.SportPages.Ligue1"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
-          "Common.TypeNameIdentifier": "Ligue1",
-          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
         "HashCode": 1720688498,
         "Kind": "Components.Component",
         "Name": "SportScoresPro.Pages.SportPages.LaLiga",
@@ -784,6 +747,43 @@
         "Metadata": {
           "Common.TypeName": "SportScoresPro.Pages.SportPages.CollegeFootball",
           "Common.TypeNameIdentifier": "CollegeFootball",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1806734825,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Ligue1"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
+          "Common.TypeNameIdentifier": "Ligue1",
+          "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1676007955,
+        "Kind": "Components.Component",
+        "Name": "SportScoresPro.Pages.SportPages.Ligue1",
+        "AssemblyName": "SportScoresPro",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SportScoresPro.Pages.SportPages.Ligue1"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "SportScoresPro.Pages.SportPages.Ligue1",
+          "Common.TypeNameIdentifier": "Ligue1",
           "Common.TypeNamespace": "SportScoresPro.Pages.SportPages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"

@@ -570,14 +570,14 @@ html {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .leftArrow {
-    display: block !important;
+    display: grid !important;
     border-color: white;
   }
 
   .rightArrow {
-    display: block !important;
+    display: grid !important;
     border-color: white;
   }
   .scrollmenu {

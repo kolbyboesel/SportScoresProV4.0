@@ -41,6 +41,16 @@ function AddNoDataTxt() {
   return `<div style="color:white;width: 100%; height: 1%; padding-top: 30px; text-align: center; display: inline-block; font-size: 2vh;">Sorry, no data is available, please check back later!</div>`;
 }
 
+function enableLoadingScreen() {
+  let loadingContainerObj = document.querySelector(".accountLoading");
+  loadingContainerObj.style.display = "revert";
+}
+
+function disableLoadingScreen() {
+  let loadingContainerObj = document.querySelector(".accountLoading");
+  loadingContainerObj.style.display = "none";
+}
+
 async function getBetData(url) {
   try {
     let res = await fetch(url, getBets);
@@ -148,6 +158,7 @@ function formatEpochDate(epochTIS) {
 
 async function showNBABets() {
   removeAllActiveAI();
+  enableLoadingScreen();
   let currentBtn = document.getElementById("nbaai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -173,11 +184,13 @@ async function showNBABets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showMLBBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
   let currentBtn = document.getElementById("mlbai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -203,11 +216,13 @@ async function showMLBBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showNFLBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
   let currentBtn = document.getElementById("nflai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -233,11 +248,13 @@ async function showNFLBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showNHLBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
   let currentBtn = document.getElementById("nhlai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -264,11 +281,14 @@ async function showNHLBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showCFBBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("cfbai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -295,11 +315,14 @@ async function showCFBBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showCBBBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("cbbai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -326,11 +349,14 @@ async function showCBBBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showCBaseballBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("cbaseballai");
   currentBtn.classList.add("active");
   let currentDate = getCurrentDate();
@@ -357,11 +383,14 @@ async function showCBaseballBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showPremBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("premai");
   currentBtn.classList.add("active");
 
@@ -374,11 +403,14 @@ async function showPremBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showLaligaBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("laligaai");
   currentBtn.classList.add("active");
 
@@ -391,11 +423,14 @@ async function showLaligaBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showSerieABets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("serieaai");
   currentBtn.classList.add("active");
 
@@ -408,11 +443,14 @@ async function showSerieABets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showLigue1Bets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("ligue1ai");
   currentBtn.classList.add("active");
 
@@ -425,11 +463,14 @@ async function showLigue1Bets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showBundesligaBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("bundai");
   currentBtn.classList.add("active");
   let html = "";
@@ -441,11 +482,14 @@ async function showBundesligaBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 
 async function showMLSBets() {
   removeAllActiveAI();
+  enableLoadingScreen();
+
   let currentBtn = document.getElementById("mlsai");
   currentBtn.classList.add("active");
 
@@ -458,6 +502,7 @@ async function showMLSBets() {
   }
 
   let container = document.querySelector(".AccountContainer");
+  disableLoadingScreen();
   container.innerHTML = html;
 }
 

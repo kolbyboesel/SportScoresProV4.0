@@ -171,7 +171,7 @@ a:hover {
 }
 
 .arrow {
-  border: solid black;
+  border: solid white;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -465,6 +465,9 @@ html {
   text-align: center;
 }
 
+.white-text {
+  color: white !important;
+}
 .right-text {
   text-align: right;
 }
@@ -534,7 +537,7 @@ html {
   display: flex;
   justify-content: center;
   background-color: #f44336;
-  height: 6.5vh;
+  height: fit-content;
 }
 
 .responsiveSearchContainer {
@@ -556,6 +559,7 @@ html {
   display: flex;
   justify-content: center;
   margin: auto;
+  overflow: auto;
 }
 
 .scrollmenu a {

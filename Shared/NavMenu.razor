@@ -127,11 +127,11 @@
         <p>Please fill in this form to create an account.</p>
         <hr>
         <label for="username"><b>Email</b></label>
-        <InputText @bind-Value="@signupData.Email" id="username" type="text" placeholder="Enter Email" name="username"
+        <InputText @bind-Value="@signupData.Email" id="SignupUsername" type="text" placeholder="Enter Email" name="username"
           required />
 
         <label for="psw"><b>Password</b></label>
-        <InputText @bind-Value="@signupData.Psw" id="password" type="password" placeholder="Enter Password"
+        <InputText @bind-Value="@signupData.Psw" id="SignupPassword" type="password" placeholder="Enter Password"
           name="password" required />
 
         <label for="psw-repeat"><b>Repeat Password</b></label>
@@ -251,15 +251,15 @@
       <div class="container pt-5 h-auto">
         <label for="email"><b>New Email</b></label>
         <InputText @bind-Value="@changeEmail.Email" type="text" class="form-control" placeholder="Enter New Email"
-          id="email" name="email" required />
+          id="ChangeEmail" name="email" required />
 
         <label for="confirmEmail"><b>Confirm New Email</b></label>
         <InputText @bind-Value="@changeEmail.EmailRepeat" type="text" class="form-control" placeholder="Reenter Email"
-          id="confirmEmail" name="confirmEmail" required />
+          id="confirmChangeEmail" name="confirmEmail" required />
 
         <label for="password"><b>Enter Password to Verify</b></label>
         <InputText @bind-Value="@changeEmail.Password" type="password" class="form-control" placeholder="Enter Password"
-          id="password" name="password" required />
+          id="ChangeEmailPassword" name="password" required />
 
         <button type="submit" style="border-radius:5px">Confirm</button>
       </div>
@@ -291,7 +291,7 @@
 
         <label for="password"><b>Confirm New Password</b></label>
         <InputText @bind-Value="@changePsw.NewPSWRepeat" type="password" class="form-control"
-          placeholder="Confirm New Paassword" id="confirmPassword" name="confirmPassword" required />
+          placeholder="Confirm New Paassword" id="confirmChangePassword" name="confirmPassword" required />
 
         <button type="submit" style="border-radius:5px">Confirm</button>
       </div>

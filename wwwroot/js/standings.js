@@ -21,7 +21,7 @@ async function showStandings(
     );
   } catch (error) {}
   html += buildStandings(data);
-  if ((html += "")) {
+  if (html == "") {
     html += AddNoStandingsTxt();
   }
   let container = document.querySelector("." + containerName);

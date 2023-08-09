@@ -630,6 +630,9 @@ html {
   background-color: #dbb5b2 !important;
   border-color: #dbb5b2 !important;
   height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-btn:hover {

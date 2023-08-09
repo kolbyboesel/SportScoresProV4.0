@@ -89,7 +89,7 @@ function searchEventScores(searchDate) {
 }
 
 async function loadScoreboard(
-  live,
+  onlyLive,
   sportID,
   league,
   containerName,
@@ -106,7 +106,7 @@ async function loadScoreboard(
   if (league == "Ligue1") {
     league = "Ligue 1";
   }
-  if (live == "Y") {
+  if (onlyLive == "Y") {
     removeAllActiveLive();
     let currentBtn = document.getElementById(buttonID);
     currentBtn.classList.add("active");
@@ -120,35 +120,19 @@ async function loadScoreboard(
       "&sport_id=" +
       sportID;
   }
-  let eventDateMax = new Date(date);
-  eventDateMax.setDate(eventDateMax.getDate() + 1);
-  eventDateMax.setHours(eventDateMax.getHours() + 5);
   let eventDateMin = new Date(date);
   let html = "";
-  if (live == "Y" || eventDateMax.getTime() < Date.now()) {
-    html += buildLiveScoreboard(
-      await getAllData(url),
-      containerName,
-      sportID,
-      league,
-      eventDateMin,
-      live,
-      loadingName,
-      date,
-      buttonID
-    );
-  } else {
-    html += buildUpcomingScoreboard(
-      await getAllData(url),
-      containerName,
-      sportID,
-      league,
-      eventDateMin,
-      loadingName,
-      date,
-      buttonID
-    );
-  }
+  html += filterLiveGames(
+    await getAllData(url),
+    containerName,
+    sportID,
+    league,
+    eventDateMin,
+    onlyLive,
+    loadingName,
+    date,
+    buttonID
+  );
   if (
     html == "" &&
     url ==
@@ -164,8 +148,66 @@ async function loadScoreboard(
   container.innerHTML = html;
 }
 
-function buildUpcomingScoreboard(
+function filterLiveGames(
   allData,
+  containerName,
+  sportID,
+  league,
+  date,
+  onlyLive,
+  loadingContainer,
+  eventDate,
+  buttonID
+) {
+  let eventInfo = allData.data;
+  let html = "";
+  eventInfo.forEach((currentEvent) => {
+    dateConfirm = false;
+    let compareDate = new Date(currentEvent.startTimestamp * 1000);
+    compareDate.setHours(compareDate.getHours() - 5);
+    let maxDate = new Date(date);
+    maxDate.setDate(maxDate.getDate() + 1);
+
+    if (
+      compareDate.getTime() > date.getTime() &&
+      compareDate.getTime() < maxDate.getTime()
+    ) {
+      dateConfirm = true;
+    }
+    let currentTime = new Date();
+    if (dateConfirm == true || onlyLive == "Y") {
+      if (currentEvent.startTimestamp * 1000 > Date.now()) {
+        html += buildUpcomingScoreboard(
+          currentEvent,
+          containerName,
+          sportID,
+          league,
+          date,
+          loadingContainer,
+          eventDate,
+          buttonID
+        );
+      } else {
+        html += buildLiveScoreboard(
+          currentEvent,
+          containerName,
+          sportID,
+          league,
+          date,
+          onlyLive,
+          loadingContainer,
+          eventDate,
+          buttonID
+        );
+      }
+    }
+  });
+
+  return html;
+}
+
+function buildUpcomingScoreboard(
+  currentEvent,
   containerName,
   sportID,
   league,
@@ -175,45 +217,384 @@ function buildUpcomingScoreboard(
   buttonID
 ) {
   let html = "";
-  let eventInfo = allData.data;
+  let startTime = formatEventDate(currentEvent.startTimestamp);
+
+  let eventLeague = "";
+  if (currentEvent.tournament.uniqueTournament.name == undefined) {
+    eventLeague = currentEvent.tournament.name;
+  } else {
+    eventLeague = currentEvent.tournament.uniqueTournament.name;
+  }
+  let homeTeamID = currentEvent.homeTeam.id;
+  let awayTeamID = currentEvent.awayTeam.id;
+  let gameID = currentEvent.id;
+  let secondLeague = "";
+  if (league == "NFL") {
+    secondLeague = "NFL Preseason";
+  }
+  if (eventLeague == league || eventLeague == secondLeague) {
+    let homeTeam = currentEvent.homeTeam.name;
+    let awayTeam = currentEvent.awayTeam.name;
+    html += constructUpcomingScoreboard(
+      currentEvent,
+      startTime,
+      homeTeam,
+      awayTeam,
+      gameID,
+      homeTeamID,
+      awayTeamID,
+      containerName,
+      loadingContainer,
+      sportID,
+      eventDate,
+      league,
+      buttonID
+    );
+  }
+  return html;
+}
+
+function buildLiveScoreboard(
+  currentEvent,
+  containerName,
+  sportID,
+  league,
+  date,
+  onlyLive,
+  loadingContainer,
+  eventDate,
+  buttonID
+) {
+  let html = "";
   let dateConfirm = false;
-  eventInfo.forEach((currentEvent) => {
-    let eventLeague = "";
-    if (currentEvent.tournament.uniqueTournament.name == undefined) {
-      eventLeague = currentEvent.tournament.name;
-    } else {
-      eventLeague = currentEvent.tournament.uniqueTournament.name;
+  let eventLeague = "";
+  if (currentEvent.tournament.uniqueTournament.name != undefined) {
+    eventLeague = currentEvent.tournament.uniqueTournament.name;
+  } else {
+    eventLeague = currentEvent.tournament.name;
+  }
+  let homeTeamID = currentEvent.homeTeam.id;
+  let awayTeamID = currentEvent.awayTeam.id;
+  let gameID = currentEvent.id;
+  dateConfirm = false;
+  let startTime = formatEventDate(currentEvent.startTimestamp);
+  let compareDate = new Date(currentEvent.startTimestamp * 1000);
+  compareDate.setHours(compareDate.getHours() - 5);
+  let maxDate = new Date(date);
+  maxDate.setDate(maxDate.getDate() + 1);
+  if (
+    compareDate.getTime() > date.getTime() &&
+    compareDate.getTime() < maxDate.getTime()
+  ) {
+    dateConfirm = true;
+  }
+  if (onlyLive == "Y") {
+    dateConfirm = true;
+  }
+  let secondLeague = "";
+  if (league == "NFL") {
+    secondLeague = "NFL Preseason";
+  }
+  if (
+    (eventLeague == league || eventLeague == secondLeague) &&
+    dateConfirm == true
+  ) {
+    let awayScore = currentEvent.awayScore.current;
+    let homeScore = currentEvent.homeScore.current;
+    let currentPeriod = currentEvent.status.description;
+    let currentPTime = "";
+    let homeTeam = currentEvent.homeTeam.name;
+    let awayTeam = currentEvent.awayTeam.name;
+    let numPeriods = "";
+    let homePeriodScores = [];
+    let awayPeriodScores = [];
+    let sport = "";
+    let awayStat1 = "NA";
+    let awayStat2 = "NA";
+    let homeStat1 = "NA";
+    let homeStat2 = "NA";
+
+    if (sportID == "64" && league == "MLB") {
+      numPeriods = 9;
+      sport = "baseball";
+      if (currentEvent.awayScore.innings.inning1 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning1.run);
+      }
+      if (currentEvent.awayScore.innings.inning2 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning2.run);
+      }
+      if (currentEvent.awayScore.innings.inning3 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning3.run);
+      }
+      if (currentEvent.awayScore.innings.inning4 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning4.run);
+      }
+      if (currentEvent.awayScore.innings.inning5 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning5.run);
+      }
+      if (currentEvent.awayScore.innings.inning6 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning6.run);
+      }
+      if (currentEvent.awayScore.innings.inning7 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning7.run);
+      }
+      if (currentEvent.awayScore.innings.inning8 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning8.run);
+      }
+      if (currentEvent.awayScore.innings.inning9 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.innings.inning9.run);
+      }
+
+      if (currentEvent.homeScore.innings.inning1 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning1.run);
+      }
+      if (currentEvent.homeScore.innings.inning2 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning2.run);
+      }
+      if (currentEvent.homeScore.innings.inning3 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning3.run);
+      }
+      if (currentEvent.homeScore.innings.inning4 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning4.run);
+      }
+      if (currentEvent.homeScore.innings.inning5 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning5.run);
+      }
+      if (currentEvent.homeScore.innings.inning6 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning6.run);
+      }
+      if (currentEvent.homeScore.innings.inning7 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning7.run);
+      }
+      if (currentEvent.homeScore.innings.inning8 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning8.run);
+      }
+      if (currentEvent.homeScore.innings.inning9 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.innings.inning9.run);
+      }
+      try {
+        awayStat1 = currentEvent.awayScore.inningsBaseball.hits;
+      } catch (error) {}
+      try {
+        awayStat2 = currentEvent.awayScore.inningsBaseball.errors;
+      } catch (error) {}
+      try {
+        homeStat1 = currentEvent.homeScore.inningsBaseball.hits;
+      } catch (error) {}
+      try {
+        homeStat2 = currentEvent.homeScore.inningsBaseball.errors;
+      } catch (error) {}
     }
-    let homeTeamID = currentEvent.homeTeam.id;
-    let awayTeamID = currentEvent.awayTeam.id;
-    let gameID = currentEvent.id;
-    dateConfirm = false;
-    let startTime = formatEventDate(currentEvent.startTimestamp);
-    let compareDate = new Date(currentEvent.startTimestamp * 1000);
-    compareDate.setHours(compareDate.getHours() - 5);
-    let maxDate = new Date(date);
-    maxDate.setDate(maxDate.getDate() + 1);
-    if (
-      compareDate.getTime() > date.getTime() &&
-      compareDate.getTime() < maxDate.getTime()
-    ) {
-      dateConfirm = true;
+
+    if (sportID == "64" && league == "NCAA, Regular Season") {
+      numPeriods = 7;
+      sport = "baseball";
+      if (currentEvent.awayScore.period1 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period1);
+      }
+      if (currentEvent.awayScore.period2 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period2);
+      }
+      if (currentEvent.awayScore.period3 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period3);
+      }
+      if (currentEvent.awayScore.period4 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period4);
+      }
+      if (currentEvent.awayScore.period5 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period5);
+      }
+      if (currentEvent.awayScore.period6 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period6);
+      }
+      if (currentEvent.awayScore.period7 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period7);
+      }
+
+      if (currentEvent.homeScore.period1 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period1);
+      }
+      if (currentEvent.homeScore.period2 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period2);
+      }
+      if (currentEvent.homeScore.period3 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period3);
+      }
+      if (currentEvent.homeScore.period4 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period4);
+      }
+      if (currentEvent.homeScore.period5 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period5);
+      }
+      if (currentEvent.homeScore.period6 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period6);
+      }
+      if (currentEvent.homeScore.period7 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period7);
+      }
+
+      try {
+        awayStat1 = currentEvent.awayScore.inningsBaseball.hits;
+      } catch (error) {}
+      try {
+        awayStat2 = currentEvent.awayScore.inningsBaseball.errors;
+      } catch (error) {}
+      try {
+        homeStat1 = currentEvent.homeScore.inningsBaseball.hits;
+      } catch (error) {}
+      try {
+        homeStat2 = currentEvent.homeScore.inningsBaseball.errors;
+      } catch (error) {}
     }
-    let secondLeague = "";
-    if (league == "NFL") {
-      secondLeague = "NFL Preseason";
+
+    if (sportID == "63") {
+      numPeriods = 4;
+      sport = "football";
+
+      if (currentEvent.awayScore.period1 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period1);
+      }
+      if (currentEvent.awayScore.period2 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period2);
+      }
+      if (currentEvent.awayScore.period3 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period3);
+      }
+      if (currentEvent.awayScore.period4 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period4);
+      }
+
+      if (currentEvent.homeScore.period1 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period1);
+      }
+      if (currentEvent.homeScore.period2 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period2);
+      }
+      if (currentEvent.homeScore.period3 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period3);
+      }
+      if (currentEvent.homeScore.period4 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period4);
+      }
+
+      awayStat1 = "";
+      awayStat2 = "";
+      homeStat1 = "";
+      homeStat2 = "";
     }
-    if (
-      (eventLeague == league || eventLeague == secondLeague) &&
-      dateConfirm == true
-    ) {
-      let homeTeam = currentEvent.homeTeam.name;
-      let awayTeam = currentEvent.awayTeam.name;
-      html += constructUpcomingScoreboard(
+
+    if (sportID == "4") {
+      numPeriods = 3;
+      sport = "hockey";
+
+      if (currentEvent.awayScore.period1 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period1);
+      }
+      if (currentEvent.awayScore.period2 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period2);
+      }
+      if (currentEvent.awayScore.period3 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period3);
+      }
+
+      if (currentEvent.homeScore.period1 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period1);
+      }
+      if (currentEvent.homeScore.period2 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period2);
+      }
+      if (currentEvent.homeScore.period3 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period3);
+      }
+      awayStat1 = "";
+      awayStat2 = "";
+      homeStat1 = "";
+      homeStat2 = "";
+    }
+
+    if (sportID == "2") {
+      if (league == "NBA") {
+        numPeriods = 4;
+      } else {
+        numPeriods = 2;
+      }
+      sport = "basketball";
+
+      if (currentEvent.awayScore.period1 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period1);
+      }
+      if (currentEvent.awayScore.period2 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period2);
+      }
+
+      if (currentEvent.homeScore.period1 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period1);
+      }
+      if (currentEvent.homeScore.period2 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period2);
+      }
+      if (league == "NBA") {
+        if (currentEvent.awayScore.period3 != undefined) {
+          awayPeriodScores.push(currentEvent.awayScore.period3);
+        }
+        if (currentEvent.awayScore.period4 != undefined) {
+          awayPeriodScores.push(currentEvent.awayScore.period4);
+        }
+        if (currentEvent.homeScore.period3 != undefined) {
+          homePeriodScores.push(currentEvent.homeScore.period3);
+        }
+        if (currentEvent.homeScore.period4 != undefined) {
+          homePeriodScores.push(currentEvent.homeScore.period4);
+        }
+      }
+
+      awayStat1 = "";
+      awayStat2 = "";
+      homeStat1 = "";
+      homeStat2 = "";
+    }
+
+    if (sportID == "1") {
+      numPeriods = 2;
+      sport = "soccer";
+
+      if (currentEvent.awayScore.period1 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period1);
+      }
+      if (currentEvent.awayScore.period2 != undefined) {
+        awayPeriodScores.push(currentEvent.awayScore.period2);
+      }
+
+      if (currentEvent.homeScore.period1 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period1);
+      }
+      if (currentEvent.homeScore.period2 != undefined) {
+        homePeriodScores.push(currentEvent.homeScore.period2);
+      }
+
+      awayStat1 = "";
+      awayStat2 = "";
+      homeStat1 = "";
+      homeStat2 = "";
+    }
+
+    if (homeScore != undefined && awayScore != undefined) {
+      html += constructLiveScoreboard(
         currentEvent,
+        awayScore,
+        homeScore,
+        awayPeriodScores,
+        homePeriodScores,
+        currentPeriod,
         startTime,
         homeTeam,
         awayTeam,
+        numPeriods,
+        sport,
+        homeStat1,
+        homeStat2,
+        awayStat1,
+        awayStat2,
         gameID,
         homeTeamID,
         awayTeamID,
@@ -225,366 +606,7 @@ function buildUpcomingScoreboard(
         buttonID
       );
     }
-  });
-  return html;
-}
-
-function buildLiveScoreboard(
-  allData,
-  containerName,
-  sportID,
-  league,
-  date,
-  live,
-  loadingContainer,
-  eventDate,
-  buttonID
-) {
-  let html = "";
-  let eventInfo = allData.data;
-  let dateConfirm = false;
-  eventInfo.forEach((currentEvent) => {
-    let eventLeague = "";
-    if (currentEvent.tournament.uniqueTournament.name != undefined) {
-      eventLeague = currentEvent.tournament.uniqueTournament.name;
-    } else {
-      eventLeague = currentEvent.tournament.name;
-    }
-    let homeTeamID = currentEvent.homeTeam.id;
-    let awayTeamID = currentEvent.awayTeam.id;
-    let gameID = currentEvent.id;
-    dateConfirm = false;
-    let startTime = formatEventDate(currentEvent.startTimestamp);
-    let compareDate = new Date(currentEvent.startTimestamp * 1000);
-    compareDate.setHours(compareDate.getHours() - 5);
-    let maxDate = new Date(date);
-    maxDate.setDate(maxDate.getDate() + 1);
-    if (
-      compareDate.getTime() > date.getTime() &&
-      compareDate.getTime() < maxDate.getTime()
-    ) {
-      dateConfirm = true;
-    }
-    if (live == "Y") {
-      dateConfirm = true;
-    }
-    let secondLeague = "";
-    if (league == "NFL") {
-      secondLeague = "NFL Preseason";
-    }
-    if (
-      (eventLeague == league || eventLeague == secondLeague) &&
-      dateConfirm == true
-    ) {
-      let awayScore = currentEvent.awayScore.current;
-      let homeScore = currentEvent.homeScore.current;
-      let currentPeriod = currentEvent.status.description;
-      let currentPTime = "";
-      let homeTeam = currentEvent.homeTeam.name;
-      let awayTeam = currentEvent.awayTeam.name;
-      let numPeriods = "";
-      let homePeriodScores = [];
-      let awayPeriodScores = [];
-      let sport = "";
-      let awayStat1 = "NA";
-      let awayStat2 = "NA";
-      let homeStat1 = "NA";
-      let homeStat2 = "NA";
-
-      if (sportID == "64" && league == "MLB") {
-        numPeriods = 9;
-        sport = "baseball";
-        if (currentEvent.awayScore.innings.inning1 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning1.run);
-        }
-        if (currentEvent.awayScore.innings.inning2 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning2.run);
-        }
-        if (currentEvent.awayScore.innings.inning3 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning3.run);
-        }
-        if (currentEvent.awayScore.innings.inning4 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning4.run);
-        }
-        if (currentEvent.awayScore.innings.inning5 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning5.run);
-        }
-        if (currentEvent.awayScore.innings.inning6 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning6.run);
-        }
-        if (currentEvent.awayScore.innings.inning7 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning7.run);
-        }
-        if (currentEvent.awayScore.innings.inning8 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning8.run);
-        }
-        if (currentEvent.awayScore.innings.inning9 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.innings.inning9.run);
-        }
-
-        if (currentEvent.homeScore.innings.inning1 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning1.run);
-        }
-        if (currentEvent.homeScore.innings.inning2 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning2.run);
-        }
-        if (currentEvent.homeScore.innings.inning3 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning3.run);
-        }
-        if (currentEvent.homeScore.innings.inning4 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning4.run);
-        }
-        if (currentEvent.homeScore.innings.inning5 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning5.run);
-        }
-        if (currentEvent.homeScore.innings.inning6 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning6.run);
-        }
-        if (currentEvent.homeScore.innings.inning7 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning7.run);
-        }
-        if (currentEvent.homeScore.innings.inning8 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning8.run);
-        }
-        if (currentEvent.homeScore.innings.inning9 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.innings.inning9.run);
-        }
-        try {
-          awayStat1 = currentEvent.awayScore.inningsBaseball.hits;
-        } catch (error) {}
-        try {
-          awayStat2 = currentEvent.awayScore.inningsBaseball.errors;
-        } catch (error) {}
-        try {
-          homeStat1 = currentEvent.homeScore.inningsBaseball.hits;
-        } catch (error) {}
-        try {
-          homeStat2 = currentEvent.homeScore.inningsBaseball.errors;
-        } catch (error) {}
-      }
-
-      if (sportID == "64" && league == "NCAA, Regular Season") {
-        numPeriods = 7;
-        sport = "baseball";
-        if (currentEvent.awayScore.period1 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period1);
-        }
-        if (currentEvent.awayScore.period2 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period2);
-        }
-        if (currentEvent.awayScore.period3 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period3);
-        }
-        if (currentEvent.awayScore.period4 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period4);
-        }
-        if (currentEvent.awayScore.period5 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period5);
-        }
-        if (currentEvent.awayScore.period6 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period6);
-        }
-        if (currentEvent.awayScore.period7 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period7);
-        }
-
-        if (currentEvent.homeScore.period1 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period1);
-        }
-        if (currentEvent.homeScore.period2 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period2);
-        }
-        if (currentEvent.homeScore.period3 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period3);
-        }
-        if (currentEvent.homeScore.period4 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period4);
-        }
-        if (currentEvent.homeScore.period5 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period5);
-        }
-        if (currentEvent.homeScore.period6 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period6);
-        }
-        if (currentEvent.homeScore.period7 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period7);
-        }
-
-        try {
-          awayStat1 = currentEvent.awayScore.inningsBaseball.hits;
-        } catch (error) {}
-        try {
-          awayStat2 = currentEvent.awayScore.inningsBaseball.errors;
-        } catch (error) {}
-        try {
-          homeStat1 = currentEvent.homeScore.inningsBaseball.hits;
-        } catch (error) {}
-        try {
-          homeStat2 = currentEvent.homeScore.inningsBaseball.errors;
-        } catch (error) {}
-      }
-
-      if (sportID == "63") {
-        numPeriods = 4;
-        sport = "football";
-
-        if (currentEvent.awayScore.period1 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period1);
-        }
-        if (currentEvent.awayScore.period2 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period2);
-        }
-        if (currentEvent.awayScore.period3 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period3);
-        }
-        if (currentEvent.awayScore.period4 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period4);
-        }
-
-        if (currentEvent.homeScore.period1 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period1);
-        }
-        if (currentEvent.homeScore.period2 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period2);
-        }
-        if (currentEvent.homeScore.period3 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period3);
-        }
-        if (currentEvent.homeScore.period4 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period4);
-        }
-
-        awayStat1 = "";
-        awayStat2 = "";
-        homeStat1 = "";
-        homeStat2 = "";
-      }
-
-      if (sportID == "4") {
-        numPeriods = 3;
-        sport = "hockey";
-
-        if (currentEvent.awayScore.period1 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period1);
-        }
-        if (currentEvent.awayScore.period2 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period2);
-        }
-        if (currentEvent.awayScore.period3 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period3);
-        }
-
-        if (currentEvent.homeScore.period1 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period1);
-        }
-        if (currentEvent.homeScore.period2 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period2);
-        }
-        if (currentEvent.homeScore.period3 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period3);
-        }
-        awayStat1 = "";
-        awayStat2 = "";
-        homeStat1 = "";
-        homeStat2 = "";
-      }
-
-      if (sportID == "2") {
-        if (league == "NBA") {
-          numPeriods = 4;
-        } else {
-          numPeriods = 2;
-        }
-        sport = "basketball";
-
-        if (currentEvent.awayScore.period1 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period1);
-        }
-        if (currentEvent.awayScore.period2 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period2);
-        }
-
-        if (currentEvent.homeScore.period1 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period1);
-        }
-        if (currentEvent.homeScore.period2 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period2);
-        }
-        if (league == "NBA") {
-          if (currentEvent.awayScore.period3 != undefined) {
-            awayPeriodScores.push(currentEvent.awayScore.period3);
-          }
-          if (currentEvent.awayScore.period4 != undefined) {
-            awayPeriodScores.push(currentEvent.awayScore.period4);
-          }
-          if (currentEvent.homeScore.period3 != undefined) {
-            homePeriodScores.push(currentEvent.homeScore.period3);
-          }
-          if (currentEvent.homeScore.period4 != undefined) {
-            homePeriodScores.push(currentEvent.homeScore.period4);
-          }
-        }
-
-        awayStat1 = "";
-        awayStat2 = "";
-        homeStat1 = "";
-        homeStat2 = "";
-      }
-
-      if (sportID == "1") {
-        numPeriods = 2;
-        sport = "soccer";
-
-        if (currentEvent.awayScore.period1 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period1);
-        }
-        if (currentEvent.awayScore.period2 != undefined) {
-          awayPeriodScores.push(currentEvent.awayScore.period2);
-        }
-
-        if (currentEvent.homeScore.period1 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period1);
-        }
-        if (currentEvent.homeScore.period2 != undefined) {
-          homePeriodScores.push(currentEvent.homeScore.period2);
-        }
-
-        awayStat1 = "";
-        awayStat2 = "";
-        homeStat1 = "";
-        homeStat2 = "";
-      }
-
-      if (homeScore != undefined && awayScore != undefined) {
-        html += constructLiveScoreboard(
-          currentEvent,
-          awayScore,
-          homeScore,
-          awayPeriodScores,
-          homePeriodScores,
-          currentPeriod,
-          startTime,
-          homeTeam,
-          awayTeam,
-          numPeriods,
-          sport,
-          homeStat1,
-          homeStat2,
-          awayStat1,
-          awayStat2,
-          gameID,
-          homeTeamID,
-          awayTeamID,
-          containerName,
-          loadingContainer,
-          sportID,
-          eventDate,
-          league,
-          buttonID
-        );
-      }
-    }
-  });
+  }
   return html;
 }
 

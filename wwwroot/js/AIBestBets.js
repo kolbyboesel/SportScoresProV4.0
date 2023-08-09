@@ -1139,4 +1139,4 @@ function generateSoccerBestBetBoard(
   return htmlSegment;
 }
 
-showBundesligaBets();
+//showBundesligaBets();

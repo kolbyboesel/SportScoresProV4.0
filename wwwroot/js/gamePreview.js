@@ -1,3 +1,22 @@
+function decimalToAmericanOdds(decimalOdd) {
+  let oddValue = "";
+  if (decimalOdd < 2) {
+    oddValue = -100 / (decimalOdd - 1);
+  } else if (decimalOdd > 2) {
+    oddValue = (decimalOdd - 1) * 100;
+  } else {
+    oddValue = 100;
+  }
+  oddValue = Math.round(oddValue);
+  let stringOddValue = "";
+  if (oddValue < 0) {
+    stringOddValue = "ML: (" + oddValue.toString() + ")";
+  } else {
+    stringOddValue = "ML: (+" + oddValue.toString() + ")";
+  }
+  return stringOddValue;
+}
+
 async function loadGamePreview(
   live,
   gameID,
@@ -87,6 +106,9 @@ function generateGamePreview(
   let awayManager = "        ";
   let homeLineup = [];
   let awayLineup = [];
+  let homeTeamMascot = "";
+  let awayTeamMascot = "";
+
   try {
     homeRecord = form.homeTeam.value;
   } catch (error) {}
@@ -110,6 +132,13 @@ function generateGamePreview(
     shortAwayTeamName = event.awayTeam.nameCode;
   } catch (error) {}
 
+  try {
+    homeTeamMascot = event.homeTeam.shortName;
+  } catch (error) {}
+
+  try {
+    awayTeamMascot = event.awayTeam.shortName;
+  } catch (error) {}
   try {
     homeManager = event.homeTeam.manager.name;
   } catch (error) {}
@@ -162,13 +191,14 @@ function generateGamePreview(
     }
   } else {
     try {
-      homeMoneyline = odds.choices[0].fractionalValue;
-      awayMoneyline = odds.choices[1].fractionalValue;
+      homeMoneyline = decimalToAmericanOdds(odds[0].choices[0].fractionalValue);
+      awayMoneyline = decimalToAmericanOdds(odds[0].choices[1].fractionalValue);
     } catch (error) {
       homeMoneyline = "";
       awayMoneyline = "";
     }
   }
+
   let coachHeader = "Coach";
   if (sport == "Baseball") {
     coachHeader = "Manager";
@@ -199,7 +229,9 @@ function generateGamePreview(
     containerName,
     loadingContainer,
     buttonID,
-    isLiveContainer
+    isLiveContainer,
+    homeTeamMascot,
+    awayTeamMascot
   );
 
   return html;
@@ -231,7 +263,9 @@ function buildGamePreview(
   containerName,
   loadingContainer,
   buttonID,
-  isLiveContainer
+  isLiveContainer,
+  homeTeamMascot,
+  awayTeamMascot
 ) {
   let html = "";
   html +=
@@ -285,9 +319,6 @@ function buildGamePreview(
   if (live == "Y") {
     html += `<div class="col-auto team-name-style center-elements bold-lg-font center-text no-gutters-sm">
             ${awayScore}</div>`;
-  } else {
-    html += `<div class="col-auto team-name-style center-elements center-text no-gutters-sm">
-            ${awayMoneyline}</div>`;
   }
 
   html += `
@@ -315,19 +346,18 @@ function buildGamePreview(
               <div class="col-12 team-name-style center-elements lg-screen center-text">${homeTeam}</div>
             </div>
             <div class="row no-gutters">
-              <div class="team-record-style center-elements center-text">${homeRecord}</div>
+              <div class="team-record-style center-elements center-text no-gutters">${homeRecord}</div>
             </div>
           </div>`;
   } else {
-    html += `<div class="col container no-gutters">
+    html += `
+    <div class="col container no-gutters">
             <div class="row no-gutters">
               <div class="col-12 team-name-style center-elements sm-screen center-text">
                 ${shortHomeTeamName}</div>
               <div class="col-12 team-name-style center-elements lg-screen center-text">${homeTeam}</div>
-              <div class="col-12 team-name-style center-elements center-text no-gutters-sm">${homeMoneyline}
-              </div>
               <div class="row no-gutters">
-                <div class="team-record-style center-elements center-text">${homeRecord}</div>
+                <div class="team-record-style center-elements center-text no-gutters">${homeRecord}</div>
               </div>
             </div>
           </div>`;
@@ -344,7 +374,7 @@ function buildGamePreview(
   <div class="row">
     <div class="col">
       <div class="d-flex flex-column bd-highlight mb-3">
-        <div class=" p-2 bd-highlight center-elements center-text header">Away Starters</div>`;
+        <div class=" p-2 bd-highlight center-elements center-text header">${awayTeamMascot} Starters</div>`;
   for (let i = 0; i < awayLineup.length; i++) {
     html += `<div class="p-2 bd-highlight">
           <div class="container no-gutters">
@@ -359,13 +389,17 @@ function buildGamePreview(
           </div>
       </div>`;
   }
-  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap">${coachHeader}: ${awayManager}</div>
-    </div>
+  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap">${coachHeader}: ${awayManager}</div>`;
+  if (live == "N") {
+    html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap bold-font">Moneyline: ${awayMoneyline}</div>`;
+  }
+
+  html += `</div>
   </div>
 
   <div class="col">
     <div class="d-flex flex-column bd-highlight mb-3 right-text">
-      <div class=" p-2 bd-highlight center-elements center-text header">Home Starters</div>`;
+      <div class=" p-2 bd-highlight center-elements center-text header">${homeTeamMascot} Starters</div>`;
 
   for (let i = 0; i < homeLineup.length; i++) {
     html += `<div class="p-2 bd-highlight">
@@ -381,8 +415,12 @@ function buildGamePreview(
         </div>
     </div>`;
   }
-  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap">${coachHeader}: ${homeManager}</div>
-  </div>
+  html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap">${coachHeader}: ${homeManager}</div>`;
+  if (live == "N") {
+    html += `<div class=" p-2 bd-highlight center-text whitespace-nowrap bold-font">Moneyline: ${homeMoneyline}</div>`;
+  }
+
+  html += `</div>
   </div>
   </div>
   </div>`;
@@ -400,4 +438,4 @@ async function getImgLogo(url) {
   }
 }
 
-//loadGamePreview("Y","11163757","3627","3633","liveScoresContainer","liveLoading");
+//loadGamePreview("N","11164025","3630","3628","liveScoresContainer","liveLoading");

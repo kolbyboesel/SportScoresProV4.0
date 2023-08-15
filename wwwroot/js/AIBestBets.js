@@ -122,10 +122,18 @@ function formatDateAI(rawDate) {
     hour: "2-digit",
     minute: "2-digit",
   });
-  if (dateRaw.getHours() - 5 < 12) {
-    startTime = dateRaw.getHours() - 5 + ":" + dateRaw.getMinutes() + " AM";
+  let minutes = "";
+  if (dateRaw.getMinutes() == 0) {
+    minutes = "00";
   } else {
-    startTime = dateRaw.getHours() - 17 + ":" + dateRaw.getMinutes() + " PM";
+    minutes = dateRaw.getMinutes().toString();
+  }
+  if (dateRaw.getHours() - 5 < 12) {
+    startTime = dateRaw.getHours() - 5 + ":" + minutes + " AM";
+  } else if (dateRaw.getHours() == 17) {
+    startTime = 12 + ":" + minutes + " PM";
+  } else {
+    startTime = dateRaw.getHours() - 17 + ":" + minutes + " PM";
   }
 
   return dateRaw.toLocaleDateString() + " Start Time: " + startTime;

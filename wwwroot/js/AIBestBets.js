@@ -697,7 +697,7 @@ function buildBestBetBoard(allOdds, containerName) {
     if (
       containerName === "containerCBB" &&
       currentGame.country_name === "USA" &&
-      currentLeague === "NCAA" &&
+      currentLeague === "NCAA Men" &&
       currentDay === eventDay
     ) {
       homeTeam = currentGame.home_team_name;
@@ -729,7 +729,7 @@ function buildBestBetBoard(allOdds, containerName) {
         secondOverVal,
         thirdOverVal,
         fourthOverVal,
-        fifthOverValue,
+        fifthOverVal,
         eventStart
       );
     }

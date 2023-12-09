@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4wHA2JqUaQotEk4qBXLCLP/1HDJiur4+QgGaMzsmX3M=",
+  "Hash": "0fot4WuRVevzKzlYnOkwu9aUCZx0XX/iIF/5+2R62jM=",
   "Source": "SportScoresPro",
   "BasePath": "_content/SportScoresPro",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SportScoresPro/wwwroot",
       "Source": "SportScoresPro",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/.DS_Store",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/.DS_Store",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/MainLayout.css",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/MainLayout.css",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/MainLayout.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot/css/MainLayout.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/NavMenu.css",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/NavMenu.css",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/NavMenu.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot/css/NavMenu.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/open-iconic/README.md",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/open-iconic/README.md",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/css/site.css",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/css/site.css",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/fonts/icomoon.eot",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/fonts/icomoon.eot",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "fonts/icomoon.eot",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot/fonts/icomoon.eot"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/fonts/icomoon.svg",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/fonts/icomoon.svg",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "fonts/icomoon.svg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot/fonts/icomoon.svg"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/fonts/icomoon.ttf",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/fonts/icomoon.ttf",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "fonts/icomoon.ttf",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot/fonts/icomoon.ttf"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/fonts/icomoon.woff",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/fonts/icomoon.woff",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "fonts/icomoon.woff",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot/fonts/icomoon.woff"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/fonts/Quicksand-Bold.ttf",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/fonts/Quicksand-Bold.ttf",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "fonts/Quicksand-Bold.ttf",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot/fonts/Quicksand-Bold.ttf"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/fonts/Quicksand-Regular.ttf",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/fonts/Quicksand-Regular.ttf",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "fonts/Quicksand-Regular.ttf",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot/fonts/Quicksand-Regular.ttf"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/backgroundimage.jpg",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/backgroundimage.jpg",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/backgroundimage.jpg",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot/images/backgroundimage.jpg"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/brLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/brLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/brLogo.png",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot/images/brLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/bundesligaLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/bundesligaLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/bundesligaLogo.png",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot/images/bundesligaLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/espnLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/espnLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/espnLogo.png",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot/images/espnLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/eventPreview.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/eventPreview.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/eventPreview.png",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot/images/eventPreview.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/favicon.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/favicon.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/favicon.png",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot/images/favicon.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/homeImage.jpeg",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/homeImage.jpeg",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/homeImage.jpeg",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot/images/homeImage.jpeg"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/laligaLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/laligaLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/laligaLogo.png",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot/images/laligaLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/ligue1Logo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/ligue1Logo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/ligue1Logo.png",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot/images/ligue1Logo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/logo_transparent.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/logo_transparent.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/logo_transparent.png",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot/images/logo_transparent.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/mlbLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/mlbLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/mlbLogo.png",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot/images/mlbLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/mlsLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/mlsLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/mlsLogo.png",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot/images/mlsLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/nbaLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/nbaLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/nbaLogo.png",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot/images/nbaLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/ncaaLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/ncaaLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/ncaaLogo.png",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot/images/ncaaLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/newBackground.jpg",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/newBackground.jpg",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/newBackground.jpg",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot/images/newBackground.jpg"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/newMobileBackground.jpeg",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/newMobileBackground.jpeg",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/newMobileBackground.jpeg",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot/images/newMobileBackground.jpeg"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/nflLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/nflLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/nflLogo.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot/images/nflLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/nhlLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/nhlLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/nhlLogo.png",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot/images/nhlLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/premLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/premLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/premLogo.png",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot/images/premLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/proExample.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/proExample.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/proExample.png",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot/images/proExample.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/serieALogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/serieALogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/serieALogo.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot/images/serieALogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/slamLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/slamLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/slamLogo.png",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot/images/slamLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/soccerExample.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/soccerExample.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/soccerExample.png",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot/images/soccerExample.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/images/yahooLogo.png",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/images/yahooLogo.png",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "images/yahooLogo.png",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot/images/yahooLogo.png"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/AIBestBets.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/AIBestBets.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/AIBestBets.js",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot/js/AIBestBets.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/BettingOdds.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/BettingOdds.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/BettingOdds.js",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot/js/BettingOdds.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/buildScoreboard.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/buildScoreboard.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/buildScoreboard.js",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot/js/buildScoreboard.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/CookieManagement.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/CookieManagement.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/CookieManagement.js",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot/js/CookieManagement.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/gamePreview.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/gamePreview.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/gamePreview.js",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot/js/gamePreview.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Imports/bootstrap.min.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/Imports/bootstrap.min.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/Imports/bootstrap.min.js",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot/js/Imports/bootstrap.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Imports/jquery-3.3.1.min.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/Imports/jquery-3.3.1.min.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/Imports/jquery-3.3.1.min.js",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot/js/Imports/jquery-3.3.1.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Imports/jquery.sticky.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/Imports/jquery.sticky.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/Imports/jquery.sticky.js",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot/js/Imports/jquery.sticky.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Imports/owl.carousel.min.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/Imports/owl.carousel.min.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/Imports/owl.carousel.min.js",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot/js/Imports/owl.carousel.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/Imports/popper.min.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/Imports/popper.min.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/Imports/popper.min.js",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot/js/Imports/popper.min.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/NavbarManagement.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/NavbarManagement.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/NavbarManagement.js",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot/js/NavbarManagement.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/News.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/News.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/News.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot/js/News.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/SportsAI.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/SportsAI.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/SportsAI.js",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot/js/SportsAI.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/standings.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/standings.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/standings.js",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot/js/standings.js"
     },
     {
-      "Identity": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/js/StyleInjection.js",
+      "Identity": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/js/StyleInjection.js",
       "SourceId": "SportScoresPro",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/kolbyboesel/Desktop/SportScoresPro/wwwroot/",
+      "ContentRoot": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/wwwroot/",
       "BasePath": "_content/SportScoresPro",
       "RelativePath": "js/StyleInjection.js",
       "AssetKind": "All",

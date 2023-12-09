@@ -9,121 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SportScoresPro
 build_property.RootNamespace = SportScoresPro
-build_property.ProjectDir = /Users/kolbyboesel/Desktop/SportScoresPro/
+build_property.ProjectDir = /Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/kolbyboesel/Desktop/SportScoresPro
+build_property.MSBuildProjectDirectory = /Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/App.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/AccountHome.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/AccountHome.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNjb3VudEhvbWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ConfirmPayment.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/ConfirmPayment.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29uZmlybVBheW1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/ErrorTxt.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/ErrorTxt.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3JUeHQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/HomePage.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Index.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/LivePages/AllBetOdds.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/LivePages/AllBetOdds.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGl2ZVBhZ2VzL0FsbEJldE9kZHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/LivePages/LiveScores.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/LivePages/LiveScores.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTGl2ZVBhZ2VzL0xpdmVTY29yZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Signout.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/Signout.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2lnbm91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Bundesliga.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/Bundesliga.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9CdW5kZXNsaWdhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBaseball.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/CollegeBaseball.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9Db2xsZWdlQmFzZWJhbGwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeBasketball.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/CollegeBasketball.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9Db2xsZWdlQmFza2V0YmFsbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/CollegeFootball.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/CollegeFootball.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9Db2xsZWdlRm9vdGJhbGwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/LaLiga.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/LaLiga.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9MYUxpZ2EucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/Ligue1.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/Ligue1.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9MaWd1ZTEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLB.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/MLB.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9NTEIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/MLS.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/MLS.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9NTFMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NBA.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/NBA.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9OQkEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NFL.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/NFL.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9ORkwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/NHL.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/NHL.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9OSEwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/PremierLeague.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/PremierLeague.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9QcmVtaWVyTGVhZ3VlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/SportPages/SerieA.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/SportPages/SerieA.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvcnRQYWdlcy9TZXJpZUEucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Shared/MainLayout.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Shared/NavMenu.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/_Imports.razor]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/Error.cshtml]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/_Host.cshtml]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/kolbyboesel/Desktop/SportScoresPro/Pages/_Layout.cshtml]
+[/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

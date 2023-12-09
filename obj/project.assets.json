@@ -936,11 +936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kolbyboesel/Desktop/SportScoresPro/SportScoresPro.csproj",
+      "projectUniqueName": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/SportScoresPro.csproj",
       "projectName": "SportScoresPro",
-      "projectPath": "/Users/kolbyboesel/Desktop/SportScoresPro/SportScoresPro.csproj",
+      "projectPath": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/SportScoresPro.csproj",
       "packagesPath": "/Users/kolbyboesel/.nuget/packages/",
-      "outputPath": "/Users/kolbyboesel/Desktop/SportScoresPro/obj/",
+      "outputPath": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/kolbyboesel/.nuget/NuGet/NuGet.Config"

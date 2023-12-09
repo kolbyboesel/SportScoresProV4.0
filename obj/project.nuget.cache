@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oR1LTAvEcqM3Ws6YIyOasOC1FyTkiKWdGj9GLKdr+JoHdoAccWxZfi/HB/ha0mH6wrvj7fVphXmPMSbHyYepIw==",
+  "dgSpecHash": "wFb7CE+ct1SFJtHPQcba+D9wvUsY+CQd+cp+AaOjK4k8vhd2A3HYjNloRRCXAlDCJYBNFtrRMyW1D83ruiw7Vg==",
   "success": true,
-  "projectFilePath": "/Users/kolbyboesel/Desktop/SportScoresPro/SportScoresPro.csproj",
+  "projectFilePath": "/Users/kolbyboesel/Library/Mobile Documents/com~apple~CloudDocs/SportScoresPro/SportScoresPro.csproj",
   "expectedPackageFiles": [
     "/Users/kolbyboesel/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/kolbyboesel/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",
